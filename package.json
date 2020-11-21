@@ -7,9 +7,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "i18n:extract": "node src/translations/manageTranslations.js"
+    "i18n:extract": "node src/translations/manageTranslations.js",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.2",
     "@testing-library/user-event": "^12.2.2",
@@ -34,12 +37,20 @@
     "workbox-streams": "^5.1.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "@storybook/addon-actions": "^6.1.1",
+    "@storybook/addon-essentials": "^6.1.1",
+    "@storybook/addon-links": "^6.1.1",
+    "@storybook/node-logger": "^6.1.1",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.1",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.19.4",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
     "@types/react-intl": "^3.0.0",
     "@types/react-router-dom": "^5.1.6",
+    "babel-loader": "^8.2.1",
     "react-intl-translations-manager": "^5.0.3",
     "rimraf": "^3.0.2",
     "typescript-react-intl": "^0.4.1"
