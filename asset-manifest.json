@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/4laws-web/static/css/main.ea1455b2.chunk.css",
-    "main.js": "/4laws-web/static/js/main.052eab76.chunk.js",
-    "main.js.map": "/4laws-web/static/js/main.052eab76.chunk.js.map",
+    "main.js": "/4laws-web/static/js/main.1d201cfc.chunk.js",
+    "main.js.map": "/4laws-web/static/js/main.1d201cfc.chunk.js.map",
     "runtime-main.js": "/4laws-web/static/js/runtime-main.be223c8d.js",
     "runtime-main.js.map": "/4laws-web/static/js/runtime-main.be223c8d.js.map",
-    "static/js/2.20dbf9b7.chunk.js": "/4laws-web/static/js/2.20dbf9b7.chunk.js",
-    "static/js/2.20dbf9b7.chunk.js.map": "/4laws-web/static/js/2.20dbf9b7.chunk.js.map",
+    "static/js/2.551d9bf5.chunk.js": "/4laws-web/static/js/2.551d9bf5.chunk.js",
+    "static/js/2.551d9bf5.chunk.js.map": "/4laws-web/static/js/2.551d9bf5.chunk.js.map",
     "static/js/3.fb7cd27a.chunk.js": "/4laws-web/static/js/3.fb7cd27a.chunk.js",
     "static/js/3.fb7cd27a.chunk.js.map": "/4laws-web/static/js/3.fb7cd27a.chunk.js.map",
     "index.html": "/4laws-web/index.html",
     "service-worker.js": "/4laws-web/service-worker.js",
     "service-worker.js.map": "/4laws-web/service-worker.js.map",
     "static/css/main.ea1455b2.chunk.css.map": "/4laws-web/static/css/main.ea1455b2.chunk.css.map",
-    "static/js/2.20dbf9b7.chunk.js.LICENSE.txt": "/4laws-web/static/js/2.20dbf9b7.chunk.js.LICENSE.txt"
+    "static/js/2.551d9bf5.chunk.js.LICENSE.txt": "/4laws-web/static/js/2.551d9bf5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.be223c8d.js",
-    "static/js/2.20dbf9b7.chunk.js",
+    "static/js/2.551d9bf5.chunk.js",
     "static/css/main.ea1455b2.chunk.css",
-    "static/js/main.052eab76.chunk.js"
+    "static/js/main.1d201cfc.chunk.js"
   ]
 }
