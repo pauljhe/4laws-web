@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import RouterConfig from '../navigation/RouterConfig';
 import { Language } from './TranslationsProvider';
 
@@ -33,9 +33,9 @@ class App extends React.Component<IProps> {
             { this.props.locale === 'en' ? this.locales['ko']: this.locales['en'] }
           </button>
         </header>
-        <BrowserRouter>
+        <HashRouter basename="/">
           <RouterConfig />
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }

@@ -2,6 +2,7 @@
   "name": "4laws-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pauljhe.github.io/4laws-web",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -9,7 +10,10 @@
     "eject": "react-scripts eject",
     "i18n:extract": "node src/translations/manageTranslations.js",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "chromatic": "npx chromatic --project-token r0oz2z5eh5"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -50,7 +54,8 @@
     "@types/react-dom": "^16.9.9",
     "@types/react-intl": "^3.0.0",
     "@types/react-router-dom": "^5.1.6",
-    "babel-loader": "^8.2.1",
+    "chromatic": "^5.4.0",
+    "gh-pages": "^3.1.0",
     "react-intl-translations-manager": "^5.0.3",
     "rimraf": "^3.0.2",
     "typescript-react-intl": "^0.4.1"
