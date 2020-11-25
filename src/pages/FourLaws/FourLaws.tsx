@@ -19,7 +19,7 @@ const FourLaws: React.FC<RouteComponentProps<IProps>> = (props) => {
   // <span>Four Laws Generated</span>
   return (
     <div className="FourLaws">
-      <div>font-size 13:</div>
+      <div className="font13">font-size 13:</div>
       <div className="font13">
         <FormattedMessage 
           id="fourlaws.title"
@@ -27,7 +27,7 @@ const FourLaws: React.FC<RouteComponentProps<IProps>> = (props) => {
           description="Four Laws Title"
         />
       </div>
-      <div>font-size 14:</div>
+      <div className="font14">font-size 14:</div>
       <div className="font14">
         <FormattedMessage 
           id="fourlaws.title"
@@ -35,7 +35,7 @@ const FourLaws: React.FC<RouteComponentProps<IProps>> = (props) => {
           description="Four Laws Title"
         />
       </div>
-      <div>font-size 16:</div>
+      <div className="font16">font-size 16:</div>
       <div className="font16">
         <FormattedMessage 
           id="fourlaws.title"
@@ -43,7 +43,7 @@ const FourLaws: React.FC<RouteComponentProps<IProps>> = (props) => {
           description="Four Laws Title"
         />
       </div>
-      <div>font-size 20:</div>
+      <div className="font20">font-size 20:</div>
       <div className="font20">
         <FormattedMessage 
           id="fourlaws.title"
@@ -51,7 +51,7 @@ const FourLaws: React.FC<RouteComponentProps<IProps>> = (props) => {
           description="Four Laws Title"
         />
       </div>
-      <div>font-size 30:</div>
+      <div className="font30">font-size 30:</div>
       <div className="font30">
         <FormattedMessage 
           id="fourlaws.title"
