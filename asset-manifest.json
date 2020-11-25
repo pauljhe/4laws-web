@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/4laws-web/static/css/main.e9ec45c7.chunk.css",
-    "main.js": "/4laws-web/static/js/main.e4775b67.chunk.js",
-    "main.js.map": "/4laws-web/static/js/main.e4775b67.chunk.js.map",
+    "main.js": "/4laws-web/static/js/main.f070ff69.chunk.js",
+    "main.js.map": "/4laws-web/static/js/main.f070ff69.chunk.js.map",
     "runtime-main.js": "/4laws-web/static/js/runtime-main.5352e0ff.js",
     "runtime-main.js.map": "/4laws-web/static/js/runtime-main.5352e0ff.js.map",
     "static/js/2.358d171f.chunk.js": "/4laws-web/static/js/2.358d171f.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.5352e0ff.js",
     "static/js/2.358d171f.chunk.js",
     "static/css/main.e9ec45c7.chunk.css",
-    "static/js/main.e4775b67.chunk.js"
+    "static/js/main.f070ff69.chunk.js"
   ]
 }
