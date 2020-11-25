@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src:  url('./assets/fonts/MaruBuri-Regular.ttf') format('truetype');
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff'),
+         local('MaruBuri-Regular'),
+         url('./assets/fonts/MaruBuri-Regular.ttf') format('truetype'),
+         url('./assets/fonts/MaruBuri-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "MaruBuri-Regular", "Helvetica", "Arial", "sans-serif";
 }

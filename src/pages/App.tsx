@@ -3,11 +3,23 @@ import './App.css';
 import { HashRouter } from 'react-router-dom';
 import RouterConfig from '../navigation/RouterConfig';
 import { Language } from './TranslationsProvider';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+import { Button } from '@material-ui/core';
 
 interface IProps {
   changeLanguage: (locale: Language) => void;
   locale: Language;
 }
+
+const CustomTheme = createMuiTheme({
+  typography: {
+    "fontFamily": `"MaruBuri-Regular", "Helvetica", "Arial", "sans-serif"`,
+    "fontSize": 14,
+    "fontWeightLight": 300,
+    "fontWeightRegular": 400,
+    "fontWeightMedium": 500
+  }
+});
 
 class App extends React.Component<IProps> {
 
@@ -27,16 +39,21 @@ class App extends React.Component<IProps> {
 
   render() {
     return (
-      <div className="App">
-        <header>
-          <button onClick={this.changeLanguage}>
-            { this.props.locale === 'en' ? this.locales['ko']: this.locales['en'] }
-          </button>
-        </header>
+      <MuiThemeProvider theme={CustomTheme}>
+        <div className="App">
+          <header>
+            <Button variant="contained" onClick={this.changeLanguage}>
+              { this.props.locale === 'en' ? this.locales['ko']: this.locales['en'] }
+            </Button>
+          </header>
+        </div>
         <HashRouter basename="/">
           <RouterConfig />
         </HashRouter>
-      </div>
+      </MuiThemeProvider>
+      // <div className="App">
+        
+      // </div>
     );
   }
 }
