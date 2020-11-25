@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/4laws-web/static/css/main.ea1455b2.chunk.css",
-    "main.js": "/4laws-web/static/js/main.8ffe90a3.chunk.js",
-    "main.js.map": "/4laws-web/static/js/main.8ffe90a3.chunk.js.map",
-    "runtime-main.js": "/4laws-web/static/js/runtime-main.be223c8d.js",
-    "runtime-main.js.map": "/4laws-web/static/js/runtime-main.be223c8d.js.map",
-    "static/js/2.551d9bf5.chunk.js": "/4laws-web/static/js/2.551d9bf5.chunk.js",
-    "static/js/2.551d9bf5.chunk.js.map": "/4laws-web/static/js/2.551d9bf5.chunk.js.map",
-    "static/js/3.fb7cd27a.chunk.js": "/4laws-web/static/js/3.fb7cd27a.chunk.js",
-    "static/js/3.fb7cd27a.chunk.js.map": "/4laws-web/static/js/3.fb7cd27a.chunk.js.map",
+    "main.css": "/4laws-web/static/css/main.e9ec45c7.chunk.css",
+    "main.js": "/4laws-web/static/js/main.e4775b67.chunk.js",
+    "main.js.map": "/4laws-web/static/js/main.e4775b67.chunk.js.map",
+    "runtime-main.js": "/4laws-web/static/js/runtime-main.5352e0ff.js",
+    "runtime-main.js.map": "/4laws-web/static/js/runtime-main.5352e0ff.js.map",
+    "static/js/2.358d171f.chunk.js": "/4laws-web/static/js/2.358d171f.chunk.js",
+    "static/js/2.358d171f.chunk.js.map": "/4laws-web/static/js/2.358d171f.chunk.js.map",
+    "static/js/3.d4a2857d.chunk.js": "/4laws-web/static/js/3.d4a2857d.chunk.js",
+    "static/js/3.d4a2857d.chunk.js.map": "/4laws-web/static/js/3.d4a2857d.chunk.js.map",
     "index.html": "/4laws-web/index.html",
     "service-worker.js": "/4laws-web/service-worker.js",
     "service-worker.js.map": "/4laws-web/service-worker.js.map",
-    "static/css/main.ea1455b2.chunk.css.map": "/4laws-web/static/css/main.ea1455b2.chunk.css.map",
-    "static/js/2.551d9bf5.chunk.js.LICENSE.txt": "/4laws-web/static/js/2.551d9bf5.chunk.js.LICENSE.txt"
+    "static/css/main.e9ec45c7.chunk.css.map": "/4laws-web/static/css/main.e9ec45c7.chunk.css.map",
+    "static/js/2.358d171f.chunk.js.LICENSE.txt": "/4laws-web/static/js/2.358d171f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/4laws-web/static/media/MaruBuri-Regular.46d19374.otf"
   },
   "entrypoints": [
-    "static/js/runtime-main.be223c8d.js",
-    "static/js/2.551d9bf5.chunk.js",
-    "static/css/main.ea1455b2.chunk.css",
-    "static/js/main.8ffe90a3.chunk.js"
+    "static/js/runtime-main.5352e0ff.js",
+    "static/js/2.358d171f.chunk.js",
+    "static/css/main.e9ec45c7.chunk.css",
+    "static/js/main.e4775b67.chunk.js"
   ]
 }
