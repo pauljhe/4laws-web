@@ -2,18 +2,18 @@ import React from 'react';
 import './App.css';
 import { HashRouter } from 'react-router-dom';
 import RouterConfig from '../navigation/RouterConfig';
-import { Language } from './TranslationsProvider';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
+import Header from './Header';
+import { Language } from '../interfaces/language.interfaces';
 
-interface IProps {
+export interface IAppProps {
   changeLanguage: (locale: Language) => void;
   locale: Language;
 }
 
-const CustomTheme = createMuiTheme({
+const THEME = createMuiTheme({
   typography: {
-    "fontFamily": `"MaruBuri-Regular", "Helvetica", "Arial", "sans-serif"`,
+    "fontFamily": `"JSDongkang-Regular", "Helvetica", "Arial", "sans-serif"`,
     "fontSize": 14,
     "fontWeightLight": 300,
     "fontWeightRegular": 400,
@@ -21,65 +21,19 @@ const CustomTheme = createMuiTheme({
   }
 });
 
-class App extends React.Component<IProps> {
-
-  private locales: any = {
-    'en': 'English',
-    'ko': '한국어'
-  };
-
-  constructor(props: IProps) {
-    super(props);
-    this.changeLanguage = this.changeLanguage.bind(this);
-  }
-
-  changeLanguage() {
-    this.props.changeLanguage(this.props.locale === 'en' ? 'ko': 'en');
-  }
-
+class App extends React.Component<IAppProps> {
   render() {
     return (
-      <MuiThemeProvider theme={CustomTheme}>
-        <div className="App">
-          <header>
-            <Button variant="contained" onClick={this.changeLanguage}>
-              { this.props.locale === 'en' ? this.locales['ko']: this.locales['en'] }
-            </Button>
-          </header>
-        </div>
+      <MuiThemeProvider theme={THEME}>
         <HashRouter basename="/">
+          <div className="App">
+            <Header title="Example Title" { ...this.props } ></Header>
+          </div>
           <RouterConfig />
         </HashRouter>
       </MuiThemeProvider>
-      // <div className="App">
-        
-      // </div>
     );
   }
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//       <BrowserRouter>
-//         <RouterConfig />
-//       </BrowserRouter>
-//     </div>
-//   );
-// }
 
 export default App;

@@ -1,3 +1,3 @@
-import FourLaws from "./FourLaws";
+import FourLaws from './FourLaws';
 
 export default FourLaws;

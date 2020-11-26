@@ -3,19 +3,18 @@ import { IntlProvider } from 'react-intl';
 import App from './App';
 import locale_en from '../translations/locales/en.json';
 import locale_ko from '../translations/locales/ko.json';
-
-export type Language = 'en' | 'ko';
+import { Language } from '../interfaces/language.interfaces';
 
 const translations: any = {
   'en': locale_en,
   'ko': locale_ko
 };
 
-interface IState {
+export interface ITranslationsProviderState {
   locale: Language;
 }
 
-class TranslationsProvider extends React.Component<{}, IState> {
+class TranslationsProvider extends React.Component<{}, ITranslationsProviderState> {
   constructor(props: {}) {
     super(props);
     this.changeLanguage = this.changeLanguage.bind(this);
@@ -24,7 +23,7 @@ class TranslationsProvider extends React.Component<{}, IState> {
   }
 
   changeLanguage(locale: Language) {
-    this.setState({ locale });
+    this.setState((state) => ({ ...state, locale }));
   }
 
   public render() {

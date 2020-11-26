@@ -4,7 +4,7 @@ import FourLaws from '../pages/FourLaws';
 import { Routes } from './constants';
 
 
-const RouterConfig: React.FunctionComponent = () => {
+const RouterConfig: React.FC = () => {
   return (
     <Switch>
       <Route path={Routes.FOUR_LAWS_PAGE} component={FourLaws} />

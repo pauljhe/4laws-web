@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.2",
     "@testing-library/user-event": "^12.2.2",
@@ -58,6 +59,7 @@
     "gh-pages": "^3.1.0",
     "react-intl-translations-manager": "^5.0.3",
     "rimraf": "^3.0.2",
+    "storybook-addon-intl": "^2.4.1",
     "typescript-react-intl": "^0.4.1"
   },
   "eslintConfig": {

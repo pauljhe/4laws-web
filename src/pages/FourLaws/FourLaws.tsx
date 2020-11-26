@@ -3,11 +3,11 @@ import './FourLaws.css';
 import { FormattedMessage } from 'react-intl';
 import { RouteComponentProps } from 'react-router-dom';
 
-interface IProps { 
+export interface IFourLawsProps { 
   page: string | undefined; 
 }
 
-const FourLaws: React.FC<RouteComponentProps<IProps>> = (props) => {
+const FourLaws: React.FC<RouteComponentProps<IFourLawsProps>> = (props) => {
   // const { page } = useParams<any>();
   
   // const page = props.match.params.page;
