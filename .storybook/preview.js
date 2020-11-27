@@ -1,7 +1,7 @@
 import { addDecorator } from '@storybook/react';
 import { setIntlConfig, withIntl } from 'storybook-addon-intl';
-import locale_en from '../src/translations/locales/en.json';
-import locale_ko from '../src/translations/locales/ko.json';
+import locale_en from '../src/assets/i18n/en.json';
+import locale_ko from '../src/assets/i18n/ko.json';
 import { MemoryRouter } from 'react-router-dom';
 
 const translations = {

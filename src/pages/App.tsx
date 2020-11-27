@@ -5,6 +5,7 @@ import RouterConfig from '../navigation/RouterConfig';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import Header from './Header';
 import { Language } from '../interfaces/language.interfaces';
+import { injectIntl, WrappedComponentProps } from 'react-intl';
 
 export interface IAppProps {
   changeLanguage: (locale: Language) => void;
@@ -21,13 +22,19 @@ const THEME = createMuiTheme({
   }
 });
 
-class App extends React.Component<IAppProps> {
+class App extends React.Component<IAppProps & WrappedComponentProps, {}> {
   render() {
+    const { intl } = this.props;
+    const title = intl.formatMessage({
+      id: 'header.title',
+      defaultMessage: "Example Title",
+      description: "Header Title"
+    });
     return (
       <MuiThemeProvider theme={THEME}>
         <HashRouter basename="/">
           <div className="App">
-            <Header title="Example Title" { ...this.props } ></Header>
+            <Header title={title} { ...this.props } ></Header>
           </div>
           <RouterConfig />
         </HashRouter>
@@ -36,4 +43,4 @@ class App extends React.Component<IAppProps> {
   }
 }
 
-export default App;
+export default injectIntl(App);

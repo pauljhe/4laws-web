@@ -1,8 +1,8 @@
 import React from 'react';
 import { IntlProvider } from 'react-intl';
 import App from './App';
-import locale_en from '../translations/locales/en.json';
-import locale_ko from '../translations/locales/ko.json';
+import locale_en from '../assets/i18n/en.json';
+import locale_ko from '../assets/i18n/ko.json';
 import { Language } from '../interfaces/language.interfaces';
 
 const translations: any = {
