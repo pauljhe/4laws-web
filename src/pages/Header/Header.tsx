@@ -1,6 +1,5 @@
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import React from 'react';
 import './Header.css';
 import { IAppProps } from '../App';
@@ -14,13 +13,12 @@ export interface IHeaderProps extends IAppProps {
 class Header extends React.Component<IHeaderProps> {
   render() {
     return (
-      <AppBar position="static" className="Header">
+      <AppBar position="fixed" className="Header">
         <Toolbar>
-          <DrawerMenu />
-          <Typography className="Header-title" variant="h6">
-            { this.props.title }
-          </Typography>
+          <div className="logo-placeholder"></div>
+          <div className="spacing"></div>
           <TranslationMenu { ...this.props } />
+          <DrawerMenu />
         </Toolbar>
       </AppBar>
     );

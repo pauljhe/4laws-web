@@ -50,7 +50,7 @@ class DrawerMenu extends React.Component<{}, IDrawerMenuState> {
           <MenuIcon />
         </IconButton>
         <Drawer 
-          anchor="left"
+          anchor="right"
           open={this.state.open}
           onClose={this.toggleDrawer(false)}
         >

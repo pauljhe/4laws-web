@@ -1,3 +1,19 @@
-.Header-title {
+.Header.MuiAppBar-colorPrimary {
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
+}
+
+.Header .MuiToolbar-root > *:not(:first-child) {
+    margin-left: 24px;
+}
+
+.Header .logo-placeholder {
+    height: 60px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.Header .spacing {
     flex: 1;
 }

@@ -4,10 +4,7 @@ import DrawerMenu from './DrawerMenu';
 
 export default {
   title: 'Header/DrawerMenu',
-  component: DrawerMenu,
-  parameters: {
-    backgrounds: { default: 'dark' }
-  }
+  component: DrawerMenu
 } as Meta;
 
 const Template: Story<{}> = (args) => <DrawerMenu { ...args } />;

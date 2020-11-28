@@ -1,16 +1,21 @@
 @font-face {
-    font-family: 'JSDongkang-Regular';
-    src: local('JSDongkang-Regular'),
-         url('./assets/fonts/JSDongkang-Regular.ttf') format('truetype'),
-         url('./assets/fonts/JSDongkang-Regular.otf') format('opentype'),
-         url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+    font-family: 'Ikkeullim';
+    src: local('aIkkeullimM'),
+         url('./assets/fonts/aIkkeullimM.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Ikkeullim';
+    src: local('aIkkeullimB'),
+         url('./assets/fonts/aIkkeullimB.ttf');
+    font-weight: bold;
+}
+
 body {
     margin: 0;
-    font-family: "JSDongkang-Regular", "Helvetica", "Arial", "sans-serif";
+    font-family: "Ikkeullim", "Helvetica", "Arial", "sans-serif";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

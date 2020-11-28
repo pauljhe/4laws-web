@@ -1,6 +1,6 @@
 import React from 'react';
 import IconButton from '@material-ui/core/IconButton';
-import TranslateIcon from '@material-ui/icons/Translate';
+import LanguageIcon from '@material-ui/icons/Language';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import './TranslationMenu.css';
@@ -47,7 +47,7 @@ class TranslationMenu extends React.Component<ITranslationMenuProps, ITranslatio
           aria-haspopup="true"
           onClick={this.onMenuClick}
         >
-          <TranslateIcon />
+          <LanguageIcon />
         </IconButton>
         <Menu
           id="i18n-menu"

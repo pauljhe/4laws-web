@@ -4,10 +4,7 @@ import TranslationMenu, { ITranslationMenuProps } from './TranslationMenu';
 
 export default {
   title: 'Header/TranslationMenu',
-  component: TranslationMenu,
-  parameters: {
-    backgrounds: { default: 'dark' }
-  }
+  component: TranslationMenu
 } as Meta;
 
 const Template: Story<ITranslationMenuProps> = (args) => <TranslationMenu { ...args } />;

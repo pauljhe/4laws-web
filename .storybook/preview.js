@@ -3,6 +3,7 @@ import { setIntlConfig, withIntl } from 'storybook-addon-intl';
 import locale_en from '../src/assets/i18n/en.json';
 import locale_ko from '../src/assets/i18n/ko.json';
 import { MemoryRouter } from 'react-router-dom';
+import '../src/index.css';
 
 const translations = {
     'en': locale_en,
