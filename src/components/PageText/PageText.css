@@ -1,0 +1,27 @@
+.PageText-Title {
+    font-size: 28px;
+}
+
+.PageText-Content {
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .PageText-Title {
+        font-size: 41px;
+    }
+
+    .PageText-Content {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .PageText-Title {
+        font-size: 61px;
+    }
+
+    .PageText-Content {
+        font-size: 41px;
+    }
+}

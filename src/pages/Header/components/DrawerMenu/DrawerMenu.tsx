@@ -69,7 +69,7 @@ class DrawerMenu extends React.Component<{}, IDrawerMenuState> {
               </ListSubheader>
               {
                 exampleLists.map(list => (
-                  <ListItem button key={list.id} component={Link} to="/">
+                  <ListItem button key={list} component={Link} to="/">
                     <ListItemText>
                       <FormattedMessage
                         id="drawerMenu.laws"

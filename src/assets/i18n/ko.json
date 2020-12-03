@@ -1,6 +1,11 @@
 {
+  "bottomNavigation.next": "다음",
+  "bottomNavigation.previous": "이전",
   "drawerMenu.laws": "제 {n}원리",
   "drawerMenu.subheader": "사영리",
-  "fourlaws.title": "사영리 타이틀",
+  "fourlaws.main.wrapup": "자연계에 자연 법칙이 있듯이 하나님과 사람 사이에도 영적인 원리가 있습니다.",
+  "fourlaws.main1": "사영리(",
+  "fourlaws.main2": "四靈理",
+  "fourlaws.main3": ")에 대하여 들어보셨습니까?",
   "header.title": "예시 타이틀"
 }

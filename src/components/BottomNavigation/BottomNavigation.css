@@ -1,0 +1,14 @@
+.BottomNavigation-Previous, .BottomNavigation-Next {
+    position: fixed;
+    bottom: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.BottomNavigation-Previous {
+    left: 30px;
+}
+
+.BottomNavigation-Next {
+    right: 30px;
+}

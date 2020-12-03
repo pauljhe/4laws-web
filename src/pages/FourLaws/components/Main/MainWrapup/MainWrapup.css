@@ -1,0 +1,16 @@
+.FourLawsMain-Wrapup {
+    text-align: center;
+    max-width: 350px;
+}
+
+@media only screen and (min-width: 600px) {
+    .FourLawsMain-Wrapup {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .FourLawsMain-Wrapup {
+        max-width: 750px;
+    }
+}

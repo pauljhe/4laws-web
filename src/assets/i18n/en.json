@@ -1,6 +1,11 @@
 {
+  "bottomNavigation.next": "Next",
+  "bottomNavigation.previous": "Previous",
   "drawerMenu.laws": "Law {n}",
   "drawerMenu.subheader": "Four Spritual Laws",
-  "fourlaws.title": "Four Laws Title",
+  "fourlaws.main.wrapup": "Just as there are physical laws that govern the physical universe, so are there spiritual laws that govern your relationship with God.",
+  "fourlaws.main1": "Have You",
+  "fourlaws.main2": " ",
+  "fourlaws.main3": "Heard of the Four Spiritual Laws?",
   "header.title": "Example Title"
 }
