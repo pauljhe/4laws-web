@@ -1,3 +1,7 @@
-.TranslationMenu-IconButton.MuiIconButton-root {
+.TranslationMenu-Button.MuiIconButton-root {
     color: black;
+}
+
+.TranslationMenu-Text {
+    padding: 0 10px;
 }

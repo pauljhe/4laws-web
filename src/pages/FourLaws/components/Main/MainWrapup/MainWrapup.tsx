@@ -17,7 +17,7 @@ const MainWrapup: React.FC = () => {
       </PageText>
       <BottomNavigation 
         previousLink='/4laws/main/0'
-        nextLink='/4laws/main/1'
+        nextLink='/4laws/one'
       />
     </React.Fragment>
  

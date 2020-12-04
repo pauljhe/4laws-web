@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Redirect, Route, Switch, useRouteMatch } from 'react-router-dom';
+import LawOne from './components/LawOne/LawOne';
 import Main from './components/Main';
 
 export enum FourLawsPaths {
@@ -18,6 +19,7 @@ const FourLawsRoutes: React.FC = () => {
   return (
     <Switch>
       <Route path={path + FourLawsPaths.MAIN} component={Main} />
+      <Route path={path + FourLawsPaths.LAW_1} component={LawOne} />
       <Redirect exact to={path + FourLawsPaths.MAIN} />
     </Switch>
   );

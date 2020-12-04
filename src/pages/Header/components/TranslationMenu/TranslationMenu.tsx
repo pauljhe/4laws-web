@@ -1,8 +1,11 @@
 import React from 'react';
-import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
 import LanguageIcon from '@material-ui/icons/Language';
+import ExpandLess from '@material-ui/icons/ExpandLess';
+import ExpandMore from '@material-ui/icons/ExpandMore';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import Hidden from '@material-ui/core/Hidden';
 import './TranslationMenu.css';
 import { IAppProps } from '../../../App';
 import { Language, LanguageList } from '../../../../interfaces/language.interfaces';
@@ -38,17 +41,22 @@ class TranslationMenu extends React.Component<ITranslationMenuProps, ITranslatio
   };
 
   render() {
+    const selectedLocale = locales.find(locale => locale.type === this.props.locale);
     return (
       <React.Fragment>
-        <IconButton
-          className="TranslationMenu-IconButton"
+        <Button
+          className="TranslationMenu-Button"
           aria-label="i18n"
           aria-controls="i18n-menu"
           aria-haspopup="true"
           onClick={this.onMenuClick}
         >
           <LanguageIcon />
-        </IconButton>
+          <Hidden xsDown>
+            <span className="TranslationMenu-Text">{ (selectedLocale) ? selectedLocale.label : '' }</span>
+          </Hidden>
+          { (this.state.anchorEl) ? <ExpandLess /> : <ExpandMore /> }
+        </Button>
         <Menu
           id="i18n-menu"
           anchorEl={this.state.anchorEl}
