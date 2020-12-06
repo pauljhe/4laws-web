@@ -5,30 +5,30 @@ import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
 
-const LawOne1: React.FC = () => {
+const LawOne2: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawOne-Content">
         <div className="LawOne-SubTitle">
           <FormattedMessage 
-            id="fourlaws.law1.one.title"
-            defaultMessage="God's Love"
+            id="fourlaws.law1.two.title"
+            defaultMessage="God's Plan"
           />
         </div>
         <div>
           <FormattedMessage 
-            id="fourlaws.law1.one.content"
-            defaultMessage={'"For God so loved the world, that He gave His only begotten Son,' + 
-                            ' that whoever believes in Him should not perish, but have eternal life" (John 3:16).'}
+            id="fourlaws.law1.two.content"
+            defaultMessage={'(Christ speaking) "I came that they might have life, and might have it abundantly"' + 
+                            ' (that it might be full and meaningful) (John 10:10).'}
           />
         </div>
       </PageText>
       <BottomNavigation 
-        previousLink={FourLawsPaths.LAW_ONE_TITLE}
-        nextLink={FourLawsPaths.LAW_ONE_2}
+        previousLink={FourLawsPaths.LAW_ONE_1}
+        nextLink={FourLawsPaths.LAW_ONE_WRAPUP}
       />
     </React.Fragment>
   );
 };
 
-export default LawOne1;
+export default LawOne2;

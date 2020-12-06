@@ -9,20 +9,27 @@ import InfoIcon from '@material-ui/icons/Info';
 
 const LawOne: React.FC = () => {
   const Icon = <InfoIcon className="PageTitle-Icon" />;
+  const isTitle: boolean = window.location.href.endsWith(FourLawsPaths.LAW_ONE_TITLE);
+  const isWrapup: boolean = window.location.href.endsWith(FourLawsPaths.LAW_ONE_WRAPUP);
   return (
     <React.Fragment>
-      <PageTitle
-        className="LawOne-PageTitle"
-        icon={Icon}
-        type={PageTextType.CONTENT}
-        minimized={!window.location.href.endsWith(FourLawsPaths.LAW_ONE_TITLE)}
-      >
-        <FormattedMessage 
-          id="fourlaws.law1.title"
-          defaultMessage={'God LOVES you, and offers a wonderful PLAN for your life.'}
-        />
-      </PageTitle>
-      <LawOneRoutes />
+      {
+        (isWrapup) ? null:
+        <PageTitle
+          className="LawOne-PageTitle"
+          icon={Icon}
+          type={PageTextType.CONTENT}
+          minimized={!isTitle}
+        >
+          <FormattedMessage 
+            id="fourlaws.law1.title"
+            defaultMessage={'God LOVES you, and offers a wonderful PLAN for your life.'}
+          />
+        </PageTitle>
+      }
+      <div className="LawOne-PageContent">
+        <LawOneRoutes />
+      </div>
     </React.Fragment>
   );
 };
