@@ -1,0 +1,18 @@
+.PageTitle.LawOne-PageTitle .PageText-Content {
+    max-width: 329px;
+    min-width: 329px;
+}
+
+@media only screen and (min-width: 600px) {
+    .PageTitle.LawOne-PageTitle .PageText-Content {
+        max-width: 461px;
+        min-width: 461px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .PageTitle.LawOne-PageTitle .PageText-Content {
+        min-width: 675px;
+        max-width: 675px;
+    }
+}

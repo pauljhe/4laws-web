@@ -1,11 +1,13 @@
 .PageTitle {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
     transition: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .PageTitle.PageTitle-Minimized {
@@ -14,29 +16,30 @@
     top: 110px;
 }
 
-.PageTitle .PageText-Content {
-    max-width: 300px;
-    min-width: 300px;
+.PageTitle .PageTitle-Icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
 }
 
 @media only screen and (min-width: 600px) {
     .PageTitle.PageTitle-Minimized {
-        left: 25%;
+        left: 30%;
     }
 
-    .PageTitle .PageText-Content {
-        max-width: 480px;
-        min-width: 480px;
+    .PageTitle .PageTitle-Icon {
+        width: 112px;
+        height: 112px;
     }
 }
 
 @media only screen and (min-width: 960px) {
     .PageTitle.PageTitle-Minimized {
-        left: 20%;
+        left: 25%;
     }
 
-    .PageTitle .PageText-Content {
-        min-width: 630px;
-        max-width: 630px;
+    .PageTitle .PageTitle-Icon {
+        width: 164px;
+        height: 164px;
     }
 }

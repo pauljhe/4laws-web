@@ -8,12 +8,20 @@ export interface IPageTitleProps extends IPageTextProps {
 }
 
 class PageTitle extends React.Component<IPageTitleProps> {
+  getClassNames(): string {
+    const { minimized, className } = this.props;
+    let classNames = 'PageTitle';
+    if (minimized) classNames += ' PageTitle-Minimized';
+    if (className) classNames += ' ' + className;
+    return classNames;
+  }
+  
   render() {
-    const { icon, type, className, minimized, children } = this.props;
+    const { icon, type, children } = this.props;
     return (
-      <div className={`PageTitle${(minimized) ? ' PageTitle-Minimized' : ''}`}>
+      <div className={this.getClassNames()}>
         { icon }
-        <PageText type={type} className={className}>
+        <PageText type={type}>
           { children }
         </PageText>
       </div>
