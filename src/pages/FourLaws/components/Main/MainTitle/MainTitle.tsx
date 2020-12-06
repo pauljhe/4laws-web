@@ -3,6 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import BottomNavigation from '../../../../../components/BottomNavigation/BottomNavigation';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
+import { FourLawsPaths } from '../../../../paths';
 import './MainTitle.css';
 
 const MainTitle: React.FC = () => {
@@ -25,7 +26,7 @@ const MainTitle: React.FC = () => {
         />
       </PageText>
       <BottomNavigation 
-        nextLink='/4laws/main/1'
+        nextLink={FourLawsPaths.MAIN_WRAPUP}
       />
     </React.Fragment>
   );

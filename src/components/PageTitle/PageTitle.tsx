@@ -4,13 +4,14 @@ import './PageTitle.css';
 
 export interface IPageTitleProps extends IPageTextProps {
   icon: React.ReactNode;
+  minimized?: boolean;
 }
 
 class PageTitle extends React.Component<IPageTitleProps> {
   render() {
-    const { icon, type, className, children } = this.props;
+    const { icon, type, className, minimized, children } = this.props;
     return (
-      <div className="PageTitle">
+      <div className={`PageTitle${(minimized) ? ' PageTitle-Minimized' : ''}`}>
         { icon }
         <PageText type={type} className={className}>
           { children }

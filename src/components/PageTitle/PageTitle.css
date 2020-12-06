@@ -1,4 +1,42 @@
 .PageTitle {
     display: flex;
     align-items: center;
+    position: absolute;
+    transition: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.PageTitle.PageTitle-Minimized {
+    transition: all 500ms ease-out;
+    transform: translate(-50%, -50%) scale(0.5);
+    top: 110px;
+}
+
+.PageTitle .PageText-Content {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+@media only screen and (min-width: 600px) {
+    .PageTitle.PageTitle-Minimized {
+        left: 25%;
+    }
+
+    .PageTitle .PageText-Content {
+        max-width: 480px;
+        min-width: 480px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .PageTitle.PageTitle-Minimized {
+        left: 20%;
+    }
+
+    .PageTitle .PageText-Content {
+        min-width: 630px;
+        max-width: 630px;
+    }
 }
