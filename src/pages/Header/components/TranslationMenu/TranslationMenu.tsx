@@ -59,6 +59,7 @@ class TranslationMenu extends React.Component<ITranslationMenuProps, ITranslatio
         </Button>
         <Menu
           id="i18n-menu"
+          className="TranslationMenu-Menu"
           anchorEl={this.state.anchorEl}
           open={Boolean(this.state.anchorEl)}
           onClose={this.onMenuClose}

@@ -5,3 +5,7 @@
 .TranslationMenu-Text {
     padding: 0 10px;
 }
+
+.TranslationMenu-Menu .MuiList-padding {
+    padding: 0;
+}
