@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/4laws-web/static/css/main.92f98b52.chunk.css",
-    "main.js": "/4laws-web/static/js/main.5d34ece5.chunk.js",
-    "main.js.map": "/4laws-web/static/js/main.5d34ece5.chunk.js.map",
-    "runtime-main.js": "/4laws-web/static/js/runtime-main.05903dbb.js",
-    "runtime-main.js.map": "/4laws-web/static/js/runtime-main.05903dbb.js.map",
-    "static/js/2.c96882c1.chunk.js": "/4laws-web/static/js/2.c96882c1.chunk.js",
-    "static/js/2.c96882c1.chunk.js.map": "/4laws-web/static/js/2.c96882c1.chunk.js.map",
-    "static/js/3.aeb6e66b.chunk.js": "/4laws-web/static/js/3.aeb6e66b.chunk.js",
-    "static/js/3.aeb6e66b.chunk.js.map": "/4laws-web/static/js/3.aeb6e66b.chunk.js.map",
+    "main.css": "/4laws-web/static/css/main.c7660465.chunk.css",
+    "main.js": "/4laws-web/static/js/main.d532431a.chunk.js",
+    "main.js.map": "/4laws-web/static/js/main.d532431a.chunk.js.map",
+    "runtime-main.js": "/4laws-web/static/js/runtime-main.81af76d8.js",
+    "runtime-main.js.map": "/4laws-web/static/js/runtime-main.81af76d8.js.map",
+    "static/js/2.34f8fb2e.chunk.js": "/4laws-web/static/js/2.34f8fb2e.chunk.js",
+    "static/js/2.34f8fb2e.chunk.js.map": "/4laws-web/static/js/2.34f8fb2e.chunk.js.map",
+    "static/js/3.88eb83b3.chunk.js": "/4laws-web/static/js/3.88eb83b3.chunk.js",
+    "static/js/3.88eb83b3.chunk.js.map": "/4laws-web/static/js/3.88eb83b3.chunk.js.map",
     "index.html": "/4laws-web/index.html",
     "service-worker.js": "/4laws-web/service-worker.js",
     "service-worker.js.map": "/4laws-web/service-worker.js.map",
-    "static/css/main.92f98b52.chunk.css.map": "/4laws-web/static/css/main.92f98b52.chunk.css.map",
-    "static/js/2.c96882c1.chunk.js.LICENSE.txt": "/4laws-web/static/js/2.c96882c1.chunk.js.LICENSE.txt",
+    "static/css/main.c7660465.chunk.css.map": "/4laws-web/static/css/main.c7660465.chunk.css.map",
+    "static/js/2.34f8fb2e.chunk.js.LICENSE.txt": "/4laws-web/static/js/2.34f8fb2e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/4laws-web/static/media/aIkkeullimM.bfc03efa.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.05903dbb.js",
-    "static/js/2.c96882c1.chunk.js",
-    "static/css/main.92f98b52.chunk.css",
-    "static/js/main.5d34ece5.chunk.js"
+    "static/js/runtime-main.81af76d8.js",
+    "static/js/2.34f8fb2e.chunk.js",
+    "static/css/main.c7660465.chunk.css",
+    "static/js/main.d532431a.chunk.js"
   ]
 }
