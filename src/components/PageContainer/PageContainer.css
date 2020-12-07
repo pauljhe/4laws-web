@@ -2,7 +2,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
     position: relative;
+    padding: 146px 0;
+    height: calc(100vh - 292px);
 }

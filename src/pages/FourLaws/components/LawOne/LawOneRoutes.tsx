@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { FourLawsPaths } from '../../../paths';
 import LawOne1 from './LawOne1';

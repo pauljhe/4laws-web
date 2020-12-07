@@ -1,5 +1,5 @@
 .LawOne-PageContent {
-    margin: auto 43px;
+    margin: auto;
 }
 
 .LawOne-PageContent .LawOne-Content .LawOne-SubTitle {
@@ -8,22 +8,26 @@
     border-bottom: 3px solid black;
 }
 
+.PageTitle.LawOne-PageTitle .PageTitle-Wrapper {
+    max-width: 195px;
+}
+
 .PageTitle.LawOne-PageTitle .PageText-Content {
     font-weight: bold;
-    max-width: 333px;
-    min-width: 333px;
 }
 
 @media only screen and (min-width: 600px) {
-    .PageTitle.LawOne-PageTitle .PageText-Content {
-        max-width: 465px;
-        min-width: 465px;
+    .LawOne-PageContent {
+        margin: auto 43px;
+    }
+
+    .PageTitle.LawOne-PageTitle .PageTitle-Wrapper {
+        max-width: 270px;
     }
 }
 
 @media only screen and (min-width: 960px) {
-    .PageTitle.LawOne-PageTitle .PageText-Content {
-        max-width: 680px;
-        min-width: 680px;
+    .PageTitle.LawOne-PageTitle .PageTitle-Wrapper {
+        max-width: 335px;
     }
 }

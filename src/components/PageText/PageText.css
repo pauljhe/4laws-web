@@ -8,7 +8,7 @@
 
 @media only screen and (min-width: 600px) {
     .PageText-Title {
-        font-size: 41px;
+        font-size: 35px;
     }
 
     .PageText-Content {
@@ -18,10 +18,10 @@
 
 @media only screen and (min-width: 960px) {
     .PageText-Title {
-        font-size: 61px;
+        font-size: 43px;
     }
 
     .PageText-Content {
-        font-size: 41px;
+        font-size: 35px;
     }
 }

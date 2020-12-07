@@ -20,10 +20,12 @@ class PageTitle extends React.Component<IPageTitleProps> {
     const { icon, type, children } = this.props;
     return (
       <div className={this.getClassNames()}>
-        { icon }
-        <PageText type={type}>
-          { children }
-        </PageText>
+        <div className="PageTitle-Wrapper">
+          { icon }
+          <PageText type={type}>
+            { children }
+          </PageText>
+        </div>
       </div>
     );
   }
