@@ -5,22 +5,22 @@ import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
 
-const LawTwoWrapup: React.FC = () => {
+const LawThreeWrapup: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawTwo-Wrapup">
+      <PageText type={PageTextType.CONTENT} className="LawThree-Wrapup">
         <FormattedMessage 
-          id="fourlaws.law2.wrapup"
-          defaultMessage={'The Third Law explains the only way to bridge this gulf...'}
+          id="fourlaws.law3.wrapup"
+          defaultMessage={'It is not enough just to know these three laws...'}
         />
       </PageText>
       <BottomNavigation 
-        previousLink={FourLawsPaths.LAW_TWO_4}
-        nextLink={FourLawsPaths.LAW_THREE}
+        previousLink={FourLawsPaths.LAW_THREE_4}
+        nextLink={FourLawsPaths.LAW_THREE_WRAPUP}
       />
     </React.Fragment>
  
   );
 };
 
-export default LawTwoWrapup;
+export default LawThreeWrapup;

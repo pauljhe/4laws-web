@@ -1,0 +1,29 @@
+.LawThree-PageContent {
+    margin: auto;
+}
+
+.LawThree-PageContent .LawThree-Content .LawThree-SubTitle {
+    margin-bottom: 0.75em;
+    display: inline-block;
+    border-bottom: 3px solid black;
+}
+
+.PageTitle.LawThree-PageTitle .PageTitle-Wrapper {
+    max-width: 245px;
+} 
+
+@media only screen and (min-width: 600px) {
+    .LawThree-PageContent {
+        margin: auto 43px;
+    }
+
+    .PageTitle.LawThree-PageTitle .PageTitle-Wrapper {
+        max-width: 335px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .PageTitle.LawThree-PageTitle .PageTitle-Wrapper {
+        max-width: 415px;
+    }
+}
