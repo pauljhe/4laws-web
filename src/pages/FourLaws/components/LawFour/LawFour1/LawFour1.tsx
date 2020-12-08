@@ -5,29 +5,29 @@ import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
 
-const LawThree3: React.FC = () => {
+const LawFour1: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawThree-Content">
-        <div className="LawThree-SubTitle">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Content">
+        <div className="LawFour-SubTitle">
           <FormattedMessage 
-            id="fourlaws.law3.three.title"
-            defaultMessage="He is the Only Way to God"
+            id="fourlaws.law4.one.title"
+            defaultMessage="We Must Receive Christ"
           />
         </div>
         <div>
           <FormattedMessage 
-            id="fourlaws.law3.three.content"
-            defaultMessage={'"Jesus said to him, \'I am the way, the truth, and the life; no one comes to the Father, but through Me\'" (John 14:6).'}
+            id="fourlaws.law4.one.content"
+            defaultMessage={'"But as many as received Him, to them He gave the right to become children of God, even to those who believe in his name" (John 1:12)'}
           />
         </div>
       </PageText>
       <BottomNavigation 
-        previousLink={FourLawsPaths.LAW_THREE_2}
-        nextLink={FourLawsPaths.LAW_THREE_4}
+        previousLink={FourLawsPaths.LAW_FOUR_TITLE}
+        nextLink={FourLawsPaths.LAW_FOUR_2}
       />
     </React.Fragment>
   );
 };
 
-export default LawThree3;
+export default LawFour1;

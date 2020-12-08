@@ -1,0 +1,27 @@
+.LawFour-Greet-Four-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LawFour-Greet-Four-flex > * {
+    flex: 1;
+}
+
+.LawFour-Greet-Four-flex .LawFour-Greet-Four-Icon {
+    width: 200px;
+    height: 200px;
+}
+
+/* @media only screen and (min-width: 600px) {
+    .PageTitle.LawOne-PageTitle .PageText-Content {
+        max-width: 465px;
+        min-width: 465px;
+    }
+} */
+
+@media only screen and (min-width: 960px) {
+    .LawFour-Greet-Four-flex {
+        flex-direction: row;
+    }
+}

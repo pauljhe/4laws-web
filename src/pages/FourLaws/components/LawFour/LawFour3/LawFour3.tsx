@@ -5,22 +5,21 @@ import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
 
-const LawThreeWrapup: React.FC = () => {
+const LawFour3: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawThree-Wrapup">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Content">
         <FormattedMessage 
-          id="fourlaws.law3.wrapup"
-          defaultMessage={'It is not enough just to know these three laws...'}
+          id="fourlaws.law4.three"
+          defaultMessage={'When We Receive Christ, We Experience a New Birth (Read John 3:1-8.)'}
         />
       </PageText>
       <BottomNavigation 
-        previousLink={FourLawsPaths.LAW_THREE_4}
-        nextLink={FourLawsPaths.LAW_FOUR}
+        previousLink={FourLawsPaths.LAW_FOUR_2}
+        nextLink={FourLawsPaths.LAW_FOUR_4}
       />
     </React.Fragment>
- 
   );
 };
 
-export default LawThreeWrapup;
+export default LawFour3;
