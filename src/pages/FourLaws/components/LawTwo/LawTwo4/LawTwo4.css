@@ -4,14 +4,11 @@
     flex-direction: column;
 }
 
-.LawTwo-Four-flex > * {
-    flex: 1;
-}
-
 .LawTwo-Four-flex .LawTwo-Four-Diagram {
-    font-size: 400px;
-    width: 400px;
-    height: 400px;
+    font-size: 334px;
+    width: 334px;
+    height: 334px;
+    margin-right: 20px;
 }
 
 @media only screen and (min-width: 960px) {

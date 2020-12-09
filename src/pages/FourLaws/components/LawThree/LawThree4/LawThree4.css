@@ -4,21 +4,12 @@
     flex-direction: column;
 }
 
-.LawThree-Four-flex > * {
-    flex: 1;
+.LawThree-Four-flex .LawThree-Four-Diagram {
+    font-size: 334px;
+    width: 334px;
+    height: 334px;
+    margin-right: 20px;
 }
-
-.LawThree-Four-flex .LawThree-Four-Icon {
-    width: 200px;
-    height: 200px;
-}
-
-/* @media only screen and (min-width: 600px) {
-    .PageTitle.LawOne-PageTitle .PageText-Content {
-        max-width: 465px;
-        min-width: 465px;
-    }
-} */
 
 @media only screen and (min-width: 960px) {
     .LawThree-Four-flex {
