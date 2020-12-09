@@ -28,7 +28,10 @@ class TranslationMenu extends React.Component<ITranslationMenuProps, ITranslatio
   }
 
   changeLanguage = (language: Language) => {
-    this.props.changeLanguage(language);
+    if (this.props.locale !== language) {
+      this.props.changeLanguage(language);
+    }
+    this.onMenuClose();
   };
 
   onMenuClick = (event: React.MouseEvent<HTMLElement>) => {
