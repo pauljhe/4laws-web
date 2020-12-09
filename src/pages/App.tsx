@@ -2,15 +2,7 @@ import React from 'react';
 import './App.css';
 import { HashRouter } from 'react-router-dom';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-import Header from './Header';
-import { Language } from '../interfaces/language.interfaces';
-import { injectIntl, WrappedComponentProps } from 'react-intl';
 import AppRoutes from './AppRoutes';
-
-export interface IAppProps {
-  changeLanguage: (locale: Language) => void;
-  locale: Language;
-}
 
 const THEME = createMuiTheme({
   typography: {
@@ -25,25 +17,16 @@ const THEME = createMuiTheme({
   }
 });
 
-class App extends React.Component<IAppProps & WrappedComponentProps, {}> {
+class App extends React.Component {
   render() {
-    const { intl } = this.props;
-    const title = intl.formatMessage({
-      id: 'header.title',
-      defaultMessage: "Example Title",
-      description: "Header Title"
-    });
     return (
       <MuiThemeProvider theme={THEME}>
         <HashRouter basename="/">
-          <div className="App">
-            <Header title={title} { ...this.props } ></Header>
-            <AppRoutes />
-          </div>
+          <AppRoutes />
         </HashRouter>
       </MuiThemeProvider>
     );
   }
 }
 
-export default injectIntl(App);
+export default App;

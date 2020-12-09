@@ -12,6 +12,5 @@ const Template: Story<IHeaderProps> = (args) => <Header { ...args } />;
 export const Example = Template.bind({});
 Example.args = {
   changeLanguage: () => {},
-  locale: 'ko',
-  title: 'Example Title'
+  locale: 'ko'
 };

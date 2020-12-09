@@ -2,12 +2,13 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import React from 'react';
 import './Header.css';
-import { IAppProps } from '../App';
 import DrawerMenu from './components/DrawerMenu';
 import TranslationMenu from './components/TranslationMenu';
+import { Language } from '../../interfaces/language.interfaces';
 
-export interface IHeaderProps extends IAppProps {
-  title: string;
+export interface IHeaderProps {
+  locale: Language;
+  changeLanguage: (language: Language) => void;
 }
 
 class Header extends React.Component<IHeaderProps> {

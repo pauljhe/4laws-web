@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import FourLaws from './FourLaws';
-import { FourLawsPaths } from './paths';
+import Home from './Home';
+import { RootPaths } from './paths';
 
 const AppRoutes: React.FC = () => {
   return (
     <Switch>
-      <Route path={FourLawsPaths.ROOT} component={FourLaws} />
-      <Redirect exact to={FourLawsPaths.ROOT} />
+      <Route path={RootPaths.ROOT_LOCALE} component={Home} />
+      <Redirect exact to={RootPaths.ROOT_EN} />
     </Switch>
   );
 };

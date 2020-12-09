@@ -7,10 +7,10 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Hidden from '@material-ui/core/Hidden';
 import './TranslationMenu.css';
-import { IAppProps } from '../../../App';
 import { Language, LanguageList } from '../../../../interfaces/language.interfaces';
+import { IHeaderProps } from '../../Header';
 
-export interface ITranslationMenuProps extends IAppProps {}
+export interface ITranslationMenuProps extends IHeaderProps {}
 
 export interface ITranslationMenuState {
   anchorEl: HTMLElement | null;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { useRouteMatch } from 'react-router-dom';
 import BottomNavigation from '../../../../../components/BottomNavigation/BottomNavigation';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
@@ -7,6 +8,8 @@ import { FourLawsPaths } from '../../../../paths';
 import './MainTitle.css';
 
 const MainTitle: React.FC = () => {
+  let { url } = useRouteMatch();
+  console.log(url);
   return (
     <React.Fragment>
       <PageText type={PageTextType.TITLE} className="FourLawsMain-Title">

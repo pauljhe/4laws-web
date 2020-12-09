@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import TranslationsProvider from './pages/TranslationsProvider';
+import App from './pages/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <TranslationsProvider />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
