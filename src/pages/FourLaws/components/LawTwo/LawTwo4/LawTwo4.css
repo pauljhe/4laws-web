@@ -8,17 +8,11 @@
     flex: 1;
 }
 
-.LawTwo-Four-flex .LawTwo-Four-Icon {
-    width: 200px;
-    height: 200px;
+.LawTwo-Four-flex .LawTwo-Four-Diagram {
+    font-size: 400px;
+    width: 400px;
+    height: 400px;
 }
-
-/* @media only screen and (min-width: 600px) {
-    .PageTitle.LawOne-PageTitle .PageText-Content {
-        max-width: 465px;
-        min-width: 465px;
-    }
-} */
 
 @media only screen and (min-width: 960px) {
     .LawTwo-Four-flex {

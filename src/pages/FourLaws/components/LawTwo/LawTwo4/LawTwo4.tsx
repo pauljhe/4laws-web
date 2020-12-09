@@ -4,15 +4,15 @@ import BottomNavigation from '../../../../../components/BottomNavigation/BottomN
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
-import InfoIcon from '@material-ui/icons/Info';
 import './LawTwo4.css';
+import Law2Diagram from '../../../../../icons/Law2Diagram';
 
 const LawTwo4: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawTwo-Content">
         <div className="LawTwo-Four-flex">
-          <InfoIcon className="LawTwo-Four-Icon" />
+          <Law2Diagram className="LawTwo-Four-Diagram" />
           <span>
             <FormattedMessage 
               id="fourlaws.law2.four"
