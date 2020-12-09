@@ -17,17 +17,13 @@
 }
 
 @media only screen and (min-width: 600px) {
-    .LawOne-PageContent {
-        margin: auto 43px;
-    }
-
     .PageTitle.LawOne-PageTitle .PageTitle-Wrapper {
         max-width: 270px;
     }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1280px) {
     .PageTitle.LawOne-PageTitle .PageTitle-Wrapper {
-        max-width: 335px;
+        max-width: 364px;
     }
 }

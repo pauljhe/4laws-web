@@ -4,6 +4,7 @@ import BottomNavigation from '../../../../../components/BottomNavigation/BottomN
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
+import './LawOne1.css';
 
 const LawOne1: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const LawOne1: React.FC = () => {
             defaultMessage="God's Love"
           />
         </div>
-        <div>
+        <div className="LawOne-One-Content">
           <FormattedMessage 
             id="fourlaws.law1.one.content"
             defaultMessage={'"For God so loved the world, that He gave His only begotten Son,' + 

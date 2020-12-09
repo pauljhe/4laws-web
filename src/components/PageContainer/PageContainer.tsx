@@ -5,7 +5,7 @@ import './PageContainer.css';
 class PageContainer extends React.Component {
   render() {
     return (
-      <Container className="PageContainer" maxWidth="md">
+      <Container className="PageContainer" maxWidth={false}>
         <div className="PageContainer-Wrapper">
           { this.props.children }
         </div>

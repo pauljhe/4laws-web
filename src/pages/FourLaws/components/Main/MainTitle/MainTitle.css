@@ -1,21 +1,8 @@
 .FourLawsMain-Title {
     margin: auto;
     text-align: center;
-    max-width: 288px;
 }
 
 .FourLawsMain-Kanji {
     font-family: 'sans-serif';
-}
-
-@media only screen and (min-width: 600px) {
-    .FourLawsMain-Title {
-        max-width: 420px;
-    }
-}
-
-@media only screen and (min-width: 960px) {
-    .FourLawsMain-Title {
-        max-width: 650px;
-    }
 }

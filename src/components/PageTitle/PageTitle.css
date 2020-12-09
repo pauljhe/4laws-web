@@ -36,7 +36,7 @@
 @media only screen and (min-width: 600px) {
     .PageTitle {
         top: 64px;
-        transform: translate(calc(50vw - 50% - 24px), calc(50vh - 50% - 64px)) scale(2);
+        transform: translate(calc(50vw - 50%), calc(50vh - 50% - 64px)) scale(2);
         justify-content: start;
     }
 
@@ -54,17 +54,20 @@
     }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1280px) {
     .PageTitle {
         left: 0;
     }
 
     .PageTitle .PageText-Content {
-        font-size: 17.5px;
+        font-size: 19px;
+        line-height: 30px;
     }
 
     .PageTitle .PageTitle-Icon {
+        font-size: 70px;
         width: 70px;
         height: 70px;
+        margin-right: 12px;
     }
 }

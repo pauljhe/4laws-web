@@ -16,12 +16,14 @@
     }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1280px) {
     .PageText-Title {
         font-size: 43px;
+        line-height: 55px;
     }
 
     .PageText-Content {
         font-size: 35px;
+        line-height: 55px;
     }
 }
