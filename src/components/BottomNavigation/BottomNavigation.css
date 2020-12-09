@@ -12,3 +12,17 @@
 .BottomNavigation-Next {
     right: 30px;
 }
+
+.BottomNavigation-Link-Wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.BottomNavigation-Link-Wrapper .Previous-Arrow {
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+
+.BottomNavigation-Link-Wrapper .Next-Arrow {
+    margin-left: 10px;
+}

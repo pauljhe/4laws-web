@@ -5,10 +5,10 @@ import { PageTextType } from '../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../paths';
 import LawFourRoutes from './LawFourRoutes';
 import './LawFour.css';
-import InfoIcon from '@material-ui/icons/Info';
+import Law4Icon from '../../../../icons/Law4Icon';
 
 const LawFour: React.FC = () => {
-  const Icon = <InfoIcon className="PageTitle-Icon" />;
+  const Icon = <Law4Icon className="PageTitle-Icon" />;
   const currentUrl = window.location.href;
   const isTitle: boolean = currentUrl.endsWith(FourLawsPaths.LAW_FOUR_TITLE);
   const hideTitle: boolean = currentUrl.endsWith(FourLawsPaths.LAW_FOUR_WRAPUP) || currentUrl.includes(FourLawsPaths.LAW_FOUR_GREET);

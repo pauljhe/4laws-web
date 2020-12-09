@@ -5,10 +5,10 @@ import { PageTextType } from '../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../paths';
 import LawTwoRoutes from './LawTwoRoutes';
 import './LawTwo.css';
-import InfoIcon from '@material-ui/icons/Info';
+import Law2Icon from '../../../../icons/Law2Icon';
 
 const LawTwo: React.FC = () => {
-  const Icon = <InfoIcon className="PageTitle-Icon" />;
+  const Icon = <Law2Icon className="PageTitle-Icon" />;
   const isTitle: boolean = window.location.href.endsWith(FourLawsPaths.LAW_TWO_TITLE);
   const isWrapup: boolean = window.location.href.endsWith(FourLawsPaths.LAW_TWO_WRAPUP);
   return (

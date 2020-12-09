@@ -27,9 +27,10 @@
 }
 
 .PageTitle .PageTitle-Icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
+    font-size: 70px;
+    width: 70px;
+    height: 70px;
+    margin-right: 12px;
 }
 
 @media only screen and (min-width: 600px) {
