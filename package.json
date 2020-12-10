@@ -11,7 +11,7 @@
     "i18n:extract": "extract-messages -l=en,ko -o src/assets/i18n -d en --flat true src/**/*.{ts,tsx}",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "predeploy": "npm run build",
+    "predeploy": "CI=false npm run build",
     "deploy": "gh-pages -d build",
     "chromatic": "chromatic --project-token CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes"
   },
