@@ -16,9 +16,6 @@ class PageText extends React.Component<IPageTextProps> {
       case PageTextType.TITLE:
         classNames += 'PageText-Title';
         break;
-      // case PageTextType.SUBTITLE:
-      //   classNames += 'PageText-Subtitle';
-      //   break;
       case PageTextType.CONTENT:
         classNames += 'PageText-Content';
         break;

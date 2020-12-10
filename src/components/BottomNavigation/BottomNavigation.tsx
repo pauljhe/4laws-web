@@ -16,10 +16,10 @@ export interface IBottomNavigationProps {
 const BottomNavigation: React.FC<IBottomNavigationProps> = (props) => {
   const { previousLink, nextLink, previousText, nextText } = props;
   const intl = useIntl();
-  console.log(intl);
+  const includeLocale = (link: string) => `/${intl.locale}${link}`;
+
   let previous;
   let next;
-  const includeLocale = (link: string) => `/${intl.locale}${link}`;
   if (previousLink) {
     previous = (
       <Link className="BottomNavigation-Previous" to={includeLocale(previousLink)}>
@@ -41,8 +41,6 @@ const BottomNavigation: React.FC<IBottomNavigationProps> = (props) => {
     );
   }
   if (nextLink) {
-    console.log(nextLink);
-    console.log(includeLocale(nextLink));
     next = (
       <Link className="BottomNavigation-Next" to={includeLocale(nextLink)}>
         <PageText type={PageTextType.CONTENT}>

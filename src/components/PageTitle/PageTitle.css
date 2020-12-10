@@ -1,9 +1,9 @@
 .PageTitle {
     position: fixed;
     transition: none;
-    top: 62px;
+    top: 101px;
     background-color: transparent;
-    transform: translate(calc(50vw - 50% - 16px), calc(50vh - 50% - 62px)) scale(2);
+    transform: translate(calc(50vw - 50% - 16px), calc(50vh - 50% - 101px)) scale(2);
 }
 
 .PageTitle.PageTitle-Minimized {
@@ -35,8 +35,7 @@
 
 @media only screen and (min-width: 600px) {
     .PageTitle {
-        top: 64px;
-        transform: translate(calc(50vw - 50%), calc(50vh - 50% - 64px)) scale(2);
+        transform: translate(calc(50vw - 50%), calc(50vh - 50% - 101px)) scale(2);
         justify-content: start;
     }
 
