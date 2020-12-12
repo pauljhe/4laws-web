@@ -7,22 +7,22 @@ import PageText from '../PageText';
 import './BottomNavigation.css';
 
 export interface IBottomNavigationProps {
-  previousLink?: string | undefined;
-  nextLink?: string | undefined;
+  previousTo?: string | undefined;
+  nextTo?: string | undefined;
   previousText?: string | undefined;
   nextText?: string | undefined;
 }
 
 const BottomNavigation: React.FC<IBottomNavigationProps> = (props) => {
-  const { previousLink, nextLink, previousText, nextText } = props;
+  const { previousTo, nextTo, previousText, nextText } = props;
   const intl = useIntl();
   const includeLocale = (link: string) => `/${intl.locale}${link}`;
 
   let previous;
   let next;
-  if (previousLink) {
+  if (previousTo) {
     previous = (
-      <Link className="BottomNavigation-Previous" to={includeLocale(previousLink)}>
+      <Link className="BottomNavigation-Previous" to={includeLocale(previousTo)}>
         <PageText type={PageTextType.CONTENT}>
           <div className="BottomNavigation-Link-Wrapper">
             <ArrowIcon className="Previous-Arrow" />
@@ -40,9 +40,9 @@ const BottomNavigation: React.FC<IBottomNavigationProps> = (props) => {
       </Link>
     );
   }
-  if (nextLink) {
+  if (nextTo) {
     next = (
-      <Link className="BottomNavigation-Next" to={includeLocale(nextLink)}>
+      <Link className="BottomNavigation-Next" to={includeLocale(nextTo)}>
         <PageText type={PageTextType.CONTENT}>
           <div className="BottomNavigation-Link-Wrapper">
             <span>

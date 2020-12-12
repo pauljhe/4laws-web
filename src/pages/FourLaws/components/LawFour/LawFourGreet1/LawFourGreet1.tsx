@@ -1,11 +1,10 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import BottomNavigation from '../../../../../components/BottomNavigation/BottomNavigation';
+import BottomNavigation from '../../../../../components/BottomNavigation';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
-import InfoIcon from '@material-ui/icons/Info';
-import './LawFourGreet1.css';
+import Law4DiagramLeft from '../../../../../icons/Law4DiagramLeft';
 
 const LawFourGreet1: React.FC = () => {
   return (
@@ -17,9 +16,9 @@ const LawFourGreet1: React.FC = () => {
             defaultMessage="SELF-DIRECTED LIFE"
           />
         </div>
-        <div className="LawFour-Greet-One-flex">
-          <InfoIcon className="LawFour-Greet-One-Icon" />
-          <div className="LawFour-Greet-One-Content">
+        <div className="LawFour-Greet-flex">
+          <Law4DiagramLeft />
+          <div className="LawFour-Greet-Content">
             <span>
               <FormattedMessage 
                 id="fourlaws.law4.greet.one.line1"
@@ -43,8 +42,8 @@ const LawFourGreet1: React.FC = () => {
         </div>
       </PageText>
       <BottomNavigation 
-        previousLink={FourLawsPaths.LAW_FOUR_GREET_0}
-        nextLink={FourLawsPaths.LAW_FOUR_GREET_2}
+        previousTo={FourLawsPaths.LAW_FOUR_GREET_0}
+        nextTo={FourLawsPaths.LAW_FOUR_GREET_2}
       />
     </React.Fragment>
   );

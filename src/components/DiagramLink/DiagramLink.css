@@ -1,0 +1,9 @@
+.DiagramLink {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 25%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2); 
+}

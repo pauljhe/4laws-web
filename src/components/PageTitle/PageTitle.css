@@ -9,7 +9,6 @@
 .PageTitle.PageTitle-Minimized {
     transition: all 400ms ease-out;
     transform: scale(1) translate(0, 0);
-    background-color: white;
 }
 
 .PageTitle .PageTitle-Wrapper {

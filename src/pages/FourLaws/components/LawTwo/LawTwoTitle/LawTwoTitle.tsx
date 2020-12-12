@@ -1,12 +1,12 @@
 import React from 'react';
-import BottomNavigation from '../../../../../components/BottomNavigation/BottomNavigation';
+import BottomNavigation from '../../../../../components/BottomNavigation';
 import { FourLawsPaths } from '../../../../paths';
 
 const LawTwoTitle: React.FC = () => {
   return (
     <BottomNavigation 
-      previousLink={FourLawsPaths.LAW_ONE_WRAPUP}
-      nextLink={FourLawsPaths.LAW_TWO_1}
+      previousTo={FourLawsPaths.LAW_ONE_WRAPUP}
+      nextTo={FourLawsPaths.LAW_TWO_1}
     />
   );
 };

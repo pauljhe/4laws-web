@@ -12,6 +12,33 @@
     max-width: 245px;
 } 
 
+.LawFour-Greet-Title {
+    text-align: center;
+}
+
+.LawFour-Greet-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LawFour-Greet-Content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.LawFour-Greet-flex .DiagramLink {
+    padding: 25px;
+    margin: 30px;
+}
+
+.LawFour-Greet-flex svg {
+    font-size: 250px;
+    width: 250px;
+    height: 250px;
+}
+
 @media only screen and (min-width: 600px) {
     .PageTitle.LawFour-PageTitle .PageTitle-Wrapper {
         max-width: 335px;
@@ -21,5 +48,10 @@
 @media only screen and (min-width: 1280px) {
     .PageTitle.LawFour-PageTitle .PageTitle-Wrapper {
         max-width: 490px;
+    }
+
+    .LawFour-Greet-flex {
+        flex-direction: row;
+        justify-content: center;
     }
 }

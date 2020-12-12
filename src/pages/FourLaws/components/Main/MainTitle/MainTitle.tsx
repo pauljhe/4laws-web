@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { useRouteMatch } from 'react-router-dom';
-import BottomNavigation from '../../../../../components/BottomNavigation/BottomNavigation';
+import BottomNavigation from '../../../../../components/BottomNavigation';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
@@ -29,7 +29,7 @@ const MainTitle: React.FC = () => {
         />
       </PageText>
       <BottomNavigation 
-        nextLink={FourLawsPaths.MAIN_WRAPUP}
+        nextTo={FourLawsPaths.MAIN_WRAPUP}
       />
     </React.Fragment>
   );

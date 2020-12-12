@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import BottomNavigation from '../../../../../components/BottomNavigation/BottomNavigation';
+import BottomNavigation from '../../../../../components/BottomNavigation';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
@@ -15,8 +15,8 @@ const LawFour3: React.FC = () => {
         />
       </PageText>
       <BottomNavigation 
-        previousLink={FourLawsPaths.LAW_FOUR_2}
-        nextLink={FourLawsPaths.LAW_FOUR_4}
+        previousTo={FourLawsPaths.LAW_FOUR_2}
+        nextTo={FourLawsPaths.LAW_FOUR_4}
       />
     </React.Fragment>
   );
