@@ -9,7 +9,7 @@ const LawThree1: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawThree-Content">
-        <div className="LawThree-SubTitle">
+        <div className="Law-SubTitle">
           <FormattedMessage 
             id="fourlaws.law3.one.title"
             defaultMessage="He Died in Our Place"

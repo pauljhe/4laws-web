@@ -9,7 +9,7 @@ const LawTwo1: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawTwo-Content">
-        <div className="LawTwo-SubTitle">
+        <div className="Law-SubTitle">
           <FormattedMessage 
             id="fourlaws.law2.one.title"
             defaultMessage="Man is Sinful"

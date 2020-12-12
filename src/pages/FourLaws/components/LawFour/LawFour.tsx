@@ -17,7 +17,7 @@ const LawFour: React.FC = () => {
       {
         (hideTitle) ? null:
         <PageTitle
-          className="LawFour-PageTitle"
+          className="Law-PageTitle LawFour-PageTitle"
           icon={Icon}
           type={PageTextType.CONTENT}
           minimized={!isTitle}
@@ -28,8 +28,7 @@ const LawFour: React.FC = () => {
           />
         </PageTitle>
       }
-      <div className="LawFour-PageTitle-Placeholder"></div>
-      <div className="LawFour-PageContent">
+      <div className="Law-PageContent">
         <LawFourRoutes />
       </div>
     </React.Fragment>

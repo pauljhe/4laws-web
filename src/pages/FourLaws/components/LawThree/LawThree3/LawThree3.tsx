@@ -9,7 +9,7 @@ const LawThree3: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawThree-Content">
-        <div className="LawThree-SubTitle">
+        <div className="Law-SubTitle">
           <FormattedMessage 
             id="fourlaws.law3.three.title"
             defaultMessage="He is the Only Way to God"

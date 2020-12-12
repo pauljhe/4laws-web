@@ -10,7 +10,7 @@ const LawFourGreet2: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawFour-Content">
-        <div className="LawFour-SubTitle">
+        <div className="Law-SubTitle">
           <FormattedMessage 
             id="fourlaws.law4.greet.two.title"
             defaultMessage="CHRIST-DIRECTED LIFE"

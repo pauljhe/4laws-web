@@ -16,7 +16,7 @@ const LawTwo: React.FC = () => {
       {
         (isWrapup) ? null:
         <PageTitle
-          className="LawTwo-PageTitle"
+          className="Law-PageTitle LawTwo-PageTitle"
           icon={Icon}
           type={PageTextType.CONTENT}
           minimized={!isTitle}
@@ -27,8 +27,7 @@ const LawTwo: React.FC = () => {
           />
         </PageTitle>
       }
-      <div className="LawTwo-PageTitle-Placeholder"></div>
-      <div className="LawTwo-PageContent">
+      <div className="Law-PageContent">
         <LawTwoRoutes />
       </div>
     </React.Fragment>

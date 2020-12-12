@@ -10,7 +10,7 @@ const LawOne1: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawOne-Content">
-        <div className="LawOne-SubTitle">
+        <div className="Law-SubTitle">
           <FormattedMessage 
             id="fourlaws.law1.one.title"
             defaultMessage="God's Love"

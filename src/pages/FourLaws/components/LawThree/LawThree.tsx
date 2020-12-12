@@ -16,7 +16,7 @@ const LawThree: React.FC = () => {
       {
         (isWrapup) ? null:
         <PageTitle
-          className="LawThree-PageTitle"
+          className="Law-PageTitle LawThree-PageTitle"
           icon={Icon}
           type={PageTextType.CONTENT}
           minimized={!isTitle}
@@ -27,8 +27,7 @@ const LawThree: React.FC = () => {
           />
         </PageTitle>
       }
-      <div className="LawThree-PageTitle-Placeholder"></div>
-      <div className="LawThree-PageContent">
+      <div className="Law-PageContent">
         <LawThreeRoutes />
       </div>
     </React.Fragment>

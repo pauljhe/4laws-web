@@ -1,24 +1,13 @@
-.FourLaws > * {
-    margin-bottom: 10px;
+.Law-PageContent {
+    margin: auto;
 }
 
-.font13 {
-    font-size: 13px;
+.Law-PageContent .Law-SubTitle {
+    margin-bottom: 0.75em;
+    display: inline-block;
+    border-bottom: 3px solid black;
 }
 
-.font14 {
-    font-size: 14px;
-}
-
-.font16 {
-    font-size: 16px;
-}
-
-.font20 {
-    font-size: 20px;
-
-}
-
-.font30 {
-    font-size: 30px;
+.PageTitle.Law-PageTitle .PageText-Content {
+    font-weight: bold;
 }

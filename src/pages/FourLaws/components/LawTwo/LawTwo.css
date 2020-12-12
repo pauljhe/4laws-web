@@ -1,22 +1,8 @@
-.LawTwo-PageContent {
-    margin: auto;
-}
-
-.LawTwo-PageContent .LawTwo-Content .LawTwo-SubTitle {
-    margin-bottom: 0.75em;
-    display: inline-block;
-    border-bottom: 3px solid black;
-}
-
 .PageTitle.LawTwo-PageTitle .PageTitle-Wrapper {
     max-width: 245px;
 } 
 
 @media only screen and (min-width: 600px) {
-    /* .LawTwo-PageContent {
-        margin: auto 43px;
-    } */
-
     .PageTitle.LawTwo-PageTitle .PageTitle-Wrapper {
         max-width: 335px;
     }
@@ -24,6 +10,6 @@
 
 @media only screen and (min-width: 1280px) {
     .PageTitle.LawTwo-PageTitle .PageTitle-Wrapper {
-        max-width: 451px;
+        max-width: 455px;
     }
 }
