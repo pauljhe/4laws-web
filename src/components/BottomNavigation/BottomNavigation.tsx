@@ -11,10 +11,11 @@ export interface IBottomNavigationProps {
   nextTo?: string | undefined;
   previousText?: string | undefined;
   nextText?: string | undefined;
+  hideArrow?: boolean;
 }
 
 const BottomNavigation: React.FC<IBottomNavigationProps> = (props) => {
-  const { previousTo, nextTo, previousText, nextText } = props;
+  const { previousTo, nextTo, previousText, nextText, hideArrow } = props;
   const intl = useIntl();
   const includeLocale = (link: string) => `/${intl.locale}${link}`;
 
@@ -22,10 +23,13 @@ const BottomNavigation: React.FC<IBottomNavigationProps> = (props) => {
   let next;
   if (previousTo) {
     previous = (
-      <Link className="BottomNavigation-Previous" to={includeLocale(previousTo)}>
+      <Link className="BottomNavigation BottomNavigation-Previous" to={includeLocale(previousTo)}>
         <PageText type={PageTextType.CONTENT}>
           <div className="BottomNavigation-Link-Wrapper">
-            <ArrowIcon className="Previous-Arrow" />
+            {
+              (hideArrow) ? null:
+              <ArrowIcon className="Previous-Arrow" />
+            }
             <span>
               {
                 (previousText) ? previousText:
@@ -42,7 +46,7 @@ const BottomNavigation: React.FC<IBottomNavigationProps> = (props) => {
   }
   if (nextTo) {
     next = (
-      <Link className="BottomNavigation-Next" to={includeLocale(nextTo)}>
+      <Link className="BottomNavigation BottomNavigation-Next" to={includeLocale(nextTo)}>
         <PageText type={PageTextType.CONTENT}>
           <div className="BottomNavigation-Link-Wrapper">
             <span>
@@ -54,7 +58,10 @@ const BottomNavigation: React.FC<IBottomNavigationProps> = (props) => {
                 />
               }
             </span>
-            <ArrowIcon className="Next-Arrow" />
+            {
+              (hideArrow) ? null:
+              <ArrowIcon className="Next-Arrow" />
+            }
           </div>
         </PageText>
       </Link>

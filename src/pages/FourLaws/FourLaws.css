@@ -8,6 +8,31 @@
     border-bottom: 3px solid black;
 }
 
+.Law-PageContent .Law-Sentence-Margin {
+    margin-bottom: 0.75em;
+}
+
+.Law-PageContent .Law-Sentence-Bold {
+    font-weight: bold;
+}
+
 .PageTitle.Law-PageTitle .PageText-Content {
     font-weight: bold;
+}
+
+.Law-Question {
+    display: flex;
+    flex-direction: column;
+}
+
+.Law-Question-Answer {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px -50px 0;
+}
+
+.Law-Question-Answer .BottomNavigation {
+    position: relative;
+    left: 0;
+    bottom: 0;
 }

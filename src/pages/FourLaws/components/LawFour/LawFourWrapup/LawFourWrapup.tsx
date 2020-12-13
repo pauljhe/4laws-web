@@ -16,7 +16,7 @@ const LawFourWrapup: React.FC = () => {
       </PageText>
       <BottomNavigation 
         previousTo={FourLawsPaths.LAW_FOUR_GREET_4}
-        nextTo={FourLawsPaths.LAW_FOUR_WRAPUP}
+        nextTo={FourLawsPaths.PRAYER}
       />
     </React.Fragment>
  
