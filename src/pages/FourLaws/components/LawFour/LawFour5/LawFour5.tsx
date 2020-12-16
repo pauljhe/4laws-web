@@ -8,7 +8,7 @@ import { FourLawsPaths } from '../../../../paths';
 const LawFour5: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawFour-Content">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Content Law-LongSentence">
         <FormattedMessage 
           id="fourlaws.law4.five"
           defaultMessage={'Receiving Christ involves turning to God from self (repentance) and trusting Christ ' + 

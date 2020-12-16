@@ -17,6 +17,7 @@ const FourLawsRoutes: React.FC = () => {
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.LAW_THREE} component={LawThree} />
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.LAW_FOUR} component={LawFour} />
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.PRAYER} component={Prayer} />
+      
       <Redirect exact to={RootPaths.ROOT_LOCALE + FourLawsPaths.MAIN} />
     </Switch>
   );

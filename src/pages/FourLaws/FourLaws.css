@@ -3,21 +3,30 @@
 }
 
 .Law-PageContent .Law-SubTitle {
-    margin-bottom: 0.75em;
+    margin-bottom: 30px;
     display: inline-block;
     border-bottom: 3px solid black;
+    line-height: 40px;
 }
 
 .Law-PageContent .Law-Sentence-Margin {
-    margin-bottom: 0.75em;
+    margin-bottom: 30px;
 }
 
 .Law-PageContent .Law-Sentence-Bold {
     font-weight: bold;
 }
 
+.Law-PageContent .Law-Sentence-Center {
+    text-align: center;
+}
+
 .PageTitle.Law-PageTitle .PageText-Content {
     font-weight: bold;
+}
+
+.PageText-Content.Law-LongSentence {
+    max-width: 751px;
 }
 
 .Law-Question {

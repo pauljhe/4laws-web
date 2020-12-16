@@ -10,12 +10,41 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0px -13px;
 }
 
 .LawFour-Greet-Content {
     display: flex;
-    flex-direction: column;
     margin-left: 30px;
+
+    flex-direction: column;
+}
+
+.LawFour-Greet-Row {
+    display: flex;
+}
+
+.LawFour-Greet-Sentence {
+    margin-left: 8px;
+}
+
+.LawFour-Greet-Column {
+    display: flex;
+    flex-direction: column;
+}
+
+.LawFour-Greet-Column.LawFour-Greet-Sentence {
+    margin-left: 8px;
+}
+
+.LawFour-Greet-Row > .Prefix-Span {
+    margin-left: 6px;
+    margin-right: 16px;
+}
+
+.LawFour-Greet-Row > .Prefix-Span-Korean {
+    margin-left: 3px;
+    margin-right: 8px;
 }
 
 .LawFour-Greet-flex .DiagramLink {
@@ -29,6 +58,17 @@
     height: 250px;
 }
 
+svg.LawFour-Icon-Inline {
+    font-size: 30px;
+    width: 30px;
+    height: 54px;
+    margin-right: 7px;
+}
+
+.LawFour-MarginLeft-272 {
+    margin-left: 272px;
+}
+
 @media only screen and (min-width: 600px) {
     .PageTitle.LawFour-PageTitle .PageTitle-Wrapper {
         max-width: 335px;
@@ -37,7 +77,7 @@
 
 @media only screen and (min-width: 1280px) {
     .PageTitle.LawFour-PageTitle .PageTitle-Wrapper {
-        max-width: 490px;
+        max-width: 852px;
     }
 
     .LawFour-Greet-flex {

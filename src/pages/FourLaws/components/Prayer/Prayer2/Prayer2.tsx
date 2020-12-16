@@ -8,8 +8,8 @@ import { FourLawsPaths } from '../../../../paths';
 const Prayer2: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT}>
-        <div className="Law-Sentence-Margin">
+      <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
+        <div className="Law-Sentence-Margin Law-Sentence-Center">
           <FormattedMessage 
             id="fourlaws.prayer.two"
             defaultMessage="The following is a suggested prayer:"

@@ -1,3 +1,8 @@
 .DrawerMenu-IconButton.MuiIconButton-root {
     color: black;
 }
+
+.DrawerMenu-IconButton.MuiIconButton-root svg {
+    width: 28px;
+    height: 28px;
+}

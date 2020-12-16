@@ -8,7 +8,7 @@ import { FourLawsPaths } from '../../../../paths';
 const LawTwo2: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawTwo-Content">
+      <PageText type={PageTextType.CONTENT} className="LawTwo-Content Law-LongSentence">
         <FormattedMessage 
           id="fourlaws.law2.two"
           defaultMessage={"Man was created to have fellowship with God; but, because of his stubborn self-will, " + 

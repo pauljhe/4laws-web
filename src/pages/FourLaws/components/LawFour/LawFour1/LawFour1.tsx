@@ -8,7 +8,7 @@ import { FourLawsPaths } from '../../../../paths';
 const LawFour1: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawFour-Content">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Content Law-LongSentence">
         <div className="Law-SubTitle">
           <FormattedMessage 
             id="fourlaws.law4.one.title"

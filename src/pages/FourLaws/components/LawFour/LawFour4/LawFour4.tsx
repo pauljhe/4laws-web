@@ -9,7 +9,7 @@ const LawFour4: React.FC = () => {
   const intl = useIntl();
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawFour-Content">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Content Law-LongSentence">
         <div className="Law-SubTitle">
           <FormattedMessage 
             id="fourlaws.law4.four.title"

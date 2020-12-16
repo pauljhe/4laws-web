@@ -26,7 +26,7 @@ class PageText extends React.Component<IPageTextProps> {
 
   render() {
     return (
-      <span className={this.getClassNames()}>{ this.props.children }</span>
+      <div className={this.getClassNames()}>{ this.props.children }</div>
     );
   }
 }

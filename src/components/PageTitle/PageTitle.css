@@ -1,49 +1,41 @@
 .PageTitle {
     position: fixed;
     transition: none;
-    top: 101px;
+    top: 131px;
     background-color: transparent;
-    transform: translate(calc(50vw - 50% - 16px), calc(50vh - 50% - 101px)) scale(2);
+    transform: translate(calc(50vw - 50% - 16px), calc(50vh - 50% - 131px)) scale(1);
 }
 
 .PageTitle.PageTitle-Minimized {
     transition: all 400ms ease-out;
-    transform: scale(1) translate(0, 0);
+    transform: scale(0.6) translate(0, 0);
 }
 
 .PageTitle .PageTitle-Wrapper {
     display: flex;
     align-items: center;
-    width: 50vw;
+    /* width: 50vw; */
 }
 
-.PageTitle.PageTitle-Minimized .PageTitle-Wrapper {
+/* .PageTitle.PageTitle-Minimized .PageTitle-Wrapper {
     width: 90vw;
-}
-
-.PageTitle .PageText-Content {
-    font-size: 10px;
-}
+} */
 
 .PageTitle .PageTitle-Icon {
-    font-size: 70px;
-    width: 70px;
-    height: 70px;
+    font-size: 170px;
+    width: 170px;
+    height: 170px;
     margin-right: 12px;
 }
 
 @media only screen and (min-width: 600px) {
     .PageTitle {
-        transform: translate(calc(50vw - 50%), calc(50vh - 50% - 101px)) scale(2);
+        transform: translate(calc(50vw - 50%), calc(50vh - 50% - 131px)) scale(1);
         justify-content: start;
     }
 
     .PageTitle.PageTitle-Minimized {
-        transform: scale(1) translate(24px, 0);
-    }
-
-    .PageTitle .PageText-Content {
-        font-size: 14px;
+        transform: scale(0.6) translate(24px, -24px);
     }
 
     .PageTitle .PageTitle-Icon {
@@ -57,15 +49,10 @@
         left: 0;
     }
 
-    .PageTitle .PageText-Content {
-        font-size: 19px;
-        line-height: 30px;
-    }
-
     .PageTitle .PageTitle-Icon {
-        font-size: 70px;
-        width: 70px;
-        height: 70px;
+        font-size: 170px;
+        width: 170px;
+        height: 170px;
         margin-right: 12px;
     }
 }

@@ -9,7 +9,7 @@ import './LawOne2.css';
 const LawOne2: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawOne-Content">
+      <PageText type={PageTextType.CONTENT} className="LawOne-Content Law-LongSentence">
         <div className="Law-SubTitle">
           <FormattedMessage 
             id="fourlaws.law1.two.title"
