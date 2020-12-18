@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/4laws-web/static/css/main.c329b144.chunk.css",
-    "main.js": "/4laws-web/static/js/main.251241b3.chunk.js",
-    "main.js.map": "/4laws-web/static/js/main.251241b3.chunk.js.map",
-    "runtime-main.js": "/4laws-web/static/js/runtime-main.07bb28dd.js",
-    "runtime-main.js.map": "/4laws-web/static/js/runtime-main.07bb28dd.js.map",
-    "static/js/2.f61008f3.chunk.js": "/4laws-web/static/js/2.f61008f3.chunk.js",
-    "static/js/2.f61008f3.chunk.js.map": "/4laws-web/static/js/2.f61008f3.chunk.js.map",
-    "static/js/3.0cc8a310.chunk.js": "/4laws-web/static/js/3.0cc8a310.chunk.js",
-    "static/js/3.0cc8a310.chunk.js.map": "/4laws-web/static/js/3.0cc8a310.chunk.js.map",
+    "main.css": "/4laws-web/static/css/main.3445e474.chunk.css",
+    "main.js": "/4laws-web/static/js/main.9d80e847.chunk.js",
+    "main.js.map": "/4laws-web/static/js/main.9d80e847.chunk.js.map",
+    "runtime-main.js": "/4laws-web/static/js/runtime-main.9999e932.js",
+    "runtime-main.js.map": "/4laws-web/static/js/runtime-main.9999e932.js.map",
+    "static/js/2.416e39cf.chunk.js": "/4laws-web/static/js/2.416e39cf.chunk.js",
+    "static/js/2.416e39cf.chunk.js.map": "/4laws-web/static/js/2.416e39cf.chunk.js.map",
+    "static/js/3.ff785a47.chunk.js": "/4laws-web/static/js/3.ff785a47.chunk.js",
+    "static/js/3.ff785a47.chunk.js.map": "/4laws-web/static/js/3.ff785a47.chunk.js.map",
     "index.html": "/4laws-web/index.html",
     "service-worker.js": "/4laws-web/service-worker.js",
     "service-worker.js.map": "/4laws-web/service-worker.js.map",
-    "static/css/main.c329b144.chunk.css.map": "/4laws-web/static/css/main.c329b144.chunk.css.map",
-    "static/js/2.f61008f3.chunk.js.LICENSE.txt": "/4laws-web/static/js/2.f61008f3.chunk.js.LICENSE.txt",
+    "static/css/main.3445e474.chunk.css.map": "/4laws-web/static/css/main.3445e474.chunk.css.map",
+    "static/js/2.416e39cf.chunk.js.LICENSE.txt": "/4laws-web/static/js/2.416e39cf.chunk.js.LICENSE.txt",
     "static/media/ArrowIcon.5d0d9979.svg": "/4laws-web/static/media/ArrowIcon.5d0d9979.svg",
     "static/media/CircleIcon.33d8ae36.svg": "/4laws-web/static/media/CircleIcon.33d8ae36.svg",
     "static/media/CrossIcon.266b8898.svg": "/4laws-web/static/media/CrossIcon.266b8898.svg",
@@ -38,9 +38,9 @@
     "static/media/index.css": "/4laws-web/static/media/aIkkeullimM.bfc03efa.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.07bb28dd.js",
-    "static/js/2.f61008f3.chunk.js",
-    "static/css/main.c329b144.chunk.css",
-    "static/js/main.251241b3.chunk.js"
+    "static/js/runtime-main.9999e932.js",
+    "static/js/2.416e39cf.chunk.js",
+    "static/css/main.3445e474.chunk.css",
+    "static/js/main.9d80e847.chunk.js"
   ]
 }
