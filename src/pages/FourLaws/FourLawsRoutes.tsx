@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { FourLawsPaths, RootPaths } from '../paths';
+import Confirm from './components/Confirm';
 import LawFour from './components/LawFour';
 import LawOne from './components/LawOne/LawOne';
 import LawThree from './components/LawThree';
@@ -9,6 +10,7 @@ import Main from './components/Main';
 import Prayer from './components/Prayer';
 
 const FourLawsRoutes: React.FC = () => {
+  console.log(window.location.href);
   return (
     <Switch>
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.MAIN} component={Main} />
@@ -17,7 +19,7 @@ const FourLawsRoutes: React.FC = () => {
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.LAW_THREE} component={LawThree} />
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.LAW_FOUR} component={LawFour} />
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.PRAYER} component={Prayer} />
-      
+      <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.CONFIRM} component={Confirm} />
       <Redirect exact to={RootPaths.ROOT_LOCALE + FourLawsPaths.MAIN} />
     </Switch>
   );

@@ -1,0 +1,33 @@
+.Answer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 50px;
+    padding: 5px 10px;
+    box-shadow: 0px 5px 5px 0px #fee0ce;
+    height: 55px;
+}
+
+.Answer-span {
+    opacity: 0;
+}
+
+.Answer-span.Answer-span-show {
+    opacity: 1;
+    transition: opacity 750ms ease-out;
+}
+
+.Answer-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: 0;
+    border: none;
+    background: transparent;
+}
+
+.Answer-arrow.Answer-arrow-left {
+    left: -24px;
+    transition: left 750ms ease-out;
+}

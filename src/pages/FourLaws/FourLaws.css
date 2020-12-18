@@ -34,14 +34,35 @@
     flex-direction: column;
 }
 
+.Law-Question-Below-words {
+    max-width: 591px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.Law-Question-Below-words.No-maxwidth {
+    max-width: none;
+}
+
 .Law-Question-Answer {
     display: flex;
     justify-content: space-between;
     margin: 150px -50px 0;
 }
 
+.Law-Question-Answer-Single {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
 .Law-Question-Answer .BottomNavigation {
     position: relative;
     left: 0;
     bottom: 0;
+}
+
+.Law-Question-Answer-Animated {
+    margin: 0 auto;
+    margin-top: 50px;
 }

@@ -27,7 +27,7 @@ const Prayer4: React.FC = () => {
       </PageText>
       <BottomNavigation 
         previousTo={FourLawsPaths.PRAYER_3}
-        nextTo={FourLawsPaths.PRAYER_4}
+        nextTo={FourLawsPaths.CONFIRM}
       />
     </React.Fragment>
   );
