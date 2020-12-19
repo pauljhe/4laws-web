@@ -14,6 +14,13 @@ const MainTitle: React.FC = () => {
     <React.Fragment>
       <PageText type={PageTextType.TITLE} className="FourLawsMain-Title">
         <FormattedMessage 
+          id="fourlaws.main"
+          defaultMessage="Have you Heard of the Four Spiritual Laws?"
+          values={{
+            b: (chunks: any) => <b className="FourLawsMain-Kanji">{chunks}</b> 
+          }}
+        />
+        {/* <FormattedMessage 
           id="fourlaws.main1"
           defaultMessage="Have You"
         />
@@ -26,7 +33,7 @@ const MainTitle: React.FC = () => {
         <FormattedMessage 
           id="fourlaws.main3"
           defaultMessage="Heard of the Four Spiritual Laws?"
-        />
+        /> */}
       </PageText>
       <BottomNavigation 
         nextTo={FourLawsPaths.MAIN_WRAPUP}
