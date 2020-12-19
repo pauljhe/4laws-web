@@ -13,6 +13,7 @@ const ConfirmFirstQuestion3: React.FC = () => {
     id: "fourlaws.confirm.first.question.three.answer",
     defaultMessage: "To open the door"
   });
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <div className="Law-Question">
       <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
@@ -29,7 +30,7 @@ const ConfirmFirstQuestion3: React.FC = () => {
             defaultMessage="What is our responsibility?"
           />
         </div>
-        <Answer className="Law-Question-Answer-Animated Answer-Confirm-first-question3" answer={answer} />
+        <Answer className={`Law-Question-Answer-Animated Answer-Confirm-first-question3-${language}`} answer={answer} />
       </PageText>
       <BottomNavigation 
         previousTo={FourLawsPaths.CONFIRM_FIRST_Q_2}

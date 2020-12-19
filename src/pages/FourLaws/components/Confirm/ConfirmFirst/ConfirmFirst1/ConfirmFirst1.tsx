@@ -11,6 +11,7 @@ import './ConfirmFirst1.css';
 
 const ConfirmFirst1: React.FC = () => {
   const intl = useIntl();
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   const location = useLocation();
   const query = new URLSearchParams(location.search);
   const isAnswerType = query.get(PageType.KEY) === PageType.ANSWER;
@@ -35,7 +36,7 @@ const ConfirmFirst1: React.FC = () => {
           />
         </div>
         {
-          (isAnswerType) ? <Answer className="Law-Question-Answer-Animated Answer-Confirm-first1" answer={answer}></Answer> :
+          (isAnswerType) ? <Answer className={`Law-Question-Answer-Animated Answer-Confirm-first1-${language}`} answer={answer}></Answer> :
           <div className="Law-Question-Answer-Single">
             <Link to={FourLawsPaths.CONFIRM_FIRST_Q}>
               <FormattedMessage 
