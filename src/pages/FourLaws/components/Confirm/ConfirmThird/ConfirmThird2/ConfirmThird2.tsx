@@ -24,7 +24,7 @@ const ConfirmThird2: React.FC = () => {
       </PageText>
       <BottomNavigation 
         previousTo={FourLawsPaths.CONFIRM_THIRD_Q_2}
-        nextTo={FourLawsPaths.CONFIRM_THIRD_2}
+        nextTo={FourLawsPaths.FEELINGS}
       />
     </React.Fragment>
   );
