@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/4laws-web/static/css/main.3445e474.chunk.css",
-    "main.js": "/4laws-web/static/js/main.9d80e847.chunk.js",
-    "main.js.map": "/4laws-web/static/js/main.9d80e847.chunk.js.map",
-    "runtime-main.js": "/4laws-web/static/js/runtime-main.9999e932.js",
-    "runtime-main.js.map": "/4laws-web/static/js/runtime-main.9999e932.js.map",
-    "static/js/2.416e39cf.chunk.js": "/4laws-web/static/js/2.416e39cf.chunk.js",
-    "static/js/2.416e39cf.chunk.js.map": "/4laws-web/static/js/2.416e39cf.chunk.js.map",
-    "static/js/3.ff785a47.chunk.js": "/4laws-web/static/js/3.ff785a47.chunk.js",
-    "static/js/3.ff785a47.chunk.js.map": "/4laws-web/static/js/3.ff785a47.chunk.js.map",
+    "main.css": "/4laws-web/static/css/main.a3d0ec10.chunk.css",
+    "main.js": "/4laws-web/static/js/main.0a0e9eeb.chunk.js",
+    "main.js.map": "/4laws-web/static/js/main.0a0e9eeb.chunk.js.map",
+    "runtime-main.js": "/4laws-web/static/js/runtime-main.61fdc3c0.js",
+    "runtime-main.js.map": "/4laws-web/static/js/runtime-main.61fdc3c0.js.map",
+    "static/js/2.c0a19ebc.chunk.js": "/4laws-web/static/js/2.c0a19ebc.chunk.js",
+    "static/js/2.c0a19ebc.chunk.js.map": "/4laws-web/static/js/2.c0a19ebc.chunk.js.map",
+    "static/js/3.0625f7cb.chunk.js": "/4laws-web/static/js/3.0625f7cb.chunk.js",
+    "static/js/3.0625f7cb.chunk.js.map": "/4laws-web/static/js/3.0625f7cb.chunk.js.map",
     "index.html": "/4laws-web/index.html",
     "service-worker.js": "/4laws-web/service-worker.js",
     "service-worker.js.map": "/4laws-web/service-worker.js.map",
-    "static/css/main.3445e474.chunk.css.map": "/4laws-web/static/css/main.3445e474.chunk.css.map",
-    "static/js/2.416e39cf.chunk.js.LICENSE.txt": "/4laws-web/static/js/2.416e39cf.chunk.js.LICENSE.txt",
+    "static/css/main.a3d0ec10.chunk.css.map": "/4laws-web/static/css/main.a3d0ec10.chunk.css.map",
+    "static/js/2.c0a19ebc.chunk.js.LICENSE.txt": "/4laws-web/static/js/2.c0a19ebc.chunk.js.LICENSE.txt",
     "static/media/ArrowIcon.5d0d9979.svg": "/4laws-web/static/media/ArrowIcon.5d0d9979.svg",
     "static/media/CircleIcon.33d8ae36.svg": "/4laws-web/static/media/CircleIcon.33d8ae36.svg",
     "static/media/CrossIcon.266b8898.svg": "/4laws-web/static/media/CrossIcon.266b8898.svg",
@@ -35,12 +35,14 @@
     "static/media/Law4Icon-ko.4cb50bbf.svg": "/4laws-web/static/media/Law4Icon-ko.4cb50bbf.svg",
     "static/media/Logo-full.25a45397.svg": "/4laws-web/static/media/Logo-full.25a45397.svg",
     "static/media/Logo-min.440f5709.svg": "/4laws-web/static/media/Logo-min.440f5709.svg",
+    "static/media/TrainDiagram-en.d78c0123.svg": "/4laws-web/static/media/TrainDiagram-en.d78c0123.svg",
+    "static/media/TrainDiagram-ko.a5a86326.svg": "/4laws-web/static/media/TrainDiagram-ko.a5a86326.svg",
     "static/media/index.css": "/4laws-web/static/media/aIkkeullimM.bfc03efa.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.9999e932.js",
-    "static/js/2.416e39cf.chunk.js",
-    "static/css/main.3445e474.chunk.css",
-    "static/js/main.9d80e847.chunk.js"
+    "static/js/runtime-main.61fdc3c0.js",
+    "static/js/2.c0a19ebc.chunk.js",
+    "static/css/main.a3d0ec10.chunk.css",
+    "static/js/main.0a0e9eeb.chunk.js"
   ]
 }
