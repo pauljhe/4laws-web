@@ -19,9 +19,9 @@ const ConfirmFirstQuestion3: React.FC = () => {
       <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
         <div className="Law-Sentence-Margin">
           <FormattedMessage 
-            id="fourlaws.law4.four.content"
+            id="fourlaws.confirm.first.question.three.words"
             defaultMessage={'(Christ speaking): "Behold, I stand at the door and knock; ' + 
-                            'if anyone hears My voice and <span>opens the door</span>, I will come in to him" (Revelation 3:20).'}
+                            'if <span>anyone hears My voice and opens the door</span>, I will come in to him" (Revelation 3:20).'}
             values={{
               span: (chunks: any) => <span className="Law-Text-Highlight">{chunks}</span>
             }}
