@@ -9,11 +9,13 @@ import { FourLawsPaths } from '../../../../../../paths';
 const ConfirmSecondQuestion3: React.FC = () => {
   return (
     <div className="Law-Question">
-      <PageText type={PageTextType.CONTENT}>
-        <FormattedMessage 
-          id="fourlaws.confirm.second.question.three"
-          defaultMessage="Do you have the Son?"
-        />
+      <PageText type={PageTextType.CONTENT} className="Law-PageContent">
+        <div className="Law-Sentence-Bold">
+          <FormattedMessage 
+            id="fourlaws.confirm.second.question.three"
+            defaultMessage="Do you have the Son?"
+          />
+        </div>
       </PageText>
       <div className="Law-Question-Answer-Single">
         <Link to={FourLawsPaths.CONFIRM_SECOND_Q_4}>

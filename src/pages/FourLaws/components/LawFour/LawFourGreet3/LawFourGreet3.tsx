@@ -12,7 +12,7 @@ const LawFourGreet3: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawFour-Content">
-        <div className="LawFour-Greet-Title">
+        <div className="LawFour-Greet-Title Law-Sentence-Bold">
           <FormattedMessage 
             id="fourlaws.law4.greet.three"
             defaultMessage="Which circle best represents your life?"

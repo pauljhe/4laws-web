@@ -5,8 +5,8 @@
     position: relative;
     min-width: 50px;
     padding: 5px 10px;
-    box-shadow: 0px 5px 5px 0px #fee0ce;
-    height: 55px;
+    box-shadow: 0 15px 5px -10px #fee0ce;
+    height: 45px;
 }
 
 .Answer-span {

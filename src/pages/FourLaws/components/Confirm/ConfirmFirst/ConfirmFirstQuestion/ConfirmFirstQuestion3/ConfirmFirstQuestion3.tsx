@@ -21,7 +21,10 @@ const ConfirmFirstQuestion3: React.FC = () => {
           <FormattedMessage 
             id="fourlaws.law4.four.content"
             defaultMessage={'(Christ speaking): "Behold, I stand at the door and knock; ' + 
-                            'if anyone hears My voice and opens the door, I will come in to him" (Revelation 3:20).'}
+                            'if anyone hears My voice and <span>opens the door</span>, I will come in to him" (Revelation 3:20).'}
+            values={{
+              span: (chunks: any) => <span className="Law-Text-Highlight">{chunks}</span>
+            }}
           />
         </div>
         <div className="Law-Sentence-Center Law-Question-Below-words">

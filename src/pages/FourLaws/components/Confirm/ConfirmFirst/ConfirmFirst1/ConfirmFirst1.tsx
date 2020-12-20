@@ -21,8 +21,8 @@ const ConfirmFirst1: React.FC = () => {
   });
   return (
     <div className="Law-Question">
-      <PageText type={PageTextType.CONTENT}>
-        <div className="Law-Sentence-Center">
+      <PageText type={PageTextType.CONTENT} className="Law-PageContent">
+        <div className="Law-Sentence-Center Law-Sentence-Bold">
           {
             (isAnswerType) ? null:
             <FormattedMessage 
@@ -48,7 +48,7 @@ const ConfirmFirst1: React.FC = () => {
         }
       </PageText>
       <BottomNavigation 
-        previousTo={FourLawsPaths.CONFIRM_MAIN}
+        previousTo={(isAnswerType) ? FourLawsPaths.CONFIRM_FIRST_Q_5 : FourLawsPaths.CONFIRM_MAIN}
         nextTo={FourLawsPaths.CONFIRM_FIRST_2}
       />
     </div>

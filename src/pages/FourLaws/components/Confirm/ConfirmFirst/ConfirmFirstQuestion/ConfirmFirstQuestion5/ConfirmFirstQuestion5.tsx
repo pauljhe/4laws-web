@@ -11,7 +11,7 @@ const ConfirmFirstQuestion5: React.FC = () => {
   return (
     <div className="Law-Question">
       <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-        <div className="Law-Sentence-Center Law-Sentence-Confirm-first-question5">
+        <div className="Law-Sentence-Center Law-Sentence-Bold Law-Sentence-Confirm-first-question5">
           <FormattedMessage 
             id="fourlaws.confirm.first.question.five"
             defaultMessage="Were you sincere when you invited Christ into your life?"

@@ -8,11 +8,13 @@ import { FourLawsPaths } from '../../../../paths';
 const ConfirmMain: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT}>
-        <FormattedMessage 
-          id="fourlaws.confirm.main"
-          defaultMessage={'How to Know That Christ Is in Your Life'}
-        />
+      <PageText type={PageTextType.CONTENT} className="Law-PageContent">
+        <div className="Law-Sentence-Bold">
+          <FormattedMessage 
+            id="fourlaws.confirm.main"
+            defaultMessage={'How to Know That Christ Is in Your Life'}
+          />
+        </div>
       </PageText>
       <BottomNavigation 
         previousTo={FourLawsPaths.PRAYER_4}

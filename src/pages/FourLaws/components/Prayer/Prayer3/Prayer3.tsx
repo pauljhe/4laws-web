@@ -17,11 +17,13 @@ const Prayer3: React.FC = () => {
   });
   return (
     <div className="Law-Question">
-      <PageText type={PageTextType.CONTENT}>
-        <FormattedMessage 
-          id="fourlaws.prayer.three"
-          defaultMessage="Does this prayer express the desire of your heart?"
-        />
+      <PageText type={PageTextType.CONTENT} className="LawFour-Content">
+        <div className="Law-Sentence-Bold">
+          <FormattedMessage 
+            id="fourlaws.prayer.three"
+            defaultMessage="Does this prayer express the desire of your heart?"
+          />
+        </div>
       </PageText>
       <div className="Law-Question-Answer">
         <BottomNavigation 
