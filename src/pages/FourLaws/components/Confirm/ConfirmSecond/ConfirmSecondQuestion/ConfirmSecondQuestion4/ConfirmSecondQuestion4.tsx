@@ -13,20 +13,33 @@ const ConfirmSecondQuestion4: React.FC = () => {
     id: "fourlaws.confirm.second.question.four.answer",
     defaultMessage: "Eternal life"
   });
-  const language = (intl.locale === 'ko') ? 'Korean': 'English';
+  const isKorean = intl.locale === 'ko';
+  const language = (isKorean) ? 'Korean': 'English';
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
         <div>
           <FormattedMessage 
-            id="fourlaws.confirm.second.words"
+            id="fourlaws.confirm.second.question.four.words"
             defaultMessage={'"And the witness is this, that God has given us eternal life, ' + 
                             'and this life is in His Son. He who has the Son has the life; ' + 
                             'he who does not have the Son of God does not have life. ' + 
                             'These things I have written to you who believe in the name of the Son of God, ' + 
-                            'in order that you may know that you have eternal life" (1 John 5:11-13).'}
+                            '<span>in order that you may know that you have eternal life</span>" (1 John 5:11-13).'}
+            values={{
+              span: (chunks: any) => <span className="Law-Text-Highlight">{chunks}</span>
+            }}
           />
         </div>
+        {
+          (!isKorean) ? null:
+          <div>
+            <FormattedMessage 
+              id="fourlaws.confirm.second.words.address"
+              defaultMessage=""
+            />
+          </div>
+        }
         <div className="Law-Sentence-Center Law-Question-Below-words No-maxwidth">
           <FormattedMessage 
             id="fourlaws.confirm.second.question.four"
