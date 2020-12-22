@@ -2,7 +2,7 @@
   "name": "4laws-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pauljhe.github.io/4laws-web",
+  "homepage": "https://lpcdowntown.org",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
