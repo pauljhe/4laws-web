@@ -1,11 +1,15 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { useLocation } from 'react-router-dom';
 import BottomNavigation from '../../../../../../components/BottomNavigation';
 import PageText from '../../../../../../components/PageText';
-import { PageTextType } from '../../../../../../interfaces/page.interfaces';
+import { PageTextType, PageType } from '../../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../../paths';
 
 const ConfirmFirst2: React.FC = () => {
+  const location = useLocation();
+  const query = new URLSearchParams(location.search);
+  const isAnswerType = query.get(PageType.KEY) === PageType.ANSWER;
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT}>
@@ -17,7 +21,7 @@ const ConfirmFirst2: React.FC = () => {
         />
       </PageText>
       <BottomNavigation 
-        previousTo={FourLawsPaths.CONFIRM_FIRST_1}
+        previousTo={(isAnswerType) ? FourLawsPaths.CONFIRM_FIRST_1_ANSWER : FourLawsPaths.CONFIRM_FIRST_1}
         nextTo={FourLawsPaths.CONFIRM_SECOND}
       />
     </React.Fragment>

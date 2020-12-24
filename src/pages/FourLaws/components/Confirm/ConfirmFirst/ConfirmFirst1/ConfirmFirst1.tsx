@@ -49,7 +49,7 @@ const ConfirmFirst1: React.FC = () => {
       </PageText>
       <BottomNavigation 
         previousTo={(isAnswerType) ? FourLawsPaths.CONFIRM_FIRST_Q_5 : FourLawsPaths.CONFIRM_MAIN}
-        nextTo={FourLawsPaths.CONFIRM_FIRST_2}
+        nextTo={(isAnswerType) ? FourLawsPaths.CONFIRM_FIRST_2_ANSWER : FourLawsPaths.CONFIRM_FIRST_2}
       />
     </div>
   );
