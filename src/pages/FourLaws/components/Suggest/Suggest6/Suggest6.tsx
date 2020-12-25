@@ -67,7 +67,7 @@ const Suggest6: React.FC = () => {
       </PageText>
       <BottomNavigation 
         previousTo={FourLawsPaths.SUGGEST_5}
-        nextTo={FourLawsPaths.SUGGEST_6}
+        nextTo={FourLawsPaths.WRAPUP}
       />
     </React.Fragment>
  

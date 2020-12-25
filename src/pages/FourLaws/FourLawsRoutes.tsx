@@ -11,6 +11,7 @@ import LawTwo from './components/LawTwo';
 import Main from './components/Main';
 import Prayer from './components/Prayer';
 import Suggest from './components/Suggest';
+import Wrapup from './components/Wrapup';
 
 const FourLawsRoutes: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const FourLawsRoutes: React.FC = () => {
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.FEELINGS} component={Feelings} />
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.GRACE} component={Grace} />
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.SUGGEST} component={Suggest} />
+      <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.WRAPUP} component={Wrapup} />
       <Redirect exact to={RootPaths.ROOT_LOCALE + FourLawsPaths.MAIN} />
     </Switch>
   );
