@@ -9,7 +9,7 @@ import { FourLawsPaths } from '../../../../paths';
 import './Grace2.css';
 
 const Colossians114: React.FC<IVerseProps> = (props) => {
-  const className = `Law-PageContent Grace-Dialog-Title${(props.minimized) ? ' Grace-Dialog-Title-Minimized' : ''}`
+  const className = `Law-PageContent Law-Dialog-Title${(props.minimized) ? ' Law-Dialog-Title-Minimized' : ''}`
   return (
     <PageText type={PageTextType.CONTENT} className={className}>
       <div className="Law-Sentence-Center Law-Sentence-Bold">
@@ -29,7 +29,7 @@ const Colossians114: React.FC<IVerseProps> = (props) => {
 };
 
 const Colossians213: React.FC<IVerseProps> = (props) => {
-  const className = `Law-PageContent Grace-Dialog-Title${(props.minimized) ? ' Grace-Dialog-Title-Minimized' : ''}`
+  const className = `Law-PageContent Law-Dialog-Title${(props.minimized) ? ' Law-Dialog-Title-Minimized' : ''}`
   return (
     <PageText type={PageTextType.CONTENT} className={className}>
       <div className="Law-Sentence-Center Law-Sentence-Bold">

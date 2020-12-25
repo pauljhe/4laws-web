@@ -92,3 +92,46 @@
 .Law-Text-Highlight {
     background-color: #fee0ce;
 }
+
+.Law-Title-Animated.PageText {
+    position: absolute;
+    left: 0;
+    top: 101px;
+    transform: translateY(calc(50vh - 50% - 101px));
+    width: 100%;
+    z-index: -1;
+}
+
+.Law-Title-Animated.Law-Title-Animated-content > div {
+    transition: all 400ms ease-out;
+}
+
+.Law-Title-Animated .Law-Title-Animated-line-one {
+    transform: translateY(0);
+}
+
+.Law-Title-Animated .Law-Title-Animated-line-two {
+    opacity: 1;
+}
+
+.Law-Title-Animated.Law-Title-Animated-content .Law-Title-Animated-line-one {
+    transform: scale(0.6) translateY(calc(-50vh + 101px));
+}
+
+.Law-Title-Animated.Law-Title-Animated-content .Law-Title-Animated-line-two {
+    opacity: 0;
+}
+
+.Law-Dialog-Title {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    transform: translate(calc(40vw - 50%), calc(40vh - 50% - 20px));
+    max-width: 771px;
+    width: 771px;
+} 
+
+.Law-Dialog-Title.Law-Dialog-Title-Minimized {
+    transition: all 400ms ease-out;
+    transform: scale(0.6) translate(calc(40vw - 40%), 0);
+}

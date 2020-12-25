@@ -9,7 +9,7 @@ import { FourLawsPaths } from '../../../../paths';
 import './Grace3.css';
 
 const John112: React.FC<IVerseProps> = (props) => {
-  const className = `Law-PageContent Grace-Dialog-Title${(props.minimized) ? ' Grace-Dialog-Title-Minimized' : ''}`
+  const className = `Law-PageContent Law-Dialog-Title${(props.minimized) ? ' Law-Dialog-Title-Minimized' : ''}`
   return (
     <PageText type={PageTextType.CONTENT} className={className}>
       <div className="Law-Sentence-Center Law-Sentence-Bold">

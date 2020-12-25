@@ -18,7 +18,7 @@ const GraceWrapup3: React.FC = () => {
       </PageText>
       <BottomNavigation 
         previousTo={FourLawsPaths.GRACE_WRAPUP_2}
-        nextTo={FourLawsPaths.GRACE_WRAPUP_3}
+        nextTo={FourLawsPaths.SUGGEST}
       />
     </React.Fragment>
  

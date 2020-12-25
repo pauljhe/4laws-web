@@ -3,7 +3,6 @@ import { FormattedMessage } from 'react-intl';
 import { PageTextType } from '../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../paths';
 import GraceRoutes from './GraceRoutes';
-import './Grace.css';
 import PageText from '../../../../components/PageText';
 
 const Grace: React.FC = () => {
@@ -15,14 +14,14 @@ const Grace: React.FC = () => {
     <div className="Law-PageContent">
       {
         (isWrapup) ? null:
-        <PageText type={PageTextType.CONTENT} className={`Law-Sentence-Center Grace-Title${(!isTitle && !isWrapup) ? ' Grace-Title-content' : ''}`}>
-          <div className="Grace-Title-line-one Law-Sentence-Bold Law-Sentence-Margin">
+        <PageText type={PageTextType.CONTENT} className={`Law-Sentence-Center Law-Title-Animated${(!isTitle && !isWrapup) ? ' Law-Title-Animated-content' : ''}`}>
+          <div className="Law-Title-Animated-line-one Law-Sentence-Bold Law-Sentence-Margin">
             <FormattedMessage 
               id="fourlaws.grace.title.line1"
               defaultMessage="NOW THAT YOU HAVE RECEIVED CHRIST"
             />
           </div>
-          <div className="Grace-Title-line-two">
+          <div className="Law-Title-Animated-line-two">
             <FormattedMessage 
               id="fourlaws.grace.title.line2"
               defaultMessage="The moment that you received Christ by faith, as an act of the will, many things happened, including the following:"
