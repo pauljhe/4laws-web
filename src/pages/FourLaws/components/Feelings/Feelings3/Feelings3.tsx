@@ -22,7 +22,7 @@ const Feelings3: React.FC = () => {
       <TrainDiagram className="Train-Diagram" />
       <BottomNavigation 
         previousTo={FourLawsPaths.FEELINGS_2}
-        nextTo={FourLawsPaths.FEELINGS_3}
+        nextTo={FourLawsPaths.GRACE}
       />
     </React.Fragment>
   );

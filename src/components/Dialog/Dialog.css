@@ -1,0 +1,20 @@
+.AppDialog.MuiDialog-root .MuiDialogContent-root {
+    padding: 0;
+    height: 80vh;
+}
+
+.AppDialog.MuiDialog-root .MuiDialog-paperWidthFalse {
+    max-width: 80vw;
+}
+
+.AppDialog.MuiDialog-root .AppDialog-CloseButton {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    color: black;
+}
+
+.AppDialog.MuiDialog-root .AppDialog-CloseButton .MuiSvgIcon-root {
+    width: 28px;
+    height: 28px;
+}

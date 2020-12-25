@@ -10,3 +10,7 @@ export enum PageType {
     PREP = 'prep', //when listener doesn't receive Christ
     REVIEW = 'review'
 }
+
+export interface IVerseProps {
+    minimized?: boolean;
+}
