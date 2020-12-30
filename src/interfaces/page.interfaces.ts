@@ -9,6 +9,11 @@ export enum PageType {
     REVIEW = 'review' //when listener received Christ before
 }
 
+export enum ConfirmFirstResponseType {
+    QUESTION = 'question',
+    DONT_KNOW = 'dontKnow'
+}
+
 export interface IVerseProps {
     minimized?: boolean;
 }

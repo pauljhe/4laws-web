@@ -4,6 +4,7 @@ import { FourLawsPaths, RootPaths } from '../paths';
 import Confirm from './components/Confirm';
 import Feelings from './components/Feelings';
 import Grace from './components/Grace';
+import GracePrep from './components/GracePrep';
 import LawFour from './components/LawFour';
 import LawOne from './components/LawOne/LawOne';
 import LawThree from './components/LawThree';
@@ -25,6 +26,7 @@ const FourLawsRoutes: React.FC = () => {
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.CONFIRM} component={Confirm} />
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.FEELINGS} component={Feelings} />
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.GRACE} component={Grace} />
+      <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.GRACE_PREP} component={GracePrep} />
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.SUGGEST} component={Suggest} />
       <Route path={RootPaths.ROOT_LOCALE + FourLawsPaths.WRAPUP} component={Wrapup} />
       <Redirect exact to={RootPaths.ROOT_LOCALE + FourLawsPaths.MAIN} />

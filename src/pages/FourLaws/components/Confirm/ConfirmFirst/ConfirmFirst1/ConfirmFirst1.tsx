@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import BottomNavigation from '../../../../../../components/BottomNavigation';
 import Link from '../../../../../../components/Link';
 import PageText from '../../../../../../components/PageText';
-import { PageTextType } from '../../../../../../interfaces/page.interfaces';
+import { ConfirmFirstResponseType, PageTextType } from '../../../../../../interfaces/page.interfaces';
 import actionCreators from '../../../../../../state/actionCreators';
 import { FourLawsPaths } from '../../../../../paths';
 import './ConfirmFirst1.css';
@@ -12,7 +12,11 @@ import './ConfirmFirst1.css';
 const ConfirmFirst1: React.FC = () => {
   const dispatch = useDispatch();
   const onDontknowClick = () => {
-    dispatch(actionCreators.setShowConfirmFirstQ(true));
+    dispatch(actionCreators.setConfirmFirstResponseType(ConfirmFirstResponseType.DONT_KNOW));
+  };
+
+  const onNextClick = () => {
+    dispatch(actionCreators.setConfirmFirstResponseType(undefined));
   };
 
   return (
@@ -36,6 +40,7 @@ const ConfirmFirst1: React.FC = () => {
       <BottomNavigation 
         previousTo={FourLawsPaths.CONFIRM_MAIN}
         nextTo={FourLawsPaths.CONFIRM_FIRST_2}
+        onNextClick={onNextClick}
       />
     </div>
   );

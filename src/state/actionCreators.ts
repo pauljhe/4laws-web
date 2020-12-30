@@ -1,5 +1,5 @@
 import actionTypes from './actionTypes';
-import { PageType } from "../interfaces/page.interfaces";
+import { ConfirmFirstResponseType, PageType } from "../interfaces/page.interfaces";
 
 function setGreetFirstAnswer(pageType: PageType | undefined) {
     return {
@@ -22,10 +22,10 @@ function setPrayerAnswer(pageType: PageType | undefined) {
     } as const;
 }
 
-function setShowConfirmFirstQ(show: boolean) {
+function setConfirmFirstResponseType(confirmFirstResponseType: ConfirmFirstResponseType | undefined) {
     return {
-        type: actionTypes.SET_SHOW_CONFIRM_FIRST_Q,
-        show
+        type: actionTypes.SET_CONFIRM_FIRST_RESPONSE_TYPE,
+        confirmFirstResponseType
     } as const;
 }
 
@@ -33,7 +33,7 @@ const actionCreators = {
     setGreetFirstAnswer,
     setGreetSecondAnswer,
     setPrayerAnswer,
-    setShowConfirmFirstQ
+    setConfirmFirstResponseType
 }
 
 export default actionCreators;

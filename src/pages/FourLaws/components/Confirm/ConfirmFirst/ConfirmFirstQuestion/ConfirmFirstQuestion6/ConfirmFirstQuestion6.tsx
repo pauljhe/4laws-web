@@ -1,14 +1,21 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
+import { useDispatch } from 'react-redux';
 import Answer from '../../../../../../../components/Answer';
 import BottomNavigation from '../../../../../../../components/BottomNavigation';
 import PageText from '../../../../../../../components/PageText';
-import { PageTextType } from '../../../../../../../interfaces/page.interfaces';
+import { ConfirmFirstResponseType, PageTextType } from '../../../../../../../interfaces/page.interfaces';
+import actionCreators from '../../../../../../../state/actionCreators';
 import { FourLawsPaths } from '../../../../../../paths';
 import './ConfirmFirstQuestion6.css';
 
 const ConfirmFirstQuestion6: React.FC = () => {
   const intl = useIntl();
+  const dispatch = useDispatch();
+  const onNextClick = () => {
+    dispatch(actionCreators.setConfirmFirstResponseType(ConfirmFirstResponseType.QUESTION));
+  };
+
   const language = (intl.locale === 'ko') ? 'Korean': 'English';
 
   const answer = intl.formatMessage({
@@ -29,6 +36,7 @@ const ConfirmFirstQuestion6: React.FC = () => {
       <BottomNavigation 
         previousTo={FourLawsPaths.CONFIRM_FIRST_Q_5}
         nextTo={FourLawsPaths.CONFIRM_FIRST_2}
+        onNextClick={onNextClick}
       />
     </div>
   );

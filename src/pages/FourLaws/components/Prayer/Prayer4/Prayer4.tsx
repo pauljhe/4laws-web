@@ -1,11 +1,15 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { useSelector } from 'react-redux';
 import BottomNavigation from '../../../../../components/BottomNavigation';
 import PageText from '../../../../../components/PageText';
-import { PageTextType } from '../../../../../interfaces/page.interfaces';
+import { PageTextType, PageType } from '../../../../../interfaces/page.interfaces';
+import { AppState } from '../../../../../state/reducer';
 import { FourLawsPaths } from '../../../../paths';
 
 const Prayer4: React.FC = () => {
+  const prayerAnswer: PageType | undefined = useSelector((state: AppState) => state.prayerAnswer);
+  const isPrep: boolean = prayerAnswer === PageType.PREP;
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
@@ -26,7 +30,7 @@ const Prayer4: React.FC = () => {
         </div>
       </PageText>
       <BottomNavigation 
-        previousTo={FourLawsPaths.PRAYER_3}
+        previousTo={(isPrep) ? FourLawsPaths.GRACE_PREP_WRAPUP_1 : FourLawsPaths.PRAYER_3}
         nextTo={FourLawsPaths.CONFIRM}
       />
     </React.Fragment>

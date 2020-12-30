@@ -16,6 +16,10 @@ const LawFourGreet4: React.FC = () => {
     dispatch(actionCreators.setGreetSecondAnswer(PageType.PREP));
   };
 
+  const onRightClick = () => {
+    dispatch(actionCreators.setGreetSecondAnswer(undefined));
+  };
+
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawFour-Content">
@@ -29,7 +33,7 @@ const LawFourGreet4: React.FC = () => {
           <DiagramLink to={FourLawsPaths.LAW_FOUR_WRAPUP_PREP} onClick={onLeftClick}>
             <Law4DiagramLeft />
           </DiagramLink>
-          <DiagramLink to={FourLawsPaths.LAW_FOUR_WRAPUP}>
+          <DiagramLink to={FourLawsPaths.LAW_FOUR_WRAPUP} onClick={onRightClick}>
             <Law4DiagramRight />
           </DiagramLink>
         </div>

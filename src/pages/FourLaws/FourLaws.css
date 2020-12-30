@@ -37,7 +37,7 @@
 .Law-Question-Below-words {
     max-width: 591px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     font-weight: bold;
 }
 
@@ -55,6 +55,10 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
+}
+
+.Law-Question-Answer-Single.Below-words {
+    margin-top: 50px;
 }
 
 .Law-Question-Answer .BottomNavigation, .Law-Question-Answer-Single, .Law-Button {
@@ -86,7 +90,7 @@
 
 .Law-Question-Answer-Animated {
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .Law-Text-Highlight {

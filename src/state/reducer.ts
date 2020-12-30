@@ -1,4 +1,4 @@
-import { PageType } from '../interfaces/page.interfaces';
+import { ConfirmFirstResponseType, PageType } from '../interfaces/page.interfaces';
 import actionTypes from './actionTypes';
 import actionCreators from './actionCreators';
 
@@ -6,20 +6,20 @@ export interface AppState {
     greetFirstAnswer: PageType | undefined;
     greetSecondAnswer: PageType | undefined;
     prayerAnswer: PageType | undefined;
-    showConfirmFirstQ: boolean;
+    confirmFirstResponse: ConfirmFirstResponseType | undefined;
 }
 
 type Actions = 
     & ReturnType<typeof actionCreators.setGreetFirstAnswer>
     & ReturnType<typeof actionCreators.setGreetSecondAnswer>
     & ReturnType<typeof actionCreators.setPrayerAnswer>
-    & ReturnType<typeof actionCreators.setShowConfirmFirstQ>;
+    & ReturnType<typeof actionCreators.setConfirmFirstResponseType>;
 
 const initialState: AppState = {
     greetFirstAnswer: undefined,
     greetSecondAnswer: undefined,
     prayerAnswer: undefined,
-    showConfirmFirstQ: false
+    confirmFirstResponse: undefined
 };
 
 export function appReducer(
@@ -43,10 +43,10 @@ export function appReducer(
                 ...state,
                 prayerAnswer: action.pageType
             };
-        case actionTypes.SET_SHOW_CONFIRM_FIRST_Q:
+        case actionTypes.SET_CONFIRM_FIRST_RESPONSE_TYPE:
             return {
                 ...state,
-                showConfirmFirstQ: action.show
+                confirmFirstResponse: action.confirmFirstResponseType
             };
     }
     return state;

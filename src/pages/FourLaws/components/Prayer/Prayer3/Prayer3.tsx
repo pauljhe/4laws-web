@@ -1,12 +1,22 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
+import { useDispatch } from 'react-redux';
 import BottomNavigation from '../../../../../components/BottomNavigation';
 import PageText from '../../../../../components/PageText';
-import { PageTextType } from '../../../../../interfaces/page.interfaces';
+import { PageTextType, PageType } from '../../../../../interfaces/page.interfaces';
+import actionCreators from '../../../../../state/actionCreators';
 import { FourLawsPaths } from '../../../../paths';
 
 const Prayer3: React.FC = () => {
   const intl = useIntl();
+  const dispatch = useDispatch();
+  const onYesClick = () => {
+    dispatch(actionCreators.setPrayerAnswer(undefined));
+  };
+  const onNoClick = () => {
+    dispatch(actionCreators.setPrayerAnswer(PageType.PREP));
+  };
+
   const yesText = intl.formatMessage({
     id: "fourlaws.prayer.three.yes",
     defaultMessage: "Yes"
@@ -29,9 +39,11 @@ const Prayer3: React.FC = () => {
         <BottomNavigation 
           previousTo={FourLawsPaths.PRAYER_4}
           previousText={yesText}
-          nextTo={FourLawsPaths.PRAYER_3}
+          nextTo={FourLawsPaths.GRACE_PREP}
           nextText={noText}
           hideArrow={true}
+          onPreviousClick={onYesClick}
+          onNextClick={onNoClick}
         />
       </div>
       <BottomNavigation 
