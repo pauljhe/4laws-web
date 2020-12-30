@@ -13,6 +13,7 @@ const LawFour: React.FC = () => {
   const isTitle: boolean = currentUrl.endsWith(FourLawsPaths.LAW_FOUR_TITLE);
   const hideTitle: boolean = currentUrl.endsWith(FourLawsPaths.LAW_FOUR_WRAPUP) || 
                              currentUrl.endsWith(FourLawsPaths.LAW_FOUR_WRAPUP_PREP) || 
+                             currentUrl.endsWith(FourLawsPaths.LAW_FOUR_WRAPUP_REVIEW) || 
                              currentUrl.includes(FourLawsPaths.LAW_FOUR_GREET);
   return (
     <React.Fragment>

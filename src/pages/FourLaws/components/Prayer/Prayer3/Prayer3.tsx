@@ -1,10 +1,11 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import BottomNavigation from '../../../../../components/BottomNavigation';
 import PageText from '../../../../../components/PageText';
 import { PageTextType, PageType } from '../../../../../interfaces/page.interfaces';
 import actionCreators from '../../../../../state/actionCreators';
+import { AppState } from '../../../../../state/reducer';
 import { FourLawsPaths } from '../../../../paths';
 
 const Prayer3: React.FC = () => {
@@ -16,6 +17,9 @@ const Prayer3: React.FC = () => {
   const onNoClick = () => {
     dispatch(actionCreators.setPrayerAnswer(PageType.PREP));
   };
+
+  const greetFirstAnswer: PageType | undefined = useSelector((state: AppState) => state.greetFirstAnswer);
+  const isReview: boolean = greetFirstAnswer === PageType.REVIEW;
 
   const yesText = intl.formatMessage({
     id: "fourlaws.prayer.three.yes",
@@ -47,7 +51,7 @@ const Prayer3: React.FC = () => {
         />
       </div>
       <BottomNavigation 
-        previousTo={FourLawsPaths.PRAYER_2}
+        previousTo={(isReview) ? FourLawsPaths.PRAYER_REVIEW_1 : FourLawsPaths.PRAYER_2}
       />
     </div>
   );
