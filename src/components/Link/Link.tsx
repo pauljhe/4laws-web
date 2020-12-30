@@ -7,14 +7,15 @@ import './Link.css';
 
 export interface IAppLinkProps {
   to: string;
+  onClick?: () => void;
 }
 
 const AppLink: React.FC<IAppLinkProps> = (props) => {
-  const { to } = props;
+  const { to, onClick } = props;
   const intl = useIntl();
   const toWithLocale = `/${intl.locale}${to}`;
   return (
-    <Link className="AppLink" to={toWithLocale}>
+    <Link className="AppLink" to={toWithLocale} onClick={onClick}>
       <PageText type={PageTextType.CONTENT}>
         { props.children }
       </PageText>

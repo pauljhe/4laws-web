@@ -5,8 +5,15 @@ import BottomNavigation from '../../../../../../../components/BottomNavigation';
 import PageText from '../../../../../../../components/PageText';
 import { PageTextType } from '../../../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../../../paths';
+import { useDispatch } from 'react-redux';
+import actionCreators from '../../../../../../../state/actionCreators';
 
 const ConfirmFirstQuestion1: React.FC = () => {
+  const dispatch = useDispatch();
+  const onPreviousClick = () => {
+    dispatch(actionCreators.setShowConfirmFirstQ(false));
+  };
+  
   return (
     <div className="Law-Question">
       <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
@@ -35,6 +42,7 @@ const ConfirmFirstQuestion1: React.FC = () => {
       <BottomNavigation 
         previousTo={FourLawsPaths.CONFIRM_FIRST_1}
         nextTo={FourLawsPaths.CONFIRM_FIRST_2}
+        onPreviousClick={onPreviousClick}
       />
     </div>
   );

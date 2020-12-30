@@ -18,7 +18,7 @@ const ConfirmFirstQuestion5: React.FC = () => {
           />
         </div>
         <div className="Law-Question-Answer-Single">
-          <Link to={FourLawsPaths.CONFIRM_FIRST_1_ANSWER}>
+          <Link to={FourLawsPaths.CONFIRM_FIRST_Q_6}>
             <FormattedMessage 
               id="fourlaws.confirm.first.question.five.answer"
               defaultMessage="Yes"

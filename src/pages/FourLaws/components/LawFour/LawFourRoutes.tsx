@@ -13,6 +13,7 @@ import LawFourGreet3 from './LawFourGreet3';
 import LawFourGreet4 from './LawFourGreet4';
 import LawFourTitle from './LawFourTitle';
 import LawFourWrapup from './LawFourWrapup';
+import LawFourWrapupPrep from './LawFourWrapupPrep';
 
 const LawFourRoutes: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const LawFourRoutes: React.FC = () => {
       <Route exact path={RootPaths.ROOT_LOCALE + FourLawsPaths.LAW_FOUR_GREET_3} component={LawFourGreet3} />
       <Route exact path={RootPaths.ROOT_LOCALE + FourLawsPaths.LAW_FOUR_GREET_4} component={LawFourGreet4} />
       <Route exact path={RootPaths.ROOT_LOCALE + FourLawsPaths.LAW_FOUR_WRAPUP} component={LawFourWrapup} />
+      <Route exact path={RootPaths.ROOT_LOCALE + FourLawsPaths.LAW_FOUR_WRAPUP_PREP} component={LawFourWrapupPrep} />
       <Redirect exact to={RootPaths.ROOT_LOCALE + FourLawsPaths.LAW_FOUR_TITLE} />
     </Switch>
   );

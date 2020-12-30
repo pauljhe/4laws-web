@@ -2,13 +2,20 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import BottomNavigation from '../../../../../components/BottomNavigation';
 import PageText from '../../../../../components/PageText';
-import { PageTextType } from '../../../../../interfaces/page.interfaces';
+import { PageTextType, PageType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
 import DiagramLink from '../../../../../components/DiagramLink';
 import Law4DiagramLeft from '../../../../../icons/Law4DiagramLeft';
 import Law4DiagramRight from '../../../../../icons/Law4DiagramRight';
+import { useDispatch } from 'react-redux';
+import actionCreators from '../../../../../state/actionCreators';
 
 const LawFourGreet4: React.FC = () => {
+  const dispatch = useDispatch();
+  const onLeftClick = () => {
+    dispatch(actionCreators.setGreetSecondAnswer(PageType.PREP));
+  };
+
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawFour-Content">
@@ -19,17 +26,16 @@ const LawFourGreet4: React.FC = () => {
           />
         </div>
         <div className="LawFour-Greet-flex">
-          <DiagramLink to={FourLawsPaths.LAW_FOUR_GREET_4}>
+          <DiagramLink to={FourLawsPaths.LAW_FOUR_WRAPUP_PREP} onClick={onLeftClick}>
             <Law4DiagramLeft />
           </DiagramLink>
-          <DiagramLink to={FourLawsPaths.LAW_FOUR_GREET_4}>
+          <DiagramLink to={FourLawsPaths.LAW_FOUR_WRAPUP}>
             <Law4DiagramRight />
           </DiagramLink>
         </div>
       </PageText>
       <BottomNavigation 
         previousTo={FourLawsPaths.LAW_FOUR_GREET_3}
-        nextTo={FourLawsPaths.LAW_FOUR_WRAPUP}
       />
     </React.Fragment>
   );

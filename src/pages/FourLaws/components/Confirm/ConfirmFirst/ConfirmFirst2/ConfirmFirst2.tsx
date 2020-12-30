@@ -1,15 +1,14 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import { useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import BottomNavigation from '../../../../../../components/BottomNavigation';
 import PageText from '../../../../../../components/PageText';
-import { PageTextType, PageType } from '../../../../../../interfaces/page.interfaces';
+import { PageTextType } from '../../../../../../interfaces/page.interfaces';
+import { AppState } from '../../../../../../state/reducer';
 import { FourLawsPaths } from '../../../../../paths';
 
 const ConfirmFirst2: React.FC = () => {
-  const location = useLocation();
-  const query = new URLSearchParams(location.search);
-  const isAnswerType = query.get(PageType.KEY) === PageType.ANSWER;
+  const showConfirmFirstQ: boolean = useSelector((state: AppState) => state.showConfirmFirstQ);
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT}>
@@ -21,7 +20,7 @@ const ConfirmFirst2: React.FC = () => {
         />
       </PageText>
       <BottomNavigation 
-        previousTo={(isAnswerType) ? FourLawsPaths.CONFIRM_FIRST_1_ANSWER : FourLawsPaths.CONFIRM_FIRST_1}
+        previousTo={(showConfirmFirstQ) ? FourLawsPaths.CONFIRM_FIRST_Q_6 : FourLawsPaths.CONFIRM_FIRST_1}
         nextTo={FourLawsPaths.CONFIRM_SECOND}
       />
     </React.Fragment>

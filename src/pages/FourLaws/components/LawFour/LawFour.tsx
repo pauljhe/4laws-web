@@ -11,7 +11,9 @@ const LawFour: React.FC = () => {
   const Icon = <Law4Icon className="PageTitle-Icon" />;
   const currentUrl = window.location.href;
   const isTitle: boolean = currentUrl.endsWith(FourLawsPaths.LAW_FOUR_TITLE);
-  const hideTitle: boolean = currentUrl.endsWith(FourLawsPaths.LAW_FOUR_WRAPUP) || currentUrl.includes(FourLawsPaths.LAW_FOUR_GREET);
+  const hideTitle: boolean = currentUrl.endsWith(FourLawsPaths.LAW_FOUR_WRAPUP) || 
+                             currentUrl.endsWith(FourLawsPaths.LAW_FOUR_WRAPUP_PREP) || 
+                             currentUrl.includes(FourLawsPaths.LAW_FOUR_GREET);
   return (
     <React.Fragment>
       {
