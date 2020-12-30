@@ -1,14 +1,17 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import BottomNavigation from '../../../../../components/BottomNavigation';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
+import './GracePrepMain1.css';
 
 const GracePrepMain1: React.FC = () => {
+  const intl = useIntl();
+  const isKorean = intl.locale === 'ko';
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="Law-Sentence-Center Law-Sentence-Bold">
+      <PageText type={PageTextType.CONTENT} className={`Law-Sentence-Center Law-Sentence-Bold${(isKorean) ? ' Grace-Prep-Main-One' : ''}`}>
         <FormattedMessage 
           id="fourlaws.grace.prep.main.one"
           defaultMessage={'I would like to tell you what will happen if you receive Christ.'}

@@ -15,46 +15,16 @@ const GracePrepWrapup1: React.FC = () => {
   };
 
   const yesText = intl.formatMessage({
-    id: "fourlaws.grace.prep.one.yes",
+    id: "fourlaws.grace.prep.wrapup.one.yes",
     defaultMessage: "Yes"
   });
   const noText = intl.formatMessage({
-    id: "fourlaws.grace.prep.one.no",
+    id: "fourlaws.grace.prep.wrapup.one.no",
     defaultMessage: "No"
   });
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT}>
-        {/* <div>
-          <FormattedMessage 
-            id="fourlaws.grace.prep.one"
-            defaultMessage={'1. Christ will come into your life.'}
-          />
-        </div>
-        <div>
-          <FormattedMessage 
-            id="fourlaws.grace.prep.two"
-            defaultMessage={'2. Your sins will be forgiven.'}
-          />
-        </div>
-        <div>
-          <FormattedMessage 
-            id="fourlaws.grace.prep.three"
-            defaultMessage={'3. You will become a child of God.'}
-          />
-        </div>
-        <div>
-          <FormattedMessage 
-            id="fourlaws.grace.prep.four"
-            defaultMessage={'4. You will receive eternal life.'}
-          />
-        </div>
-        <div>
-          <FormattedMessage 
-            id="fourlaws.grace.prep.five"
-            defaultMessage={'5. The great adventure for which God created you will begin.'}
-          />
-        </div> */}
         <div className="Law-Sentence-Center Law-Sentence-Margin Law-Sentence-Bold">
           <FormattedMessage 
             id="fourlaws.grace.prep.wrapup.one"
