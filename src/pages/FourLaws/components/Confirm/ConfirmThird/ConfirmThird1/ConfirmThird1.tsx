@@ -1,11 +1,13 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import BottomNavigation from '../../../../../../components/BottomNavigation';
 import PageText from '../../../../../../components/PageText';
 import { PageTextType } from '../../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../../paths';
 
 const ConfirmThird1: React.FC = () => {
+  const intl = useIntl();
+  const isKorean = intl.locale === 'ko';
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
@@ -21,6 +23,15 @@ const ConfirmThird1: React.FC = () => {
             defaultMessage={'"...for He Himself has said I will never leave you, nor will I ever forsake you" (Hebrews 13:5)'}
           />
         </div>
+        {
+          (!isKorean) ? null :
+          <div>
+            <FormattedMessage 
+              id="fourlaws.confirm.third.words.address"
+              defaultMessage=""
+            />
+          </div>
+        }
       </PageText>
       <BottomNavigation 
         previousTo={FourLawsPaths.CONFIRM_SECOND_Q_5}

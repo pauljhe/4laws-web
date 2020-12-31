@@ -13,7 +13,8 @@ const ConfirmThirdQuestion2: React.FC = () => {
     id: "fourlaws.confirm.third.question.two.answer",
     defaultMessage: "Once"
   });
-  const language = (intl.locale === 'ko') ? 'Korean': 'English';
+  const isKorean = intl.locale === 'ko';
+  const language = (isKorean) ? 'Korean': 'English';
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
@@ -23,6 +24,15 @@ const ConfirmThirdQuestion2: React.FC = () => {
             defaultMessage={'"...for He Himself has said I will never leave you, nor will I ever forsake you" (Hebrews 13:5)'}
           />
         </div>
+        {
+          (!isKorean) ? null :
+          <div>
+            <FormattedMessage 
+              id="fourlaws.confirm.third.words.address"
+              defaultMessage=""
+            />
+          </div>
+        }
         <div className="Law-Sentence-Center Law-Question-Below-words No-maxwidth">
           <FormattedMessage 
             id="fourlaws.confirm.third.question.two"
