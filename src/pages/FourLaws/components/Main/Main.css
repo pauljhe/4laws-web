@@ -1,0 +1,28 @@
+.FourLawsMain-PageText {
+    z-index: 2001;
+}
+
+.MuiSvgIcon-root.Main-WaterColorIcon {
+    font-size: 300px;
+    width: 300px;
+    height: 300px;
+    z-index: 2000;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(0, calc(50vh - 50%));
+}
+
+.MuiSvgIcon-root.Main-WaterColorIcon.Main-WaterColorIcon-Top {
+    /** X-axis Calculation
+     * PageContainer MaxWidth: 900px
+     * PageContainer Left,Right Padding: 24px each
+     * WaterColorIcon size: 300px
+     * Additional left-shift: 50px
+     * 
+     * Y-axis Calculation
+     * Center and additional bottom-shift (25px)
+     **/
+    transform: translate(502px, calc(50vh - 50% + 25px));
+    transition: all 400ms ease-out;
+}

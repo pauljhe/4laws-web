@@ -9,7 +9,7 @@ import './MainWrapup.css';
 const MainWrapup: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="FourLawsMain-Wrapup">
+      <PageText type={PageTextType.CONTENT} className="FourLawsMain-PageText FourLawsMain-Wrapup">
         <FormattedMessage 
           id="fourlaws.main.wrapup"
           defaultMessage={'Just as there are physical laws that govern the physical universe, ' + 
