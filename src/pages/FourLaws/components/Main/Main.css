@@ -3,11 +3,11 @@
 }
 
 .MuiSvgIcon-root.Main-WaterColorIcon {
-    font-size: 300px;
-    width: 300px;
-    height: 300px;
+    font-size: 350px;
+    width: 350px;
+    height: 350px;
     z-index: 2000;
-    left: 0;
+    left: -25px;
     position: absolute;
     top: 0;
     transform: translate(0, calc(50vh - 50%));
@@ -17,12 +17,12 @@
     /** X-axis Calculation
      * PageContainer MaxWidth: 900px
      * PageContainer Left,Right Padding: 24px each
-     * WaterColorIcon size: 300px
-     * Additional left-shift: 50px
+     * WaterColorIcon size: 350px
+     * Result: 900px - (24px * 2) - 350px = 502px
      * 
      * Y-axis Calculation
-     * Center and additional bottom-shift (25px)
+     * Center and additional bottom-shift (12px)
      **/
-    transform: translate(502px, calc(50vh - 50% + 25px));
+    transform: translate(502px, calc(50vh - 50% + 12px));
     transition: all 400ms ease-out;
 }
