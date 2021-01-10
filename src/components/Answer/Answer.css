@@ -26,6 +26,7 @@
     outline: 0;
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .Answer-arrow.Answer-arrow-left {
