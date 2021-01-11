@@ -23,6 +23,10 @@
     margin-right: 12px;
 }
 
+.PageTitle.PageTitle-Minimized .PageTitle-PageText {
+    opacity: 0;
+}
+
 @media only screen and (min-width: 600px) {
     .PageTitle {
         transform: translate(calc(50vw - 50%), calc(50vh - 50% - 131px)) scale(1);
@@ -30,7 +34,7 @@
     }
 
     .PageTitle.PageTitle-Minimized {
-        transform: scale(0.6) translate(0, -48px);
+        transform: scale(0.6) translate(calc(-40% + 100px), -48px);
     }
 
     .PageTitle .PageTitle-Icon {

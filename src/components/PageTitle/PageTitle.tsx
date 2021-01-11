@@ -17,17 +17,14 @@ class PageTitle extends React.Component<IPageTitleProps> {
   }
   
   render() {
-    const { icon, type, minimized, children } = this.props;
+    const { icon, type, children } = this.props;
     return (
       <div className={this.getClassNames()}>
         <div className="PageTitle-Wrapper">
           { icon }
-          {
-            (minimized) ? null:
-            <PageText type={type}>
-              { children }
-            </PageText>
-          }
+          <PageText type={type} className="PageTitle-PageText">
+            { children }
+          </PageText>
         </div>
       </div>
     );
