@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d318b08a.chunk.css",
-    "main.js": "/static/js/main.63517fca.chunk.js",
-    "main.js.map": "/static/js/main.63517fca.chunk.js.map",
+    "main.css": "/static/css/main.b9493706.chunk.css",
+    "main.js": "/static/js/main.39e7e32a.chunk.js",
+    "main.js.map": "/static/js/main.39e7e32a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.caad6058.js",
     "runtime-main.js.map": "/static/js/runtime-main.caad6058.js.map",
     "static/js/2.3e789bcd.chunk.js": "/static/js/2.3e789bcd.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/index.html",
     "service-worker.js": "/service-worker.js",
     "service-worker.js.map": "/service-worker.js.map",
-    "static/css/main.d318b08a.chunk.css.map": "/static/css/main.d318b08a.chunk.css.map",
+    "static/css/main.b9493706.chunk.css.map": "/static/css/main.b9493706.chunk.css.map",
     "static/js/2.3e789bcd.chunk.js.LICENSE.txt": "/static/js/2.3e789bcd.chunk.js.LICENSE.txt",
     "static/media/ArrowIcon.5d0d9979.svg": "/static/media/ArrowIcon.5d0d9979.svg",
     "static/media/CircleIcon.33d8ae36.svg": "/static/media/CircleIcon.33d8ae36.svg",
@@ -43,7 +43,7 @@
   "entrypoints": [
     "static/js/runtime-main.caad6058.js",
     "static/js/2.3e789bcd.chunk.js",
-    "static/css/main.d318b08a.chunk.css",
-    "static/js/main.63517fca.chunk.js"
+    "static/css/main.b9493706.chunk.css",
+    "static/js/main.39e7e32a.chunk.js"
   ]
 }
