@@ -6,8 +6,23 @@
     height: calc(100vh - 202px);
 }
 
+@media only screen and (min-width: 600px) {
+    .MuiContainer-root.PageContainer {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .MuiContainer-root.PageContainer {
+        padding-left: 24px;
+        padding-right: 24px;
+        max-width: 850px;
+    }
+} 
+
 @media only screen and (min-width: 1280px) {
     .MuiContainer-root.PageContainer {
         max-width: 900px;
     }
-} 
+}

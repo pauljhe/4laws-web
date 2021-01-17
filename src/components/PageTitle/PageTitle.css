@@ -1,6 +1,7 @@
 .PageTitle {
     position: fixed;
     transition: none;
+    left: 0;
     top: 131px;
     background-color: transparent;
     transform: translate(calc(50vw - 50% - 16px), calc(50vh - 50% - 131px)) scale(1);
@@ -9,6 +10,7 @@
 .PageTitle.PageTitle-Minimized {
     transition: all 400ms ease-out;
     transform: scale(0.6) translate(0, 0);
+    opacity: 1;
 }
 
 .PageTitle .PageTitle-Wrapper {
@@ -25,6 +27,7 @@
 
 .PageTitle.PageTitle-Minimized .PageTitle-PageText {
     opacity: 0;
+    height: 0;
 }
 
 @media only screen and (min-width: 600px) {
@@ -34,12 +37,38 @@
     }
 
     .PageTitle.PageTitle-Minimized {
-        transform: scale(0.6) translate(calc(-40% + 100px), -48px);
+        transform: scale(0.6) translate(calc((-499px / 2) / 0.6 + 120px), 80px);
+        opacity: 0.6;
+    }
+
+    .PageTitle .PageTitle-Wrapper {
+        max-width: 499px;
     }
 
     .PageTitle .PageTitle-Icon {
-        width: 56px;
-        height: 56px;
+        position: absolute;
+        top: -160px;
+        width: 150px;
+        height: 150px;
+        font-size: 150px;
+        transform: translateX(calc(499px / 2 - 50%));
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .PageTitle.PageTitle-Minimized {
+        transform: scale(0.6) translate(calc(-30% + 25px), -48px);
+        opacity: 1;
+    }
+
+    .PageTitle .PageTitle-Wrapper {
+        max-width: none;
+    }
+
+    .PageTitle .PageTitle-Icon {
+        position: unset;
+        top: unset;
+        transform: none;
     }
 }
 

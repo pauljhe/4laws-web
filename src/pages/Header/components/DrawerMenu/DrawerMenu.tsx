@@ -107,7 +107,7 @@ const DrawerMenu: React.FC = () => {
       >
         <div role="presentation">
           <List className="DrawerMenu-List">
-            <ListSubheader>
+            <ListSubheader disableSticky={true}>
               <Link 
                 to={`/${intl.locale}${FourLawsPaths.MAIN}`}
                 onClick={toggleDrawer(false)}
@@ -136,6 +136,7 @@ const DrawerMenu: React.FC = () => {
             }
           </List>
         </div>
+        <div className="copyright">&copy; Content Owned by KCCC</div>
       </Drawer>
     </React.Fragment>
   );

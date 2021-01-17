@@ -4,11 +4,12 @@ import BottomNavigation from '../../../../../components/BottomNavigation';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
+import './LawTwoWrapup.css'
 
 const LawTwoWrapup: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawTwo-Wrapup">
+      <PageText type={PageTextType.CONTENT} className="LawTwo-Wrapup Law-Sentence-Bold Law-Sentence-Center">
         <FormattedMessage 
           id="fourlaws.law2.wrapup"
           defaultMessage={'The Third Law explains the only way to bridge this gulf...'}

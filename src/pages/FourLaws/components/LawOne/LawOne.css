@@ -1,10 +1,32 @@
-.PageTitle.LawOne-PageTitle .PageTitle-Wrapper {
+/* .PageTitle.LawOne-PageTitle .PageTitle-Wrapper {
     max-width: 195px;
-}
+} */
 
 @media only screen and (min-width: 600px) {
     .PageTitle.LawOne-PageTitle .PageTitle-Wrapper {
-        max-width: 270px;
+        max-width: 425px;
+    }
+
+    .PageTitle.LawOne-PageTitle .PageTitle-Icon {
+        transform: translateX(calc(425px / 2 - 50%));
+    }
+
+    .PageTitle.LawOne-PageTitle.PageTitle-Minimized {
+        transform: scale(0.6) translate(calc((-425px / 2) / 0.6 + 120px), 80px);
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .PageTitle.LawOne-PageTitle .PageTitle-Wrapper {
+        max-width: 559px;
+    }
+
+    .PageTitle.LawOne-PageTitle .PageTitle-Icon {
+        transform: none;
+    }
+
+    .PageTitle.LawOne-PageTitle.PageTitle-Minimized {
+        transform: scale(0.6) translate(calc(-30% + 25px), -48px);
     }
 }
 

@@ -1,12 +1,12 @@
-.PageTitle.LawThree-PageTitle .PageTitle-Wrapper {
+/* .PageTitle.LawThree-PageTitle .PageTitle-Wrapper {
     max-width: 245px;
 } 
 
 @media only screen and (min-width: 600px) {
     .PageTitle.LawThree-PageTitle .PageTitle-Wrapper {
-        max-width: 335px;
+        max-width: 504px;
     }
-}
+} */
 
 @media only screen and (min-width: 1280px) {
     .PageTitle.LawThree-PageTitle .PageTitle-Wrapper {

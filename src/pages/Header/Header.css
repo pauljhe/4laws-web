@@ -5,7 +5,7 @@
 }
 
 .Header .MuiToolbar-root {
-    padding: 12px 0;
+    padding: 12px 0 0 0;
 }
 
 .Header .MuiToolbar-root > *:not(:first-child) {

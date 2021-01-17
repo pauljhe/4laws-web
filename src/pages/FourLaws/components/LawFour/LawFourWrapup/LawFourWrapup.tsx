@@ -12,7 +12,7 @@ const LawFourWrapup: React.FC = () => {
   const isReview: boolean = greetFirstAnswer === PageType.REVIEW;
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawFour-Wrapup">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Wrapup Law-Sentence-Bold">
         <FormattedMessage 
           id="fourlaws.law4.wrapup"
           defaultMessage={'The following explains how you can receive Christ:'}

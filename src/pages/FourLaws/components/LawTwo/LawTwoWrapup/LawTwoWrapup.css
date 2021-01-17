@@ -1,0 +1,11 @@
+@media only screen and (min-width: 600px) {
+    .PageText.LawTwo-Wrapup {
+        max-width: 503px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .PageText.LawTwo-Wrapup {
+        max-width: none;
+    }
+}

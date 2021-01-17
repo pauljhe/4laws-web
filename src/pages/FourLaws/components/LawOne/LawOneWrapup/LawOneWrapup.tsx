@@ -10,7 +10,7 @@ const LawOneWrapup: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT}>
-        <div className="LawOne-Wrapup Law-Sentence-Center">
+        <div className="LawOne-Wrapup Law-Sentence-Center Law-Sentence-Bold">
           <FormattedMessage 
             id="fourlaws.law1.wrapup"
             defaultMessage={'Why is it that most people are not experiencing the abundant life? Because...'}

@@ -18,20 +18,24 @@ const Home: React.FC = () => {
   const match = useRouteMatch<{ locale: Language }>();
   const locale = match.params.locale;
 
+  const [currentLocale, setCurrentLocale] = useState(locale);
+  if (locale !== currentLocale) {
+    setCurrentLocale(locale);
+  }
+
+  const changeLanguage = (language: Language) => {
+    setCurrentLocale(language);
+    history.push(history.location.pathname.replace(/(\/\w+)(\/.*)/, `/${language}$2`));
+  };
+
   // go to default root path when the given locale is not supported.
   if (!Object.keys(translations).includes(locale)) {
     history.replace('/');
-
   }
-  const [currentLocale] = useState(locale);
-  const changeLanguage = (language: Language) => {
-    history.push(history.location.pathname.replace(/(\/\w+)(\/.*)/, `/${language}$2`));
-    history.go(0);
-  };
 
   return (
     <IntlProvider key={currentLocale} locale={currentLocale} messages={translations[currentLocale]} defaultLocale="en">
-      <Header locale={currentLocale} changeLanguage={changeLanguage}  ></Header>
+      <Header locale={currentLocale} changeLanguage={changeLanguage}></Header>
       <HomeRoutes></HomeRoutes>
     </IntlProvider>
   );

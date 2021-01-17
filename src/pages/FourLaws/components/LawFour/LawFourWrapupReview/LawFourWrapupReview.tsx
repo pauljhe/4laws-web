@@ -19,7 +19,7 @@ const LawFourWrapupReview: React.FC = () => {
 
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawFour-Wrapup Law-PageContent">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Wrapup Law-PageContent Law-Sentence-Bold">
         <div className="Law-Sentence-Center">
           <FormattedMessage 
             id="fourlaws.law4.wrapup.review"

@@ -1,28 +1,89 @@
 .FourLawsMain-PageText {
-    z-index: 2001;
+    z-index: 1151;
 }
 
 .MuiSvgIcon-root.Main-WaterColorIcon {
     font-size: 375px;
     width: 375px;
     height: 375px;
-    z-index: 2000;
-    left: -50px;
+    z-index: 1150;
     position: absolute;
+    left: -50px;
     top: 0;
     transform: translate(0, calc(50vh - 50%));
 }
 
 .MuiSvgIcon-root.Main-WaterColorIcon.Main-WaterColorIcon-Top {
-    /** X-axis Calculation
-     * PageContainer MaxWidth: 900px
-     * PageContainer Left,Right Padding: 24px each
-     * WaterColorIcon size: 375px
-     * Result: 900px - (24px * 2) - 375px = 527px
-     * 
-     * Y-axis Calculation
-     * Center and additional bottom-shift (12px)
-     **/
-    transform: translate(527px, calc(50vh - 50% + 12px));
     transition: all 400ms ease-out;
 }
+
+@media only screen and (min-width: 600px) {
+    .MuiSvgIcon-root.Main-WaterColorIcon {
+        font-size: 300px;
+        width: 300px;
+        height: 300px;
+        left: 0;
+        top: -12px;
+        /* 48px: PageContainer Padding, 165px: half of MainTitle MaxWidth, 50px: px shift */
+        transform: translate(calc(50vw - 50% - 48px - 165px + 50px), calc(50vh - 50%));
+    }
+
+    .MuiSvgIcon-root.Main-WaterColorIcon.Main-WaterColorIcon-Top {
+        /** X-axis Calculation
+         * 50vw - 50% - 48px => center calculation (48px: PageContainer Padding)
+         * 223px: half of MainWrapup MaxWidth
+         * 90px: left shift
+         * 
+         * Y-axis Calculation
+         * Center and additional bottom-shift (24px)
+         **/
+         transform: translate(calc(50vw - 50% - 48px + 223px - 90px), calc(50vh - 50% + 24px));
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .MuiSvgIcon-root.Main-WaterColorIcon {
+        left: 50px;
+        top: 0;
+        transform: translate(0, calc(50vh - 50%));
+    }
+
+    .MuiSvgIcon-root.Main-WaterColorIcon.Main-WaterColorIcon-Top {
+        /** X-axis Calculation
+         * PageContainer MaxWidth: 850px
+         * PageContainer Left,Right Padding: 24px each
+         * WaterColorIcon size: 300px
+         * left shift: 150px
+         * Result: 850px - (24px * 2) - 300px - 150px = 352px
+         * 
+         * Y-axis Calculation
+         * Center and additional bottom-shift (12px)
+         **/
+        transform: translate(352px, calc(50vh - 50% + 12px));
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .MuiSvgIcon-root.Main-WaterColorIcon {
+        font-size: 375px;
+        width: 375px;
+        height: 375px;
+        left: -50px;
+        top: 0;
+        /* transform: translate(0, calc(50vh - 50%)); */
+    }
+
+    .MuiSvgIcon-root.Main-WaterColorIcon.Main-WaterColorIcon-Top {
+        /** X-axis Calculation
+         * PageContainer MaxWidth: 900px
+         * PageContainer Left,Right Padding: 24px each
+         * WaterColorIcon size: 375px
+         * Result: 900px - (24px * 2) - 375px = 527px
+         * 
+         * Y-axis Calculation
+         * Center and additional bottom-shift (12px)
+         **/
+        transform: translate(527px, calc(50vh - 50% + 12px));
+    }
+}
+

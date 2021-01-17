@@ -1,3 +1,13 @@
-.LawOne-Wrapup {
-    max-width: 566px
+
+
+@media only screen and (min-width: 600px) {
+    .LawOne-Wrapup {
+        max-width: 485px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .LawOne-Wrapup {
+        max-width: 572px;
+    }
 }

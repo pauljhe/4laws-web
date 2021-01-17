@@ -1,0 +1,11 @@
+@media only screen and (min-width: 600px) {
+    .PageText.LawThree-Wrapup {
+        max-width: 534px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .PageText.LawThree-Wrapup {
+        max-width: none;
+    }
+}
