@@ -1,0 +1,11 @@
+@media only screen and (min-width: 600px) {
+    .LawFour-Wrapup {
+        max-width: 303px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .LawFour-Wrapup {
+        max-width: unset;
+    }
+}

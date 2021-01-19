@@ -6,13 +6,14 @@ import PageText from '../../../../../components/PageText';
 import { PageTextType, PageType } from '../../../../../interfaces/page.interfaces';
 import { AppState } from '../../../../../state/reducer';
 import { FourLawsPaths } from '../../../../paths';
+import './LawFourWrapup.css';
 
 const LawFourWrapup: React.FC = () => {
   const greetFirstAnswer: PageType | undefined = useSelector((state: AppState) => state.greetFirstAnswer);
   const isReview: boolean = greetFirstAnswer === PageType.REVIEW;
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawFour-Wrapup Law-Sentence-Bold">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Wrapup Law-Sentence-Bold Law-Sentence-Center">
         <FormattedMessage 
           id="fourlaws.law4.wrapup"
           defaultMessage={'The following explains how you can receive Christ:'}

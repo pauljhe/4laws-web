@@ -12,14 +12,14 @@ const LawFourGreet2: React.FC = () => {
   const intl = useIntl();
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawFour-Content">
-        <div className="Law-SubTitle LawFour-MarginLeft-272">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Greet-Description">
+        <div className="Law-SubTitle LawFour-SubTitle-MarginLeft">
           <FormattedMessage 
             id="fourlaws.law4.greet.two.title"
             defaultMessage="CHRIST-DIRECTED LIFE"
           />
         </div>
-        <div className="LawFour-Greet-flex">
+        <div className="LawFour-Greet-Description-flex">
           <Law4DiagramRight />
           <div className="LawFour-Greet-Content">
             <div className="LawFour-Greet-Row">

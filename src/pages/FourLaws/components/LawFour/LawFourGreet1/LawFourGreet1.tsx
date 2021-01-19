@@ -12,14 +12,14 @@ const LawFourGreet1: React.FC = () => {
   const intl = useIntl();
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawFour-Content">
-        <div className="Law-SubTitle LawFour-MarginLeft-272">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Greet-Description">
+        <div className="Law-SubTitle LawFour-SubTitle-MarginLeft">
           <FormattedMessage 
             id="fourlaws.law4.greet.one.title"
             defaultMessage="SELF-DIRECTED LIFE"
           />
         </div>
-        <div className="LawFour-Greet-flex">
+        <div className="LawFour-Greet-Description-flex">
           <Law4DiagramLeft />
           <div className="LawFour-Greet-Content">
             <div className="LawFour-Greet-Row">
@@ -64,38 +64,6 @@ const LawFourGreet1: React.FC = () => {
               </div>
             </div>
           </div>
-
-
-
-
-
-
-          {/* <div className="LawFour-Greet-Content">
-            <div className="LawFour-Greet-Column">
-              <div className="LawFour-Greet-Prefix-Row">
-                
-              </div>
-              <div className="LawFour-Greet-Prefix-Row">
-                
-              </div>
-              <div className="LawFour-Greet-Prefix-Row">
-                <CircleIcon className="LawFour-Icon-Inline" />
-                {'-'}
-              </div>
-            </div>
-            <div className="LawFour-Greet-Column LawFour-Greet-Sentence">
-              <div>
-                
-              </div>
-              <div>
-                
-              </div>
-              <div>
-                
-              </div>
-            </div>
-          </div> */}
-          
         </div>
       </PageText>
       <BottomNavigation 

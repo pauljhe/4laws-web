@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.LawFour-Greet-Description {
+    text-align: center;
+}
+
 .LawFour-Greet-flex {
     display: flex;
     align-items: center;
@@ -13,10 +17,15 @@
     margin: 0px -13px;
 }
 
+.LawFour-Greet-Description-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .LawFour-Greet-Content {
     display: flex;
     margin-left: 30px;
-
     flex-direction: column;
 }
 
@@ -26,20 +35,12 @@
 
 .LawFour-Greet-Sentence {
     margin-left: 8px;
-}
-
-.LawFour-Greet-Column {
-    display: flex;
-    flex-direction: column;
-}
-
-.LawFour-Greet-Column.LawFour-Greet-Sentence {
-    margin-left: 8px;
+    text-align: left;
 }
 
 .LawFour-Greet-Row > .Prefix-Span {
     margin-left: 6px;
-    margin-right: 16px;
+    margin-right: 18.5px;
 }
 
 .LawFour-Greet-Row > .Prefix-Span-Korean {
@@ -48,30 +49,78 @@
 }
 
 .LawFour-Greet-flex .DiagramLink {
-    padding: 25px;
-    margin: 30px;
+    padding: 13px;
+    margin: 0 20px;
 }
 
-.LawFour-Greet-flex svg {
-    font-size: 250px;
-    width: 250px;
-    height: 250px;
+.LawFour-Greet-flex svg:not(.LawFour-Icon-Inline), .LawFour-Greet-Description-flex svg:not(.LawFour-Icon-Inline) {
+    font-size: 200px;
+    width: 200px;
+    height: 200px;
 }
 
 svg.LawFour-Icon-Inline {
     font-size: 30px;
     width: 30px;
-    height: 54px;
+    height: 55px;
     margin-right: 7px;
 }
 
-.LawFour-MarginLeft-272 {
-    margin-left: 272px;
+.LawFour-SubTitle-MarginLeft {
+    margin-left: unset;
 }
 
 @media only screen and (min-width: 600px) {
     .PageTitle.LawFour-PageTitle .PageTitle-Wrapper {
-        max-width: 504px;
+        max-width: 514px;
+    }
+
+    .LawFour-Greet-flex {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .LawFour-Greet-Content {
+        max-width: 459px;
+        margin-top: 30px;
+    }
+
+    svg.LawFour-Icon-Inline {
+        height: 42px;
+    }
+
+    .LawFour-Greet-Row > .Prefix-Span-Korean {
+        margin-right: 13px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .PageTitle.LawFour-PageTitle .PageTitle-Wrapper {
+        max-width: 676px;
+    }
+
+    .LawFour-Greet-Description-flex {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .LawFour-Greet-Description {
+        text-align: unset;
+        max-width: 702px;
+    }
+
+    .LawFour-Greet-Content {
+        max-width: unset;
+        margin-top: 0;
+        margin-left: 30px;
+    }
+    
+    .LawFour-SubTitle-MarginLeft {
+        margin-left: 234px;
+    }
+
+    .LawFour-Greet-flex .DiagramLink {
+        margin: 0 30px;
     }
 }
 
@@ -80,8 +129,35 @@ svg.LawFour-Icon-Inline {
         max-width: 870px;
     }
 
-    .LawFour-Greet-flex {
-        flex-direction: row;
-        justify-content: center;
+    .LawFour-Greet-Description {
+        max-width: unset;
+    }
+
+    .LawFour-Greet-flex svg:not(.LawFour-Icon-Inline), .LawFour-Greet-Description-flex svg:not(.LawFour-Icon-Inline) {
+        font-size: 250px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .LawFour-SubTitle-MarginLeft {
+        margin-left: 283px;
+    }
+
+    .LawFour-Greet-flex .DiagramLink {
+        padding: 25px;
+        margin: 0 30px;
+    }
+
+    svg.LawFour-Icon-Inline {
+        height: 55px;
+    }
+
+    .LawFour-Greet-Row > .Prefix-Span {
+        margin-left: 6px;
+        margin-right: 16px;
+    }
+
+    .LawFour-Greet-Row > .Prefix-Span-Korean {
+        margin-right: 8px;
     }
 }

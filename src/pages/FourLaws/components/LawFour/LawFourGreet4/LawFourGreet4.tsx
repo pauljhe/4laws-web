@@ -23,7 +23,7 @@ const LawFourGreet4: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="LawFour-Content">
-        <div className="LawFour-Greet-Title Law-Sentence-Bold">
+        <div className="LawFour-Greet-Title Law-Sentence-Bold Law-Sentence-Margin">
           <FormattedMessage 
             id="fourlaws.law4.greet.four"
             defaultMessage="Which circle would you like to have represent your life?"

@@ -6,6 +6,7 @@ import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import actionCreators from '../../../../../state/actionCreators';
 import { FourLawsPaths } from '../../../../paths';
+import './LawFourWrapupPrep.css';
 
 const LawFourWrapupPrep: React.FC = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const LawFourWrapupPrep: React.FC = () => {
 
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawFour-Wrapup Law-PageContent">
+      <PageText type={PageTextType.CONTENT} className="LawFour-Wrapup-Prep Law-PageContent Law-Sentence-Bold">
         <div className="Law-Sentence-Center">
           <FormattedMessage 
             id="fourlaws.law4.wrapup.prep"
