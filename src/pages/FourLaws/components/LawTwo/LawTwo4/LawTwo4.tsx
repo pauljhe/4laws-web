@@ -10,10 +10,10 @@ import Law2Diagram from '../../../../../icons/Law2Diagram';
 const LawTwo4: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawTwo-Content">
+      <PageText type={PageTextType.CONTENT} className="LawTwo-Content Law-LongSentence">
         <div className="LawTwo-Four-flex">
           <Law2Diagram className="LawTwo-Four-Diagram" />
-          <span>
+          <span className="LawTwo-Four-Text">
             <FormattedMessage 
               id="fourlaws.law2.four"
               defaultMessage={"This diagram illustrates that God is holy and man is sinful. " + 

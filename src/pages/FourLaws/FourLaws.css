@@ -142,7 +142,6 @@
 
 @media only screen and (min-width: 600px) {
     .PageText-Content.Law-LongSentence {
-        width: calc(100vw - 96px - 44px);
         max-width: 703px;
     }
 
@@ -162,6 +161,4 @@
         width: unset;
         max-width: 751px;
     }
-
-    
 }

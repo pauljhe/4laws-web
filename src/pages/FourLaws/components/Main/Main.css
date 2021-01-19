@@ -24,20 +24,20 @@
         height: 300px;
         left: 0;
         top: -12px;
-        /* 48px: PageContainer Padding, 165px: half of MainTitle MaxWidth, 50px: px shift */
-        transform: translate(calc(50vw - 50% - 48px - 165px + 50px), calc(50vh - 50%));
+        /* 45px: PageContainer Padding, 165px: half of MainTitle MaxWidth, 50px: px shift */
+        transform: translate(calc(50vw - 50% - 45px - 165px + 50px), calc(50vh - 50%));
     }
 
     .MuiSvgIcon-root.Main-WaterColorIcon.Main-WaterColorIcon-Top {
         /** X-axis Calculation
-         * 50vw - 50% - 48px => center calculation (48px: PageContainer Padding)
+         * 50vw - 50% - 45px => center calculation (45px: PageContainer Padding)
          * 223px: half of MainWrapup MaxWidth
          * 90px: left shift
          * 
          * Y-axis Calculation
          * Center and additional bottom-shift (24px)
          **/
-         transform: translate(calc(50vw - 50% - 48px + 223px - 90px), calc(50vh - 50% + 24px));
+         transform: translate(calc(50vw - 50% - 45px + 223px - 90px), calc(50vh - 50% + 24px));
     }
 }
 

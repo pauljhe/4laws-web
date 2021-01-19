@@ -13,7 +13,7 @@ const LawThree4: React.FC = () => {
       <PageText type={PageTextType.CONTENT} className="LawThree-Content">
         <div className="LawThree-Four-flex">
           <Law3Diagram className="LawThree-Four-Diagram" />
-          <span>
+          <span className="LawThree-Four-Text">
             <FormattedMessage 
               id="fourlaws.law3.four"
               defaultMessage={"This diagram illustrates that God has bridged the gulf which separates us from God by sending His Son, " + 
