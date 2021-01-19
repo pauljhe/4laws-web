@@ -11,7 +11,7 @@ const GracePrepWrapup2: React.FC = () => {
       <PageText type={PageTextType.CONTENT} className="Law-Sentence-Center Law-Sentence-Bold">
         <FormattedMessage 
           id="fourlaws.grace.prep.wrapup.two"
-          defaultMessage={'Thank you for your time'}
+          defaultMessage={'Thank you for your time.'}
         />
       </PageText>
       <BottomNavigation 
