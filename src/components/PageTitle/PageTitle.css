@@ -27,7 +27,6 @@
 
 .PageTitle.PageTitle-Minimized .PageTitle-PageText {
     opacity: 0;
-    height: 0;
 }
 
 @media only screen and (min-width: 600px) {
@@ -69,6 +68,10 @@
         position: unset;
         top: unset;
         transform: none;
+    }
+
+    .PageTitle.PageTitle-Minimized .PageTitle-PageText {
+        height: 0;
     }
 }
 
