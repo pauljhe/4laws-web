@@ -8,7 +8,7 @@ import { FourLawsPaths } from '../../../../paths';
 const GraceWrapup3: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="Law-Sentence-Center">
+      <PageText type={PageTextType.CONTENT} className="Law-Sentence-Center Law-Sentence-Bold">
         <div>
           <FormattedMessage 
             id="fourlaws.grace.wrapup.three"

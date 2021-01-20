@@ -4,7 +4,7 @@ import './Feelings.css';
 
 const Feelings: React.FC = () => {
   return (
-    <div className="Law-PageContent">
+    <div className="Law-PageContent Law-Feelings">
       <FeelingsRoutes />
     </div>
   );

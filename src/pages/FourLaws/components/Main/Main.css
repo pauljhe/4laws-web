@@ -10,7 +10,7 @@
     position: absolute;
     left: -50px;
     top: 0;
-    transform: translate(0, calc(50vh - 50%));
+    transform: translate(0, calc(50vh - 50% - 101px));
 }
 
 .MuiSvgIcon-root.Main-WaterColorIcon.Main-WaterColorIcon-Top {
@@ -25,7 +25,7 @@
         left: 0;
         top: -12px;
         /* 45px: PageContainer Padding, 165px: half of MainTitle MaxWidth, 50px: px shift */
-        transform: translate(calc(50vw - 50% - 45px - 165px + 50px), calc(50vh - 50%));
+        transform: translate(calc(50vw - 50% - 45px - 165px + 50px), calc(50vh - 50% - 101px));
     }
 
     .MuiSvgIcon-root.Main-WaterColorIcon.Main-WaterColorIcon-Top {
@@ -37,7 +37,7 @@
          * Y-axis Calculation
          * Center and additional bottom-shift (24px)
          **/
-         transform: translate(calc(50vw - 50% - 45px + 223px - 90px), calc(50vh - 50% + 24px));
+         transform: translate(calc(50vw - 50% - 45px + 223px - 90px), calc(50vh - 50% - 101px + 24px));
     }
 }
 
@@ -45,7 +45,7 @@
     .MuiSvgIcon-root.Main-WaterColorIcon {
         left: 50px;
         top: 0;
-        transform: translate(0, calc(50vh - 50%));
+        transform: translate(0, calc(50vh - 50% - 101px));
     }
 
     .MuiSvgIcon-root.Main-WaterColorIcon.Main-WaterColorIcon-Top {
@@ -59,7 +59,7 @@
          * Y-axis Calculation
          * Center and additional bottom-shift (12px)
          **/
-        transform: translate(352px, calc(50vh - 50% + 12px));
+        transform: translate(352px, calc(50vh - 50% - 101px + 12px));
     }
 }
 
@@ -70,7 +70,6 @@
         height: 375px;
         left: -50px;
         top: 0;
-        /* transform: translate(0, calc(50vh - 50%)); */
     }
 
     .MuiSvgIcon-root.Main-WaterColorIcon.Main-WaterColorIcon-Top {
@@ -83,7 +82,7 @@
          * Y-axis Calculation
          * Center and additional bottom-shift (12px)
          **/
-        transform: translate(527px, calc(50vh - 50% + 12px));
+        transform: translate(527px, calc(50vh - 50% - 101px + 12px));
     }
 }
 

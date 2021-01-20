@@ -76,6 +76,7 @@
     border: none;
     background: none;
     font: inherit;
+    cursor: pointer;
 }
 
 .Law-Question-Answer .PageText, .Law-Question-Answer-Single .PageText, .Law-Button .PageText {
@@ -100,7 +101,7 @@
 .Law-Title-Animated.PageText {
     position: absolute;
     left: 0;
-    top: 101px;
+    top: 0;
     transform: translateY(calc(50vh - 50% - 101px));
     width: 100%;
     z-index: -1;
