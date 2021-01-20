@@ -1,0 +1,11 @@
+@media only screen and (min-width: 600px) {
+    .Law-Prayer-Review1-Korean {
+        max-width: 380px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-Prayer-Review1-Korean {
+        max-width: unset;
+    }
+}

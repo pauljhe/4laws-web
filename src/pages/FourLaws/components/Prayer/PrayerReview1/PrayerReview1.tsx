@@ -6,6 +6,7 @@ import PageText from '../../../../../components/PageText';
 import { PageTextType, PageType } from '../../../../../interfaces/page.interfaces';
 import actionCreators from '../../../../../state/actionCreators';
 import { FourLawsPaths } from '../../../../paths';
+import './PrayerReview1.css';
 
 const PrayerReview1: React.FC = () => {
   const intl = useIntl();
@@ -22,9 +23,12 @@ const PrayerReview1: React.FC = () => {
     id: "fourlaws.prayer.review.one.no",
     defaultMessage: "No"
   });
+
+  const isKorean: boolean = intl.locale === 'ko';
+
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT}>
+      <PageText type={PageTextType.CONTENT} className={(isKorean) ? "Law-Prayer-Review1-Korean" : "Law-Prayer-Review1"}>
         <div className="Law-Sentence-Center Law-Sentence-Margin Law-Sentence-Bold">
           <FormattedMessage 
             id="fourlaws.prayer.review.one"

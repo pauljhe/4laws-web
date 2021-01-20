@@ -13,7 +13,8 @@ type Actions =
     & ReturnType<typeof actionCreators.setGreetFirstAnswer>
     & ReturnType<typeof actionCreators.setGreetSecondAnswer>
     & ReturnType<typeof actionCreators.setPrayerAnswer>
-    & ReturnType<typeof actionCreators.setConfirmFirstResponseType>;
+    & ReturnType<typeof actionCreators.setConfirmFirstResponseType>
+    & ReturnType<typeof actionCreators.initializeStates>;
 
 const initialState: AppState = {
     greetFirstAnswer: undefined,
@@ -28,6 +29,10 @@ export function appReducer(
 ) {
     console.log(action);
     switch(action.type) {
+        case actionTypes.INITIALIZE_STATE:
+            return {
+                ...initialState
+            };
         case actionTypes.SET_GREET_FIRST_ANSWER:
             return {
                 ...state,

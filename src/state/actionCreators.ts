@@ -1,6 +1,12 @@
 import actionTypes from './actionTypes';
 import { ConfirmFirstResponseType, PageType } from "../interfaces/page.interfaces";
 
+function initializeStates() {
+    return {
+        type: actionTypes.INITIALIZE_STATE
+    } as const;
+}
+
 function setGreetFirstAnswer(pageType: PageType | undefined) {
     return {
         type: actionTypes.SET_GREET_FIRST_ANSWER,
@@ -30,6 +36,7 @@ function setConfirmFirstResponseType(confirmFirstResponseType: ConfirmFirstRespo
 }
 
 const actionCreators = {
+    initializeStates,
     setGreetFirstAnswer,
     setGreetSecondAnswer,
     setPrayerAnswer,
