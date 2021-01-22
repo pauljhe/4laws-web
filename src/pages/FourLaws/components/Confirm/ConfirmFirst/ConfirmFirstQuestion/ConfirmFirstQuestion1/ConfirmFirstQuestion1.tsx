@@ -7,6 +7,7 @@ import { ConfirmFirstResponseType, PageTextType } from '../../../../../../../int
 import { FourLawsPaths } from '../../../../../../paths';
 import { useDispatch } from 'react-redux';
 import actionCreators from '../../../../../../../state/actionCreators';
+import './ConfirmFirstQuestion1.css';
 
 const ConfirmFirstQuestion1: React.FC = () => {
   const dispatch = useDispatch();
@@ -28,7 +29,7 @@ const ConfirmFirstQuestion1: React.FC = () => {
                             'if anyone hears My voice and opens the door, I will come in to him" (Revelation 3:20).'}
           />
         </div>
-        <div className="Law-Sentence-Center Law-Question-Below-words">
+        <div className="Law-Sentence-Center Law-Question-Below-words Law-Confirm1-Question1">
           <FormattedMessage 
             id="fourlaws.confirm.first.question.one"
             defaultMessage="According to His promise in Revelation 3:20, where is Christ right now in relation to you?"

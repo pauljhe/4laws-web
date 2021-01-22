@@ -25,7 +25,7 @@ const ConfirmFirstQuestion6: React.FC = () => {
   return (
     <div className="Law-Question">
       <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-        <div className="Law-Sentence-Center Law-Sentence-Bold">
+        <div className={`Law-Sentence-Center Law-Sentence-Bold Law-Confirm1-Question6-${language}`}>
           <FormattedMessage 
             id="fourlaws.confirm.first.question.six"
             defaultMessage="According to His promise in Revelation 3:20, where is Christ right now in relation to you?"

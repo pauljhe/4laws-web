@@ -11,12 +11,6 @@
     margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 600px) {
-    .LawThree-Four-Text {
-        max-width: 465px;
-    }
-}
-
 @media only screen and (min-width: 960px) {
     .LawThree-Four-flex {
         flex-direction: row;
@@ -26,10 +20,6 @@
         margin-bottom: 0;
         margin-right: 30px;
     }
-
-    .LawThree-Four-Text {
-        max-width: none;
-    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -37,5 +27,9 @@
         font-size: 334px;
         width: 334px;
         height: 334px;
+    }
+
+    .LawThree-Four.Law-LongSentence {
+        max-width: unset;
     }
 }

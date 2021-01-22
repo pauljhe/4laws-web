@@ -26,7 +26,7 @@
 }
 
 .PageText-Content.Law-LongSentence {
-    max-width: 751px;
+    max-width: 752px;
 }
 
 .Law-Question {
@@ -160,6 +160,6 @@
 @media only screen and (min-width: 1280px) {
     .PageText-Content.Law-LongSentence {
         width: unset;
-        max-width: 751px;
+        max-width: 752px;
     }
 }

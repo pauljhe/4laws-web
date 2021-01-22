@@ -20,7 +20,7 @@ const ConfirmFirst2: React.FC = () => {
   
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT}>
+      <PageText type={PageTextType.CONTENT} className="Law-LongSentence">
         <FormattedMessage 
           id="fourlaws.confirm.first.two"
           defaultMessage={'Christ said that He would come into your life. Would He mislead you? ' + 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import { useDispatch } from 'react-redux';
 import BottomNavigation from '../../../../../../components/BottomNavigation';
 import Link from '../../../../../../components/Link';
@@ -10,6 +10,7 @@ import { FourLawsPaths } from '../../../../../paths';
 import './ConfirmFirst1.css';
 
 const ConfirmFirst1: React.FC = () => {
+  const intl = useIntl();
   const dispatch = useDispatch();
   const onDontknowClick = () => {
     dispatch(actionCreators.setConfirmFirstResponseType(ConfirmFirstResponseType.DONT_KNOW));
@@ -19,10 +20,12 @@ const ConfirmFirst1: React.FC = () => {
     dispatch(actionCreators.setConfirmFirstResponseType(undefined));
   };
 
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
+
   return (
     <div className="Law-Question">
       <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-        <div className="Law-Sentence-Center Law-Sentence-Bold">
+        <div className={`Law-Sentence-Center Law-Sentence-Bold Law-ConfirmFirst1-Question-${language}`}>
           <FormattedMessage 
             id="fourlaws.confirm.first.one"
             defaultMessage="As you prayed, did you receive Christ into your life? According to His promise in Revelation 3:20, where is Christ right now in relation to you?"

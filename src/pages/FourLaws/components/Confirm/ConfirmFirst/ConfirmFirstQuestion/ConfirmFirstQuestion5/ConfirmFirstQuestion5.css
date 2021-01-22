@@ -1,3 +1,11 @@
-.Law-Sentence-Confirm-first-question5 {
-    max-width: 701px;
+@media only screen and (min-width: 600px) {
+    .Law-Sentence-Confirm-first-question5 {
+        max-width: 419px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Sentence-Confirm-first-question5 {
+        max-width: 524px;
+    }
 }

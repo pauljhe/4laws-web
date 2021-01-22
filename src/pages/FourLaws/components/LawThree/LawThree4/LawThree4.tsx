@@ -10,7 +10,7 @@ import Law3Diagram from '../../../../../icons/Law3Diagram';
 const LawThree4: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawThree-Content">
+      <PageText type={PageTextType.CONTENT} className="LawThree-Content LawThree-Four Law-LongSentence">
         <div className="LawThree-Four-flex">
           <Law3Diagram className="LawThree-Four-Diagram" />
           <span className="LawThree-Four-Text">

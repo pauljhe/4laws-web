@@ -1,11 +1,21 @@
-.Answer.Answer-Confirm-first1-English, .Answer.Answer-Confirm-first1-Korean {
-    margin-top: 100px;
+@media only screen and (min-width: 600px) {
+    .Law-ConfirmFirst1-Question-English, .Law-ConfirmFirst1-Question-Korean {
+        max-width: 507px;
+    }
 }
 
-.Answer.Answer-Confirm-first1-English {
-    max-width: 255px;
+@media only screen and (min-width: 960px) {
+    .Law-ConfirmFirst1-Question-English {
+        max-width: 730px;
+    }
+
+    .Law-ConfirmFirst1-Question-Korean {
+        max-width: 703px;
+    }
 }
 
-.Answer.Answer-Confirm-first1-Korean {
-    max-width: 100px;
+@media only screen and (min-width: 1280px) {
+    .Law-ConfirmFirst1-Question-English, .Law-ConfirmFirst1-Question-Korean {
+        max-width: unset;
+    }
 }

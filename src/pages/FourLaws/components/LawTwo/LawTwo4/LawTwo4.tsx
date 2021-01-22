@@ -10,7 +10,7 @@ import Law2Diagram from '../../../../../icons/Law2Diagram';
 const LawTwo4: React.FC = () => {
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="LawTwo-Content Law-LongSentence">
+      <PageText type={PageTextType.CONTENT} className="LawTwo-Content LawTwo-Four Law-LongSentence">
         <div className="LawTwo-Four-flex">
           <Law2Diagram className="LawTwo-Four-Diagram" />
           <span className="LawTwo-Four-Text">

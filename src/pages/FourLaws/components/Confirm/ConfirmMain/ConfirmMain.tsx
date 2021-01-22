@@ -6,6 +6,7 @@ import PageText from '../../../../../components/PageText';
 import { PageTextType, PageType } from '../../../../../interfaces/page.interfaces';
 import { AppState } from '../../../../../state/reducer';
 import { FourLawsPaths } from '../../../../paths';
+import './ConfirmMain.css';
 
 const ConfirmMain: React.FC = () => {
   const greetFirstAnswer: PageType | undefined = useSelector((state: AppState) => state.greetFirstAnswer);
@@ -13,7 +14,7 @@ const ConfirmMain: React.FC = () => {
   
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="Law-PageContent">
+      <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-Sentence-Center Law-ConfirmMain">
         <div className="Law-Sentence-Bold">
           <FormattedMessage 
             id="fourlaws.confirm.main"

@@ -38,4 +38,8 @@
         width: 334px;
         height: 334px;
     }
+
+    .LawTwo-Four.Law-LongSentence {
+        max-width: unset;
+    }
 }
