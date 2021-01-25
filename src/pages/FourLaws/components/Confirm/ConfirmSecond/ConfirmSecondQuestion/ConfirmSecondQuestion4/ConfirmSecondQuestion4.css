@@ -5,3 +5,17 @@
 .Answer.Answer-Confirm-second-question4-Korean {
     max-width: 100px;
 }
+
+
+
+@media only screen and (min-width: 600px) {
+    .Law-ConfirmSecond-Q4-Title {
+        max-width: 475px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-ConfirmSecond-Q4-Title {
+        max-width: 564px;
+    }
+}

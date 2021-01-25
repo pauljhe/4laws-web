@@ -1,0 +1,12 @@
+@media only screen and (min-width: 600px) {
+    .Law-ConfirmSecond-Q3-Title {
+        text-align: center;
+        max-width: 409px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-ConfirmSecond-Q3-Title {
+        max-width: unset;
+    }
+}

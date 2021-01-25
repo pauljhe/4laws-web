@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@material-ui/core';
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import Answer from '../../../../../../../components/Answer';
@@ -13,8 +14,13 @@ const ConfirmSecondQuestion1: React.FC = () => {
     id: "fourlaws.confirm.second.question.one.answer",
     defaultMessage: "Eternal life"
   });
+  const isDesktopView = useMediaQuery('(min-width:1280px)');
   const isKorean = intl.locale === 'ko';
   const language = (isKorean) ? 'Korean': 'English';
+  const address = intl.formatMessage({
+    id: "fourlaws.confirm.second.words.address",
+    defaultMessage: ""
+  });
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
@@ -30,14 +36,14 @@ const ConfirmSecondQuestion1: React.FC = () => {
               span: (chunks: any) => <span className="Law-Text-Highlight">{chunks}</span>
             }}
           />
+          {
+            (!isKorean || isDesktopView) ? null: (" " + address)
+          }
         </div>
         {
-          (!isKorean) ? null:
+          (!isKorean || !isDesktopView) ? null:
           <div>
-            <FormattedMessage 
-              id="fourlaws.confirm.second.words.address"
-              defaultMessage=""
-            />
+            { address }
           </div>
         }
         <div className="Law-Sentence-Center Law-Question-Below-words">

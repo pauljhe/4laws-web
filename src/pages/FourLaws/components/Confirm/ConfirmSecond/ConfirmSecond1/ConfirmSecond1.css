@@ -1,0 +1,26 @@
+.Law-ConfirmSecond-1-Title-Korean, .Law-ConfirmSecond-1-Title-English {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .Law-ConfirmSecond-1-Title-Korean {
+        max-width: 466px;
+    }
+
+    .Law-ConfirmSecond-1-Title-English {
+        max-width: 380px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-ConfirmSecond-1-Title-English {
+        max-width: unset;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-ConfirmSecond-1-Title-Korean {
+        max-width: 617px;
+    }
+}

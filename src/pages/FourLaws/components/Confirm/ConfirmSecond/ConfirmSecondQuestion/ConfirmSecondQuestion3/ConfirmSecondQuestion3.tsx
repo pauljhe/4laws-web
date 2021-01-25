@@ -5,12 +5,13 @@ import Link from '../../../../../../../components/Link';
 import PageText from '../../../../../../../components/PageText';
 import { PageTextType } from '../../../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../../../paths';
+import './ConfirmSecondQuestion3.css';
 
 const ConfirmSecondQuestion3: React.FC = () => {
   return (
     <div className="Law-Question">
       <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-        <div className="Law-Sentence-Bold">
+        <div className="Law-Sentence-Bold Law-ConfirmSecond-Q3-Title">
           <FormattedMessage 
             id="fourlaws.confirm.second.question.three"
             defaultMessage="Do you have the Son?"
