@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@material-ui/core';
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import Answer from '../../../../../../../components/Answer';
@@ -15,6 +16,11 @@ const ConfirmThirdQuestion2: React.FC = () => {
   });
   const isKorean = intl.locale === 'ko';
   const language = (isKorean) ? 'Korean': 'English';
+  const isDesktopView = useMediaQuery('(min-width:1280px)');
+  const address = intl.formatMessage({
+    id: "fourlaws.confirm.third.words.address",
+    defaultMessage: ""
+  });
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
@@ -23,17 +29,17 @@ const ConfirmThirdQuestion2: React.FC = () => {
             id="fourlaws.confirm.third.words"
             defaultMessage={'"...for He Himself has said I will never leave you, nor will I ever forsake you" (Hebrews 13:5)'}
           />
+          {
+            (!isKorean || isDesktopView) ? null: (" " + address)
+          }
         </div>
         {
-          (!isKorean) ? null :
+          (!isKorean || !isDesktopView) ? null :
           <div>
-            <FormattedMessage 
-              id="fourlaws.confirm.third.words.address"
-              defaultMessage=""
-            />
+            { address }
           </div>
         }
-        <div className="Law-Sentence-Center Law-Question-Below-words No-maxwidth">
+        <div className="Law-Sentence-Center Law-Question-Below-words Law-ConfirmThird-Q2-Title">
           <FormattedMessage 
             id="fourlaws.confirm.third.question.two"
             defaultMessage="Because Christ will never leave you, how many times do you need to invite Him to come into your life?"

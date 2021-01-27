@@ -1,3 +1,15 @@
 .Answer.Answer-Confirm-third-question2-English, .Answer.Answer-Confirm-third-question2-Korean {
     max-width: 85px;
 }
+
+@media only screen and (min-width: 600px) {
+    .Law-ConfirmThird-Q2-Title {
+        max-width: 535px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-ConfirmThird-Q2-Title {
+        max-width: 668px;
+    }
+}

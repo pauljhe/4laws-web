@@ -1,0 +1,13 @@
+@media only screen and (min-width: 600px) {
+    .Law-ConfirmThird-1-Title {
+        max-width: 464px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-ConfirmThird-1-Title {
+        max-width: 580px;
+    }
+}

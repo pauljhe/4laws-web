@@ -1,15 +1,18 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import BottomNavigation from '../../../../../../components/BottomNavigation';
 import PageText from '../../../../../../components/PageText';
 import { PageTextType } from '../../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../../paths';
+import './ConfirmThird2.css';
 
 const ConfirmThird2: React.FC = () => {
+  const intl = useIntl();
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
-        <div className="Law-Sentence-Margin Law-Sentence-Center">
+        <div className={`Law-Sentence-Margin Law-Sentence-Center Law-ConfirmThird-2-Title-${language}`}>
           <FormattedMessage 
             id="fourlaws.confirm.third.two.line1"
             defaultMessage="You can know on the basis of His promise that Christ lives in you and that you have eternal life, from the very moment you invite Him in. He will not deceive you."
