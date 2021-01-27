@@ -35,7 +35,7 @@ const ConfirmFirst1: React.FC = () => {
           <Link to={FourLawsPaths.CONFIRM_FIRST_Q} onClick={onDontknowClick}>
             <FormattedMessage 
               id="fourlaws.confirm.first.one.dontknow"
-              defaultMessage="I don't know"
+              defaultMessage="Review Revelation 3:20"
             />
           </Link>
         </div>
