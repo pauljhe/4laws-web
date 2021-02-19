@@ -12,7 +12,7 @@ const Colossians114: React.FC<IVerseProps> = (props) => {
   const className = `Law-PageContent Law-Dialog-Title${(props.minimized) ? ' Law-Dialog-Title-Minimized' : ''}`
   return (
     <PageText type={PageTextType.CONTENT} className={className}>
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className="Law-Sentence-Center Law-Sentence-Bold Law-Grace2-Colossians114">
         <FormattedMessage 
           id="fourlaws.grace.two.words1"
           defaultMessage={"\"in whom we have redemption, the forgiveness of sins.\""}
@@ -29,10 +29,11 @@ const Colossians114: React.FC<IVerseProps> = (props) => {
 };
 
 const Colossians213: React.FC<IVerseProps> = (props) => {
-  const className = `Law-PageContent Law-Dialog-Title${(props.minimized) ? ' Law-Dialog-Title-Minimized' : ''}`
+  const className = `Law-PageContent Law-Dialog-Title${(props.minimized) ? ' Law-Dialog-Title-Minimized' : ''}`;
+  
   return (
     <PageText type={PageTextType.CONTENT} className={className}>
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className="Law-Sentence-Center Law-Sentence-Bold Law-Grace2-Colossians213">
         <FormattedMessage 
           id="fourlaws.grace.two.words2"
           defaultMessage={"\"When you were dead in your transgressions and the uncircumcision of your flesh, He made you alive together with Him, having forgiven us all our transgressions\""}
@@ -58,7 +59,7 @@ const Question1: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-        <div className="Law-Sentence-Center Law-Sentence-Margin Law-Sentence-Bold">
+        <div className={`Law-Sentence-Center Law-Sentence-Margin Law-Sentence-Bold Law-Grace2-Q1-${language}`}>
           <FormattedMessage 
             id="fourlaws.grace.two.question1"
             defaultMessage="What did God do with your sins?"

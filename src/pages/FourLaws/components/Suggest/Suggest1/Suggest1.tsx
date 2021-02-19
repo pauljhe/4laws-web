@@ -1,15 +1,18 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import BottomNavigation from '../../../../../components/BottomNavigation';
 import Dialog from '../../../../../components/Dialog';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
+import './Suggest1.css';
 
 const John157: React.FC = () => {
+  const intl = useIntl();
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className={`Law-Sentence-Center Law-Sentence-Bold Law-Suggest1-John157-${language}`}>
         <FormattedMessage 
           id="fourlaws.suggest.one.words"
           defaultMessage={"\"If you abide in Me, and My words abide in you, ask whatever you wish, and it will be done for you.\""}

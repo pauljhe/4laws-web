@@ -13,3 +13,37 @@
 .Answer-Grace-three-question2-English {
     max-width: 261px;
 }
+
+@media only screen and (min-width: 600px) {
+    .Law-Grace3-John112-Korean, .Law-Grace3-John112-English {
+        max-width: 445px;
+    }
+
+    .Law-Grace3-Q2-Korean {
+        max-width: 386px;
+    }
+
+    .Law-Grace3-Q2-English {
+        max-width: 392px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-Grace3-Q2-Korean, .Law-Grace3-Q2-English {
+        max-width: 512px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Grace3-John112-Korean {
+        max-width: 521px;
+    }
+
+    .Law-Grace3-John112-English {
+        max-width: 529px;
+    }
+
+    .Law-Grace3-Q2-Korean, .Law-Grace3-Q2-English {
+        max-width: 640px;
+    }
+}

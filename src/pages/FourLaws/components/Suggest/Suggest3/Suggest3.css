@@ -1,0 +1,19 @@
+@media only screen and (min-width: 600px) {
+    .Law-Suggest3-John1421-Korean {
+        max-width: 503px;
+    }
+    
+    .Law-Suggest3-John1421-English {
+        max-width: 488px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Suggest3-John1421-Korean {
+        max-width: 629px;
+    }
+    
+    .Law-Suggest3-John1421-English {
+        max-width: 604px;
+    }
+}

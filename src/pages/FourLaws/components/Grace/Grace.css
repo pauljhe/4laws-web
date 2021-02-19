@@ -1,0 +1,19 @@
+@media only screen and (min-width: 600px) {
+    .Law-Grace-Title-line-two {
+        max-width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-Grace-Title-line-two {
+        max-width: 535px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Grace-Title-line-two {
+        max-width: 678px;
+    }
+}

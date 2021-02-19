@@ -1,8 +1,18 @@
+.BottomNavigation-Background {
+    position: fixed;
+    height: 91px;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
 .BottomNavigation-Previous, .BottomNavigation-Next {
     position: fixed;
     bottom: 30px;
     text-decoration: none;
     color: black;
+    z-index: 1100;
 }
 
 .BottomNavigation-Previous {

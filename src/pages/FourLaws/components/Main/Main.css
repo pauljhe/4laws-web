@@ -1,12 +1,12 @@
 .FourLawsMain-PageText {
-    z-index: 1151;
+    z-index: 1051;
 }
 
 .MuiSvgIcon-root.Main-WaterColorIcon {
     font-size: 375px;
     width: 375px;
     height: 375px;
-    z-index: 1150;
+    z-index: 1050;
     position: absolute;
     left: -50px;
     top: 0;

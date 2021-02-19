@@ -19,7 +19,7 @@ const LawTwo4: React.FC = () => {
               defaultMessage={"This diagram illustrates that God is holy and man is sinful. " + 
                               "A great gulf separates the two. The arrows illustrate that man is " + 
                               "continually trying to reach God and the abundant life through " + 
-                              "his own efforts, such as a good life, philosophy, or religion."}
+                              "his own efforts, such as a good life, philosophy or religion."}
             />
           </span>
         </div>

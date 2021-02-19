@@ -11,17 +11,17 @@ const ConfirmThird2: React.FC = () => {
   const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className="Law-PageContent Law-LongSentence">
+      <PageText type={PageTextType.CONTENT} className="Law-PageContent">
         <div className={`Law-Sentence-Margin Law-Sentence-Center Law-ConfirmThird-2-Title-${language}`}>
           <FormattedMessage 
             id="fourlaws.confirm.third.two.line1"
-            defaultMessage="You can know on the basis of His promise that Christ lives in you and that you have eternal life, from the very moment you invite Him in. He will not deceive you."
+            defaultMessage="You can know that the living Christ indwells you, and that you have eternal life, from the very moment you invite Him in on the basis of His promise. He will not deceive you."
           />
         </div>
         <div className="Law-Sentence-Center">
           <FormattedMessage 
             id="fourlaws.confirm.third.two.line2"
-            defaultMessage={'An important reminder...'}
+            defaultMessage={'What about feelings?'}
           />
         </div>
       </PageText>

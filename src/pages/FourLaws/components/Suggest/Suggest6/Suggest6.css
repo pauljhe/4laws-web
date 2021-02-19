@@ -1,0 +1,39 @@
+@media only screen and (min-width: 600px) {
+    .Law-Suggest6-Title-Korean, .Law-Suggest6-Title-English {
+        max-width: 495px;
+    }
+
+    .Law-Suggest6-Galatians51617-Korean, .Law-Suggest6-Galatians51617-English {
+        max-width: 572px;
+    }
+
+    .Law-Suggest6-Acts18-Korean {
+        max-width: 475px;
+    }
+
+    .Law-Suggest6-Acts18-English {
+        max-width: 513px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Suggest6-Title-Korean {
+        max-width: 584px;
+    }
+
+    .Law-Suggest6-Title-English {
+        max-width: 514px;
+    }
+
+    .Law-Suggest6-Galatians51617-Korean, .Law-Suggest6-Galatians51617-English {
+        max-width: 715px;
+    }
+
+    .Law-Suggest6-Acts18-Korean {
+        max-width: 593px;
+    }
+
+    .Law-Suggest6-Acts18-English {
+        max-width: 641px;
+    }
+}

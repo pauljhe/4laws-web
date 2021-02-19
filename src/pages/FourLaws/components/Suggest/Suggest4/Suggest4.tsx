@@ -1,15 +1,18 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import BottomNavigation from '../../../../../components/BottomNavigation';
 import Dialog from '../../../../../components/Dialog';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
+import './Suggest4.css';
 
 const Matthew419: React.FC = () => {
+  const intl = useIntl();
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className={`Law-Sentence-Center Law-Sentence-Bold Law-Suggest4-Matthew419-${language}`}>
         <FormattedMessage 
           id="fourlaws.suggest.four.words1"
           defaultMessage={"And He said to them, \"Follow Me, and I will make you fishers of men.\""}
@@ -26,9 +29,11 @@ const Matthew419: React.FC = () => {
 };
 
 const John158: React.FC = () => {
+  const intl = useIntl();
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className={`Law-Sentence-Center Law-Sentence-Bold Law-Suggest4-John158-${language}`}>
         <FormattedMessage 
           id="fourlaws.suggest.four.words2"
           defaultMessage={"\"My Father is glorified by this, that you bear much fruit, and so prove to be My disciples.\""}

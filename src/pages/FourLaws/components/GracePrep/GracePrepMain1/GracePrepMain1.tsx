@@ -8,10 +8,10 @@ import './GracePrepMain1.css';
 
 const GracePrepMain1: React.FC = () => {
   const intl = useIntl();
-  const isKorean = intl.locale === 'ko';
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className={`Law-Sentence-Center Law-Sentence-Bold${(isKorean) ? ' Grace-Prep-Main-One' : ''}`}>
+      <PageText type={PageTextType.CONTENT} className={`Law-Sentence-Center Law-Sentence-Bold Law-GracePrepMain1-${language}`}>
         <FormattedMessage 
           id="fourlaws.grace.prep.main.one"
           defaultMessage={'I would like to tell you what will happen if you receive Christ.'}

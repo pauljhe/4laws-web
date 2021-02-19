@@ -56,7 +56,7 @@ const menuLabels: JSX.Element[] = [
   />,
   <FormattedMessage
     id="drawerMenu.wrapup"
-    defaultMessage="FELLOWSHIP IN A GOOD CHURCH"
+    defaultMessage="THE IMPORTANCE OF A GOOD CHURCH"
   />
 ];
 

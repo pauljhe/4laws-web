@@ -29,7 +29,7 @@ const ConfirmSecondQuestion4: React.FC = () => {
             id="fourlaws.confirm.second.question.four.words"
             defaultMessage={'"And the witness is this, that God has given us eternal life, ' + 
                             'and this life is in His Son. He who has the Son has the life; ' + 
-                            'he who does not have the Son of God does not have life. ' + 
+                            'he who does not have the Son of God does not have the life. ' + 
                             'These things I have written to you who believe in the name of the Son of God, ' + 
                             '<span>in order that you may know that you have eternal life</span>" (1 John 5:11-13).'}
             values={{

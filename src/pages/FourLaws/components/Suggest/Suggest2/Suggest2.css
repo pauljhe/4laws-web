@@ -1,0 +1,19 @@
+@media only screen and (min-width: 600px) {
+    .Law-Suggest2-Acts1711-Korean {
+        max-width: 480px;
+    }
+    
+    .Law-Suggest2-Acts1711-English {
+        max-width: 488px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Suggest2-Acts1711-Korean {
+        max-width: 600px;
+    }
+    
+    .Law-Suggest2-Acts1711-English {
+        max-width: 612px;
+    }
+}

@@ -7,6 +7,7 @@ import { PageTextType, PageType } from '../../../../../interfaces/page.interface
 import actionCreators from '../../../../../state/actionCreators';
 import { AppState } from '../../../../../state/reducer';
 import { FourLawsPaths } from '../../../../paths';
+import './Prayer3.css';
 
 const Prayer3: React.FC = () => {
   const intl = useIntl();
@@ -29,10 +30,12 @@ const Prayer3: React.FC = () => {
     id: "fourlaws.prayer.three.no",
     defaultMessage: "No"
   });
+
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <div className="Law-Question">
       <PageText type={PageTextType.CONTENT} className="LawFour-Content">
-        <div className="Law-Sentence-Bold">
+        <div className={`Law-Sentence-Bold Law-Sentence-Center Law-Prayer3-${language}`}>
           <FormattedMessage 
             id="fourlaws.prayer.three"
             defaultMessage="Does this prayer express the desire of your heart?"

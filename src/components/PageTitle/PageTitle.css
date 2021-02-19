@@ -8,6 +8,7 @@
 }
 
 .PageTitle.PageTitle-Minimized {
+    display: none; /* min-height 768px will be display:block */
     transition: all 400ms ease-out;
     transform: scale(0.6) translate(0, 0);
     opacity: 1;
@@ -85,5 +86,11 @@
         width: 200px;
         height: 200px;
         margin-right: 0;
+    }
+}
+
+@media only screen and (min-height: 768px) {
+    .PageTitle.PageTitle-Minimized {
+        display: block;
     }
 }

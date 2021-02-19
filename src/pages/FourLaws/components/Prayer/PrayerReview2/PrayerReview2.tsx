@@ -15,11 +15,11 @@ const PrayerReview2: React.FC = () => {
     dispatch(actionCreators.setGreetFirstAnswer(PageType.REVIEW));
   };
 
-  const isKorean: boolean = intl.locale === 'ko';
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
 
   return (
     <React.Fragment>
-      <PageText type={PageTextType.CONTENT} className={(isKorean) ? "Law-Prayer-Review2-Korean": "Law-Prayer-Review2"  }>
+      <PageText type={PageTextType.CONTENT} className={`Law-Prayer-Review2-${language}`}>
         <div className="Law-Sentence-Center Law-Sentence-Margin Law-Sentence-Bold">
           <FormattedMessage 
             id="fourlaws.prayer.review.two"

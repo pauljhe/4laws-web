@@ -25,7 +25,7 @@ const Prayer2: React.FC = () => {
             defaultMessage={'"Lord Jesus, I need You. Thank You for dying on the cross for my sins. ' + 
                             'I open the door of my life and receive You as my Savior and Lord. ' + 
                             'Thank You for forgiving my sins and giving me eternal life. Take control of the throne of my life. ' + 
-                            'Make me the kind of person You want me to be."'}
+                            'Make me the kind of person You want me to be." Amen'}
           />
         </div>
       </PageText>

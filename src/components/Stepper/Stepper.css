@@ -7,7 +7,7 @@
 }
 
 .AppStepper .AppStepper-Content {
-    max-width: 819px;
+    padding: 0px 24px;
 }
 
 .AppStepper-Button {
@@ -38,4 +38,10 @@
 
 .AppStepper-Button.AppStepper-Next .AppStepper-Arrow {
     margin-left: 10px;
+}
+
+@media only screen and (min-width: 1280px) {
+    .AppStepper .AppStepper-Content {
+        max-width: 819px;
+    }
 }

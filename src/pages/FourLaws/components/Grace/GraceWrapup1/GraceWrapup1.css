@@ -1,0 +1,25 @@
+@media only screen and (min-width: 600px) {
+    .Law-GraceWrapup1 {
+        max-width: 475px;
+    }
+
+    .Law-GraceWrapup1-FirstThessalonians518 {
+        max-width: 450px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-GraceWrapup1 {
+        max-width: 635px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-GraceWrapup1 {
+        max-width: 793px;
+    }
+
+    .Law-GraceWrapup1-FirstThessalonians518 {
+        max-width: 563px;
+    }
+}

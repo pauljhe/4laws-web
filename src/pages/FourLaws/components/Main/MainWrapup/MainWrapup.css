@@ -1,4 +1,4 @@
-.FourLawsMain-Wrapup {
+.FourLawsMain-Wrapup-Korean, .FourLawsMain-Wrapup-English {
     margin: auto;
     text-align: center;
     font-weight: bold;
@@ -6,13 +6,17 @@
 }
 
 @media only screen and (min-width: 600px) {
-    .FourLawsMain-Wrapup {
+    .FourLawsMain-Wrapup-Korean {
         max-width: 446px;
+    }
+
+    .FourLawsMain-Wrapup-English {
+        max-width: 468px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-    .FourLawsMain-Wrapup {
+    .FourLawsMain-Wrapup-Korean, .FourLawsMain-Wrapup-English {
         max-width: 667px;
     }
 }

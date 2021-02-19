@@ -1,0 +1,21 @@
+@media only screen and (min-width: 600px) {
+    .Law-Wrapup1-Hebrews1025-Korean {
+        max-width: 459px;
+    }
+    
+    .Law-Wrapup1-Hebrews1025-English {
+        max-width: 532px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-Wrapup1-Hebrews1025-Korean {
+        max-width: 531px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Wrapup1-Hebrews1025-Korean, .Law-Wrapup1-Hebrews1025-English {
+        max-width: 665px;
+    }
+}

@@ -6,6 +6,7 @@ import PageText from '../../../../../components/PageText';
 import { PageTextType, PageType } from '../../../../../interfaces/page.interfaces';
 import actionCreators from '../../../../../state/actionCreators';
 import { FourLawsPaths } from '../../../../paths';
+import './GracePrepWrapup1.css';
 
 const GracePrepWrapup1: React.FC = () => {
   const intl = useIntl();
@@ -22,10 +23,12 @@ const GracePrepWrapup1: React.FC = () => {
     id: "fourlaws.grace.prep.wrapup.one.no",
     defaultMessage: "No"
   });
+
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT}>
-        <div className="Law-Sentence-Center Law-Sentence-Margin Law-Sentence-Bold">
+        <div className={`Law-Sentence-Center Law-Sentence-Margin Law-Sentence-Bold Law-GracePrepWrapup1-${language}`}>
           <FormattedMessage 
             id="fourlaws.grace.prep.wrapup.one"
             defaultMessage={'If you receive Christ, these things will happen to you. Would you like to receive Christ?'}

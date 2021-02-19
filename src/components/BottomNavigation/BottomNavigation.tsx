@@ -81,6 +81,7 @@ const BottomNavigation: React.FC<IBottomNavigationProps> = (props) => {
     <React.Fragment>
       {previous}
       {next}
+      <div className="BottomNavigation-Background"></div>
     </React.Fragment>
   );
 };

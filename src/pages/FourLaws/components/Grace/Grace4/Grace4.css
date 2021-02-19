@@ -1,0 +1,21 @@
+@media only screen and (min-width: 600px) {
+    .Law-Grace4-John524-Korean {
+        max-width: 433px;
+    }
+
+    .Law-Grace4-John524-English {
+        max-width: 466px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-Grace4-John524-Korean, .Law-Grace4-John524-English {
+        max-width: 512px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Grace4-John524-Korean, .Law-Grace4-John524-English {
+        max-width: 640px;
+    }
+}

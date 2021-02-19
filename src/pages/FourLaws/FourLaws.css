@@ -27,6 +27,7 @@
 
 .PageText-Content.Law-LongSentence {
     max-width: 752px;
+    text-align: justify;
 }
 
 .Law-Question {
@@ -48,7 +49,7 @@
 .Law-Question-Answer {
     display: flex;
     justify-content: space-between;
-    margin: 100px -50px 0;
+    margin: 100px 0 0 0;
 }
 
 .Law-Question-Answer-Single {
@@ -67,6 +68,9 @@
     padding: 5px 25px;
     box-shadow: 0 15px 5px -10px #fee0ce;
     max-width: fit-content;
+}
+
+.Law-Question-Answer-Single, .Law-Button {
     margin-left: auto;
     margin-right: auto;
 }
@@ -117,6 +121,7 @@
 
 .Law-Title-Animated .Law-Title-Animated-line-two {
     opacity: 1;
+    text-align: justify;
 }
 
 .Law-Title-Animated.Law-Title-Animated-content .Law-Title-Animated-line-one {
@@ -131,14 +136,13 @@
     position: absolute;
     left: 0;
     top: 20px;
-    transform: translate(calc(40vw - 50%), calc(40vh - 50% - 20px));
+    transform: translate(calc(45vw - 50%), calc(45vh - 50% - 20px));
     max-width: 771px;
-    width: 771px;
 } 
 
 .Law-Dialog-Title.Law-Dialog-Title-Minimized {
     transition: all 400ms ease-out;
-    transform: scale(0.6) translate(calc((40vw - 50%) / 0.6), 0);
+    transform: scale(0.6) translate(calc((45vw - 50%) / 0.6), calc(-40% + 20px));
 }
 
 @media only screen and (min-width: 600px) {
@@ -149,11 +153,27 @@
     .PageTitle.Law-PageTitle .PageText-Content {
         text-align: center;
     }
+
+    .Law-Title-Animated.Law-Title-Animated-content .Law-Title-Animated-line-one {
+        transform: scale(0.6) translateY(calc((62.5px + 50% - 50vh + 110px) / 0.6));
+    }
 }
 
 @media only screen and (min-width: 960px) {
     .PageTitle.Law-PageTitle .PageText-Content {
-        text-align: left;
+        text-align: justify;
+    }
+
+    .Law-Title-Animated.Law-Title-Animated-content .Law-Title-Animated-line-one {
+        transform: scale(0.6) translateY(calc((41.5px + 50% - 50vh + 110px) / 0.6));
+    }
+
+    .Law-Dialog-Title {
+        transform: translate(calc(42.5vw - 50%), calc(42.5vh - 50% - 20px));
+    } 
+    
+    .Law-Dialog-Title.Law-Dialog-Title-Minimized {
+        transform: scale(0.6) translate(calc((42.5vw - 50%) / 0.6), calc(-40% + 20px));
     }
 }
 
@@ -161,5 +181,9 @@
     .PageText-Content.Law-LongSentence {
         width: unset;
         max-width: 752px;
+    }
+
+    .Law-Title-Animated.Law-Title-Animated-content .Law-Title-Animated-line-one {
+        transform: scale(0.6) translateY(calc((54.5px + 50% - 50vh + 110px) / 0.6));
     }
 }

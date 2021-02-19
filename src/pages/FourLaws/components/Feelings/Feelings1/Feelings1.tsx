@@ -12,14 +12,14 @@ const Feelings2: React.FC = () => {
         <div className="Law-Sentence-Margin Law-Sentence-Center Law-Sentence-Bold">
           <FormattedMessage 
             id="fourlaws.feelings.one.line1"
-            defaultMessage="DO NOT DEPEND ON FEELINGS"
+            defaultMessage="DO NOT DEPEND UPON FEELINGS"
           />
         </div>
         <div>
           <FormattedMessage 
             id="fourlaws.feelings.one.line2"
-            defaultMessage={'The promise of God\'s Word, the Bible, is our authority. ' + 
-                            'Not our feelings. The Christian lives by faith (trust) in the trustworthiness of God Himself and His Word.'}
+            defaultMessage={'The promise of God\'s Word, not our feelings, is our authority. ' + 
+                            'The Christian lives by faith (trust) in the trustworthiness of God Himself and His Word.'}
           />
         </div>
       </PageText>

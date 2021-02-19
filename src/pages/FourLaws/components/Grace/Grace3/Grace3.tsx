@@ -9,10 +9,12 @@ import { FourLawsPaths } from '../../../../paths';
 import './Grace3.css';
 
 const John112: React.FC<IVerseProps> = (props) => {
-  const className = `Law-PageContent Law-Dialog-Title${(props.minimized) ? ' Law-Dialog-Title-Minimized' : ''}`
+  const className = `Law-PageContent Law-Dialog-Title${(props.minimized) ? ' Law-Dialog-Title-Minimized' : ''}`;
+  const intl = useIntl();
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <PageText type={PageTextType.CONTENT} className={className}>
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className={`Law-Sentence-Center Law-Sentence-Bold Law-Grace3-John112-${language}`}>
         <FormattedMessage 
           id="fourlaws.grace.three.words"
           defaultMessage={"\"But as many as received Him, to them He gave the right to become children of God, even to those who believe in His name\""}
@@ -60,7 +62,7 @@ const Question2: React.FC = () => {
   return (
     <React.Fragment>
       <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-        <div className="Law-Sentence-Center Law-Sentence-Margin Law-Sentence-Bold">
+        <div className={`Law-Sentence-Center Law-Sentence-Margin Law-Sentence-Bold Law-Grace3-Q2-${language}`}>
           <FormattedMessage 
             id="fourlaws.grace.three.question2"
             defaultMessage="If you are Child of God and I am a child of God, what does that make us?"

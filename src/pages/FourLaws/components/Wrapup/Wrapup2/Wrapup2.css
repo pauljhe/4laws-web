@@ -1,0 +1,11 @@
+@media only screen and (min-width: 600px) {
+    .Law-Wrapup2-English {
+        max-width: 531px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Wrapup2-English {
+        max-width: 689px;
+    }
+}

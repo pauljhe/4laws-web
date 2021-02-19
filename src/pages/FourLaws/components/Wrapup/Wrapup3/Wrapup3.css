@@ -1,0 +1,38 @@
+.Law-Wrapup3-Title-Korean, .Law-Wrapup3-Content-Korean, .Law-Wrapup3-Content-English {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .Law-Wrapup3-Title-Korean {
+        max-width: 477px;
+    }
+    
+    .Law-Wrapup3-Content-Korean {
+        max-width: 515px;
+    }
+    
+    .Law-Wrapup3-Content-English {
+        max-width: 702px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-Wrapup3-Title-Korean {
+        max-width: unset;
+    }
+    
+    .Law-Wrapup3-Content-Korean {
+        max-width: 607px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Wrapup3-Content-Korean {
+        max-width: 759px;
+    }
+    
+    .Law-Wrapup3-Content-English {
+        max-width: unset;
+    }
+}

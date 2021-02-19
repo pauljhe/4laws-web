@@ -1,10 +1,11 @@
 .AppDialog.MuiDialog-root .MuiDialogContent-root {
     padding: 0;
-    height: 80vh;
+    height: 90vh;
 }
 
 .AppDialog.MuiDialog-root .MuiDialog-paperWidthFalse {
-    max-width: 80vw;
+    max-width: 90vw;
+    border-radius: 18px;
 }
 
 .AppDialog.MuiDialog-root .AppDialog-CloseButton {
@@ -17,4 +18,14 @@
 .AppDialog.MuiDialog-root .AppDialog-CloseButton .MuiSvgIcon-root {
     width: 28px;
     height: 28px;
+}
+
+@media only screen and (min-width: 960px) {
+    .AppDialog.MuiDialog-root .MuiDialogContent-root {
+        height: 85vh;
+    }
+
+    .AppDialog.MuiDialog-root .MuiDialog-paperWidthFalse {
+        max-width: 85vw;
+    }
 }

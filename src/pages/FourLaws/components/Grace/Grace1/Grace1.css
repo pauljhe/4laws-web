@@ -1,0 +1,25 @@
+@media only screen and (min-width: 600px) {
+    .Law-Grace1-Revelation320 {
+        max-width: 488px;
+    }
+
+    .Law-Grace1-Colossians127 {
+        max-width: 447px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-Grace1-Colossians127 {
+        max-width: 566px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Grace1-Revelation320 {
+        max-width: 592px;
+    }
+
+    .Law-Grace1-Colossians127 {
+        max-width: 707px;
+    }
+}

@@ -1,0 +1,27 @@
+@media only screen and (min-width: 600px) {
+    .Law-Suggest4-Matthew419-Korean {
+        max-width: 410px;
+    }
+
+    .Law-Suggest4-Matthew419-English {
+        max-width: 391px;
+    }
+
+    .Law-Suggest4-John158-Korean, .Law-Suggest4-John158-English {
+        max-width: 490px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Suggest4-Matthew419-Korean {
+        max-width: 513px;
+    }
+
+    .Law-Suggest4-Matthew419-English {
+        max-width: 469px;
+    }
+
+    .Law-Suggest4-John158-Korean, .Law-Suggest4-John158-English {
+        max-width: 598px;
+    }
+}

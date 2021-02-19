@@ -1,3 +1,37 @@
 .Law-Title-Animated.Law-Title-Animated-content .Law-Title-Animated-line-one.Suggest-Title-line-one {
-    transform: scale(0.6) translateY(calc((108.5px + 50% - 50vh + 110px) / 0.6));
+    transform: scale(0.6) translateY(calc((108.5px + 50% - 50vh + 95px) / 0.6));
+}
+
+@media only screen and (min-width: 600px) {
+    .Law-Title-Animated.Law-Title-Animated-content .Law-Title-Animated-line-one.Suggest-Title-line-one {
+        transform: scale(0.6) translateY(calc((104.5px + 50% - 50vh + 95px) / 0.6));
+    }
+
+    .Suggest-Title-line-two {
+        max-width: 503px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-Title-Animated.Law-Title-Animated-content .Law-Title-Animated-line-one.Suggest-Title-line-one {
+        transform: scale(0.6) translateY(calc((83px + 50% - 50vh + 95px) / 0.6));
+    }
+
+    .Suggest-Title-line-two {
+        max-width: 623px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Title-Animated.Law-Title-Animated-content .Law-Title-Animated-line-one.Suggest-Title-line-one {
+        transform: scale(0.6) translateY(calc((108.5px + 50% - 50vh + 95px) / 0.6));
+    }
+
+    .Suggest-Title-line-two {
+        max-width: 848px;
+    }
 }

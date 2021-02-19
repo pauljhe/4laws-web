@@ -5,11 +5,12 @@ import Dialog from '../../../../../components/Dialog';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
+import './Grace1.css';
 
 const Revelation320: React.FC = () => {
   return (
     <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className="Law-Sentence-Center Law-Sentence-Bold Law-Grace1-Revelation320">
         <FormattedMessage 
           id="fourlaws.grace.one.words1"
           defaultMessage={"\"Behold, I stand at the door and knock; if anyone hears My voice and opens the door, I will come in to him and will dine with him, and he with Me.\""}
@@ -28,7 +29,7 @@ const Revelation320: React.FC = () => {
 const Colossian127: React.FC = () => {
   return (
     <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className="Law-Sentence-Center Law-Sentence-Bold Law-Grace1-Colossians127">
         <FormattedMessage 
           id="fourlaws.grace.one.words2"
           defaultMessage={"\"to whom God willed to make known what is the riches of the glory of this mystery among the Gentiles, which is Christ in you, the hope of glory.\""}

@@ -25,7 +25,7 @@ const ConfirmFirst2: React.FC = () => {
           id="fourlaws.confirm.first.two"
           defaultMessage={'Christ said that He would come into your life. Would He mislead you? ' + 
                           'Therefore, how do you know that God has answered your prayer? ' + 
-                          '(The trustworthiness of God Himself and His Word, the Bible, in other words, God keeps His Promises).'}
+                          '(The trustworthiness of God Himself and His Word, the Bible. In other words, God keeps His Promises).'}
         />
       </PageText>
       <BottomNavigation 

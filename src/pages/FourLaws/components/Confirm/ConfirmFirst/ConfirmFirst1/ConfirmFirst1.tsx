@@ -28,7 +28,7 @@ const ConfirmFirst1: React.FC = () => {
         <div className={`Law-Sentence-Center Law-Sentence-Bold Law-ConfirmFirst1-Question-${language}`}>
           <FormattedMessage 
             id="fourlaws.confirm.first.one"
-            defaultMessage="As you prayed, did you receive Christ into your life? According to His promise in Revelation 3:20, where is Christ right now in relation to you?"
+            defaultMessage="As you prayed did you receive Christ into your life? Because of His promise in Revelation 3:20, where is Christ right now in relation to you?"
           />
         </div>
         <div className="Law-Question-Answer-Single">

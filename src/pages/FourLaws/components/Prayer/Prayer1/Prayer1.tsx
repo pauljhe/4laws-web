@@ -22,7 +22,7 @@ const Prayer1: React.FC = () => {
         <div>
           <FormattedMessage 
             id="fourlaws.prayer.one.line2"
-            defaultMessage={'God knows your heart and is not concerned with your words as He is with the attitude of your heart.'}
+            defaultMessage={'God knows your heart and is not so concerned with your words as He is with the attitude of your heart.'}
           />
         </div>
       </PageText>

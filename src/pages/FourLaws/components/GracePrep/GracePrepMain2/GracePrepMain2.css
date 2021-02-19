@@ -1,0 +1,19 @@
+@media only screen and (min-width: 600px) {
+    .Law-GracePrepMain2-Korean {
+        max-width: 553px;
+    }
+    
+    .Law-GracePrepMain2-English {
+        max-width: 525px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-GracePrepMain2-Korean {
+        max-width: 691px;
+    }
+    
+    .Law-GracePrepMain2-English {
+        max-width: 656px;
+    }
+}

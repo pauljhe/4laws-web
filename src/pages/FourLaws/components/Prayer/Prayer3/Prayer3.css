@@ -1,0 +1,11 @@
+@media only screen and (min-width: 600px) {
+    .Law-Prayer3-English {
+        max-width: 438px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-Prayer3-English {
+        max-width: none;
+    }
+}

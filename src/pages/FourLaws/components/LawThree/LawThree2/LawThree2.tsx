@@ -18,8 +18,8 @@ const LawThree2: React.FC = () => {
         <div>
           <FormattedMessage 
             id="fourlaws.law3.two.content"
-            defaultMessage={'"Christ died for our sins...He was buried...He was raised on the third day, ' + 
-                            'according to the Scriptures...He appeared to Peter, then to the twelve. ' + 
+            defaultMessage={'"Christ died for our sins... He was buried... He was raised on the third day, ' + 
+                            'according to the Scriptures... He appeared to Peter, then to the twelve. ' + 
                             'After that He appeared to more than five hundred..." (1 Corinthians 15:3-6).'}
           />
         </div>

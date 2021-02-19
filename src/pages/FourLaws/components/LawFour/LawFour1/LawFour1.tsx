@@ -18,7 +18,7 @@ const LawFour1: React.FC = () => {
         <div>
           <FormattedMessage 
             id="fourlaws.law4.one.content"
-            defaultMessage={'"But as many as received Him, to them He gave the right to become children of God, even to those who believe in his name" (John 1:12)'}
+            defaultMessage={'"But as many as received Him, to them He gave the right to become children of God, even to those who believe in His name" (John 1:12)'}
           />
         </div>
       </PageText>

@@ -1,0 +1,33 @@
+@media only screen and (min-width: 600px) {
+    .Law-Grace5-John1010 {
+        max-width: 429px;
+    }
+
+    .Law-Grace5-Corinthian517-Korean, .Law-Grace5-Corinthian517-English {
+        max-width: 408px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-Grace5-John1010 {
+        max-width: 491px;
+    }
+
+    .Law-Grace5-Corinthian517-Korean {
+        max-width: 567px;
+    }
+
+    .Law-Grace5-Corinthian517-English {
+        max-width: 594px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-Grace5-John1010 {
+        max-width: 614px;
+    }
+
+    .Law-Grace5-Corinthian517-Korean, .Law-Grace5-Corinthian517-English {
+        max-width: 743px;
+    }
+}

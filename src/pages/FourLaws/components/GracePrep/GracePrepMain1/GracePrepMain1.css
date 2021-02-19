@@ -1,3 +1,21 @@
-.Grace-Prep-Main-One {
-    max-width: 639px;
+@media only screen and (min-width: 600px) {
+    .Law-GracePrepMain1-Korean {
+        max-width: 510px;
+    }
+    
+    .Law-GracePrepMain1-English {
+        max-width: 430px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .Law-GracePrepMain1-English {
+        max-width: unset;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .Law-GracePrepMain1-Korean {
+        max-width: 639px;
+    }
 }

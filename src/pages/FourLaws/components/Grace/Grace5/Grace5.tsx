@@ -1,15 +1,16 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import BottomNavigation from '../../../../../components/BottomNavigation';
 import Dialog from '../../../../../components/Dialog';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
+import './Grace5.css';
 
 const John1010: React.FC = () => {
   return (
     <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className="Law-Sentence-Center Law-Sentence-Bold Law-Grace5-John1010">
         <FormattedMessage 
           id="fourlaws.grace.five.words1"
           defaultMessage={"\"The thief comes only to steal and kill and destroy; I came that they may have life, and have it abundantly.\""}
@@ -26,9 +27,11 @@ const John1010: React.FC = () => {
 };
 
 const SecondCorinthians517: React.FC = () => {
+  const intl = useIntl();
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className={`Law-Sentence-Center Law-Sentence-Bold Law-Grace5-Corinthian517-${language}`}>
         <FormattedMessage 
           id="fourlaws.grace.five.words2"
           defaultMessage={"\"Therefore if anyone is in Christ, he is a new creature; the old things passed away; behold, new things have come.\""}

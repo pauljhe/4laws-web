@@ -1,15 +1,18 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import BottomNavigation from '../../../../../components/BottomNavigation';
 import Dialog from '../../../../../components/Dialog';
 import PageText from '../../../../../components/PageText';
 import { PageTextType } from '../../../../../interfaces/page.interfaces';
 import { FourLawsPaths } from '../../../../paths';
+import './Suggest5.css';
 
 const FirstPeter57: React.FC = () => {
+  const intl = useIntl();
+  const language = (intl.locale === 'ko') ? 'Korean': 'English';
   return (
     <PageText type={PageTextType.CONTENT} className="Law-PageContent">
-      <div className="Law-Sentence-Center Law-Sentence-Bold">
+      <div className={`Law-Sentence-Center Law-Sentence-Bold Law-Suggest5-FirstPeter57-${language}`}>
         <FormattedMessage 
           id="fourlaws.suggest.five.words"
           defaultMessage={"\"casting all your anxiety on Him, because He cares for you.\""}
